@@ -44,6 +44,12 @@ Les nouvelles versions de votre runtime sont ensuite prises en compte **toutes s
 
 Pour une fiche de jeu : `titleIds` (les CUSA reconnus), `match` (expression reconnaissant le titre du `param.sfo`), `requiredVersion` (version minimale du jeu exigée par le runtime), `languages` (langues du texte du jeu, en numéros de langue système PS4 : 0 japonais, 1 anglais, 2 français, 3 espagnol, 4 allemand… ; sinon Crowbar les lit dans le fichier de trophées), `features` (réglages propres à ce runtime : `framerate`, `outlines`), puis `name`, `genre`, `glow` et `synopsis`, affichés dans Crowbar.
 
+`synopsis` et `genreLocalized` prennent un texte par langue, avec les codes de langue de Crowbar : `fr`, `fr-CA`, `en-US`, `en-GB`, `ja`, `es`, `es-419`, `de`, `it`, `nl`, `pt-PT`, `pt-BR`, `ru`, `ko`, `zh-Hant`, `zh-Hans`, `fi`, `sv`, `da`, `no`, `pl`, `tr` et `ar`.
+
+- Un texte en anglais (`en-US`) suffit ; toutes les autres langues sont facultatives.
+- Une langue absente se replie sur sa langue de base (`fr-CA` sur `fr`, `en-GB` sur `en-US`, `es-419` sur `es`, `pt-BR` sur `pt-PT`), puis sur l'anglais.
+- Gardez `genre`, en anglais, à côté de `genreLocalized`, pour les anciennes versions de Crowbar.
+
 ## Pour les mainteneurs du catalogue
 
 - Les tests du script se lancent avec `python -m unittest discover -s scripts`.

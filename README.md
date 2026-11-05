@@ -62,6 +62,12 @@ A game entry can also have these fields:
 - `features`: settings specific to this runtime (`framerate`, `outlines`).
 - `name`, `genre`, `glow` and `synopsis`, shown in Crowbar.
 
+`synopsis` and `genreLocalized` take one text per language, keyed by Crowbar's language codes: `fr`, `fr-CA`, `en-US`, `en-GB`, `ja`, `es`, `es-419`, `de`, `it`, `nl`, `pt-PT`, `pt-BR`, `ru`, `ko`, `zh-Hant`, `zh-Hans`, `fi`, `sv`, `da`, `no`, `pl`, `tr` and `ar`.
+
+- An English text (`en-US`) is enough; every other language is optional.
+- A missing language falls back to its base language (`fr-CA` to `fr`, `en-GB` to `en-US`, `es-419` to `es`, `pt-BR` to `pt-PT`), then to English.
+- Keep `genre` as a plain English string next to `genreLocalized`, for older versions of Crowbar.
+
 ## For catalog maintainers
 
 - Run the script's tests with `python -m unittest discover -s scripts`.
