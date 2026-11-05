@@ -6,6 +6,7 @@
       "name": "Sakura Wars",
       "titleIds": ["CUSA16429"],
       "match": "sakura\\s*wars|サクラ大戦",
+      "languages": [1, 2, 3, 4],
       "requiredVersion": "01.01",
       "features": ["framerate", "outlines"],
       "genre": "Action Adventure",
