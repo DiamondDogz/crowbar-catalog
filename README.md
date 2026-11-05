@@ -3,7 +3,7 @@
 Ce dépôt dit à [Crowbar](https://github.com/DiamondDogz/crowbar-launcher) quels jeux PS4RT existent et où télécharger leurs runtimes.
 
 - **`catalog.json`** : la liste des jeux et de leurs runtimes, modifiée à la main.
-- **`releases.json`** : généré automatiquement toutes les heures. Pour chaque runtime, il donne la dernière version **stable** et la dernière **bêta**, avec l'adresse de téléchargement, la taille et l'empreinte SHA-256. C'est le seul fichier que Crowbar lit : les joueurs n'interrogent jamais l'API GitHub.
+- **`releases.json`** : généré automatiquement toutes les heures. Pour chaque runtime, il donne la dernière version **stable** et la dernière **bêta**, avec l'adresse de téléchargement, la taille et l'empreinte SHA-256. Il liste aussi les 10 dernières versions, pour que les joueurs puissent en choisir une précise. C'est le seul fichier que Crowbar lit : les joueurs n'interrogent jamais l'API GitHub.
 
 Rien de ce dépôt n'est un jeu, une clé ou un fichier de Sony : seulement des noms, des liens et des empreintes.
 

@@ -24,6 +24,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 API = "https://api.github.com"
 NOTES_MAX = 4000  # notes de version tronquées, pour garder releases.json léger
+VERSIONS_MAX = 10  # versions proposées dans Crowbar pour revenir en arrière ou en choisir une
+VERSION_NOTES_MAX = 600
 
 
 def http_get(url: str, accept: str = "application/vnd.github+json") -> bytes:
@@ -94,7 +96,7 @@ def describe(release: dict, spec: dict, read=http_get) -> dict | None:
 
 
 def resolve(releases: list[dict], spec: dict, read=http_get) -> dict:
-    """Choisit les releases « stable » et « beta » d'un runtime."""
+    """Choisit les releases « stable » et « beta » d'un runtime, et liste les dernières versions."""
     prefix = spec.get("tagPrefix", "")
     usable = [r for r in releases
               if not r.get("draft") and r.get("published_at") and r["tag_name"].startswith(prefix)]
@@ -111,6 +113,17 @@ def resolve(releases: list[dict], spec: dict, read=http_get) -> dict:
                 out["stable"] = d
         if "beta" in out and "stable" in out:
             break
+    # Les dernières versions publiées, pour en choisir une précise dans Crowbar.
+    versions = []
+    for r in usable:
+        if len(versions) >= VERSIONS_MAX:
+            break
+        d = out["beta"] if out.get("beta", {}).get("tag") == r["tag_name"] else \
+            out["stable"] if out.get("stable", {}).get("tag") == r["tag_name"] else describe(r, spec, read)
+        if d:
+            versions.append({**d, "notes": d["notes"][:VERSION_NOTES_MAX]})
+    if versions:
+        out["versions"] = versions
     return out
 
 

@@ -22,6 +22,14 @@ class Resolve(unittest.TestCase):
         self.assertTrue(r["beta"]["prerelease"])
         self.assertEqual(r["stable"]["sha256"], "a" * 64)
 
+    def test_liste_des_versions(self):
+        releases = [rel(f"windows-1.{i}", f"2026-10-{10 + i:02d}T00:00:00Z", pre=(i == 13)) for i in range(14)]
+        r = b.resolve(releases, SPEC)
+        self.assertEqual(len(r["versions"]), b.VERSIONS_MAX)
+        self.assertEqual([v["version"] for v in r["versions"][:2]], ["1.13", "1.12"])
+        self.assertTrue(r["versions"][0]["prerelease"])
+        self.assertTrue(all(v["sha256"] for v in r["versions"]))
+
     def test_ignore_brouillons_autres_tags_et_releases_sans_archive(self):
         releases = [rel("windows-2.0", "2026-12-01T00:00:00Z", draft=True),
                     rel("linux-9", "2026-11-20T00:00:00Z"),
