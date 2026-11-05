@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T11:11:09+00:00",
+  "generatedAt": "2026-11-05T11:38:04+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 26,
+        "stars": 27,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "1.1.4",
@@ -65,7 +65,38 @@
       }
     },
     "star-ocean-5": {},
-    "valkyria-revolution": {},
+    "valkyria-revolution": {
+      "windows": {
+        "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
+        "maintainer": "DiamondDogz",
+        "stars": 14,
+        "launch": "ps4rt-run",
+        "beta": {
+          "version": "1.2",
+          "tag": "windows-1.2",
+          "prerelease": false,
+          "published": "2026-11-04T19:28:34Z",
+          "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2/Ravn-windows-1.2.zip",
+          "file": "Ravn-windows-1.2.zip",
+          "size": 84587696,
+          "sha256": "ee116cd234a81e45176044e2e5aa4debc2be871b6454339b3c8decfcc6c93aa7",
+          "notes": "First Windows release of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nBuilt from HekamiAeon's [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) `main`, commit `635e142`: tag v1.2 plus one documentation commit.\n\nYou need your own extracted copy of the base game, **CUSA06810**, with no update, as the Linux release does. Unzip the archive anywhere and run `Ravn.exe`. The steps are in INSTALL.md inside the archive.\n\n- **Ravn**: game folder, graphics settings and trophy list. The theme and visuals are original; no SEGA art or sound is included.\n- **Settings**: those of the Linux release's in-game menu.\n  - Output: 1080p, 1440p or 4K.\n  - Window: windowed, borderless or fullscreen.\n  - Upscaling: Off / Original, FSR 3.1 or FSR 4 v07. FSR 4 needs a recent GPU and falls back to FSR 3.1.\n  - Anisotropic filtering, applied on restart.\n  - Sharpening.\n- **Trophies**: local, read from your `trophy00.trp`. Nothing is sent. A card shows in game when one unlocks.\n- In game, Insert, or L2 + R3, opens the overlay.\n\nTested on Windows 11 26H2 with an Intel Core i9-12900KF and an NVIDIA GeForce RTX 3090, Studio driver 617.42. The game started and played through the Molda campaign, and trophies unlocked. A complete playthrough is not verified.\n\nThe SHA-256 of `Ravn-windows-1.2.zip` is in `Ravn-windows-1.2.zip.sha256`.\n\n## windows-1.2\n\nPremière version Windows de Valkyria Revolution PS4RT, avec le lanceur Ravn. Non officielle, aucun lien avec SEGA. Le jeu n'est pas inclus.\n\nCompilée depuis le `main` de [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) de HekamiAeon, commit `635e142` : le tag v1.2 plus un commit de documentation.\n\nIl faut votre propre copie extraite du jeu de base, **CUSA06810**, sans mise à jour, comme pour la version Linux. Décompressez l'archive où vous voulez et lancez `Ravn.exe`. Les étapes sont dans INSTALL.md, dans l'archive.\n\n- **Ravn** : dossier du jeu, réglages graphiques et liste des trophées. Le thème et les visuels sont originaux ; aucune image ni aucun son de SEGA n'est inclus.\n- **Réglages** : ceux du menu en jeu de la version Linux.\n  - Sortie : 1080p, 1440p ou 4K.\n  - Fenêtre : fenêtré, sans bordure ou plein écran.\n  - Upscaling : Désactivé / Original, FSR 3.1 ou FSR 4 v07. FSR 4 demande un GPU récent et se replie sur FSR 3.1.\n  - Filtrage anisotrope, appliqué au redémarrage.\n  - Netteté.\n- **Trophées** : locaux, lus dans votre `trophy00.trp`. Rien n'est envoyé. Une carte s'affiche en jeu quand un trophée se débloque.\n- En jeu, Insert, ou L2 + R3, ouvre l'incrustation.\n\nTesté sous Windows 11 26H2 avec un Intel Core i9-12900KF et une NVIDIA GeForce RTX 3090, pilote Studio 617.42. Le jeu a démarré et a tourné jusqu'à la fin de la campagne de Molda, et des trophées se sont débloqués. Une partie complète n'a pas été vérifiée.\n\nLe SHA-256 de `Ravn-windows-1.2.zip` est dans `Ravn-windows-1.2.zip.sha256`.\n",
+          "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
+        },
+        "stable": {
+          "version": "1.2",
+          "tag": "windows-1.2",
+          "prerelease": false,
+          "published": "2026-11-04T19:28:34Z",
+          "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2/Ravn-windows-1.2.zip",
+          "file": "Ravn-windows-1.2.zip",
+          "size": 84587696,
+          "sha256": "ee116cd234a81e45176044e2e5aa4debc2be871b6454339b3c8decfcc6c93aa7",
+          "notes": "First Windows release of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nBuilt from HekamiAeon's [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) `main`, commit `635e142`: tag v1.2 plus one documentation commit.\n\nYou need your own extracted copy of the base game, **CUSA06810**, with no update, as the Linux release does. Unzip the archive anywhere and run `Ravn.exe`. The steps are in INSTALL.md inside the archive.\n\n- **Ravn**: game folder, graphics settings and trophy list. The theme and visuals are original; no SEGA art or sound is included.\n- **Settings**: those of the Linux release's in-game menu.\n  - Output: 1080p, 1440p or 4K.\n  - Window: windowed, borderless or fullscreen.\n  - Upscaling: Off / Original, FSR 3.1 or FSR 4 v07. FSR 4 needs a recent GPU and falls back to FSR 3.1.\n  - Anisotropic filtering, applied on restart.\n  - Sharpening.\n- **Trophies**: local, read from your `trophy00.trp`. Nothing is sent. A card shows in game when one unlocks.\n- In game, Insert, or L2 + R3, opens the overlay.\n\nTested on Windows 11 26H2 with an Intel Core i9-12900KF and an NVIDIA GeForce RTX 3090, Studio driver 617.42. The game started and played through the Molda campaign, and trophies unlocked. A complete playthrough is not verified.\n\nThe SHA-256 of `Ravn-windows-1.2.zip` is in `Ravn-windows-1.2.zip.sha256`.\n\n## windows-1.2\n\nPremière version Windows de Valkyria Revolution PS4RT, avec le lanceur Ravn. Non officielle, aucun lien avec SEGA. Le jeu n'est pas inclus.\n\nCompilée depuis le `main` de [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) de HekamiAeon, commit `635e142` : le tag v1.2 plus un commit de documentation.\n\nIl faut votre propre copie extraite du jeu de base, **CUSA06810**, sans mise à jour, comme pour la version Linux. Décompressez l'archive où vous voulez et lancez `Ravn.exe`. Les étapes sont dans INSTALL.md, dans l'archive.\n\n- **Ravn** : dossier du jeu, réglages graphiques et liste des trophées. Le thème et les visuels sont originaux ; aucune image ni aucun son de SEGA n'est inclus.\n- **Réglages** : ceux du menu en jeu de la version Linux.\n  - Sortie : 1080p, 1440p ou 4K.\n  - Fenêtre : fenêtré, sans bordure ou plein écran.\n  - Upscaling : Désactivé / Original, FSR 3.1 ou FSR 4 v07. FSR 4 demande un GPU récent et se replie sur FSR 3.1.\n  - Filtrage anisotrope, appliqué au redémarrage.\n  - Netteté.\n- **Trophées** : locaux, lus dans votre `trophy00.trp`. Rien n'est envoyé. Une carte s'affiche en jeu quand un trophée se débloque.\n- En jeu, Insert, ou L2 + R3, ouvre l'incrustation.\n\nTesté sous Windows 11 26H2 avec un Intel Core i9-12900KF et une NVIDIA GeForce RTX 3090, pilote Studio 617.42. Le jeu a démarré et a tourné jusqu'à la fin de la campagne de Molda, et des trophées se sont débloqués. Une partie complète n'a pas été vérifiée.\n\nLe SHA-256 de `Ravn-windows-1.2.zip` est dans `Ravn-windows-1.2.zip.sha256`.\n",
+          "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
+        }
+      }
+    },
     "gundam-code-fairy": {}
   }
 }
