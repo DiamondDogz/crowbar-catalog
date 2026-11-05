@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-05T10:58:48+00:00",
+  "games": {
+    "sakura-wars": {
+      "windows": {
+        "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
+        "maintainer": "DiamondDogz",
+        "launch": "ps4rt-launch",
+        "beta": {
+          "version": "1.1.4",
+          "tag": "windows-1.1.4",
+          "prerelease": false,
+          "published": "2026-11-04T04:25:14Z",
+          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.4/Kagekidan-windows-1.1.4.zip",
+          "file": "Kagekidan-windows-1.1.4.zip",
+          "size": 87034569,
+          "sha256": "8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921",
+          "notes": "It is windows-1.1.3, plus a language choice for the game. Stay on windows-1.1.2 if you do not want the trophies. The game is not included.\n\nIn the launcher, the globe sets the game language. Four choices:\n\n- English\n- Français\n- Deutsch\n- Español\n\nThe next Play uses that language for the game's text. Trophy names and the in-game trophy card use the same language. Spoken voices stay in Japanese.\n\nThe EN/FR button is separate. It only switches the launcher between English and French. It does not change the game.\n\nThe trophy list no longer has its own language buttons. Japanese, Korean and Chinese are not offered, because this version of the game does not display them. A language already chosen in windows-1.1.3 is kept when it is one of the four above.\n\nOnly the launcher changed. Kagekidan.exe and the runtime are the same files as windows-1.1.3.\n\n`8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921  Kagekidan-windows-1.1.4.zip`\n\n## windows-1.1.4\n\nC'est windows-1.1.3, plus le choix de la langue du jeu. Restez sur windows-1.1.2 si vous ne voulez pas des trophées. Le jeu n'est pas inclus.\n\nDans le lanceur, le globe règle la langue du jeu. Quatre choix :\n\n- English\n- Français\n- Deutsch\n- Español\n\nLe prochain Jouer utilise cette langue pour les textes du jeu. Les noms des trophées et la carte dans le jeu utilisent la même langue. Les voix restent en japonais.\n\nLe bouton EN/FR est à part. Il ne fait passer que le lanceur de l'anglais au français. Il ne change pas le jeu.\n\nLa liste des trophées n'a plus ses propres boutons de langue. Le japonais, le coréen et le chinois ne sont pas proposés : cette version du jeu ne les affiche pas. Une langue déjà choisie dans windows-1.1.3 est gardée si elle fait partie des quatre ci-dessus.\n\nSeul le lanceur change. Kagekidan.exe et le runtime sont les mêmes fichiers que windows-1.1.3.\n",
+          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.4"
+        },
+        "stable": {
+          "version": "1.1.4",
+          "tag": "windows-1.1.4",
+          "prerelease": false,
+          "published": "2026-11-04T04:25:14Z",
+          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.4/Kagekidan-windows-1.1.4.zip",
+          "file": "Kagekidan-windows-1.1.4.zip",
+          "size": 87034569,
+          "sha256": "8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921",
+          "notes": "It is windows-1.1.3, plus a language choice for the game. Stay on windows-1.1.2 if you do not want the trophies. The game is not included.\n\nIn the launcher, the globe sets the game language. Four choices:\n\n- English\n- Français\n- Deutsch\n- Español\n\nThe next Play uses that language for the game's text. Trophy names and the in-game trophy card use the same language. Spoken voices stay in Japanese.\n\nThe EN/FR button is separate. It only switches the launcher between English and French. It does not change the game.\n\nThe trophy list no longer has its own language buttons. Japanese, Korean and Chinese are not offered, because this version of the game does not display them. A language already chosen in windows-1.1.3 is kept when it is one of the four above.\n\nOnly the launcher changed. Kagekidan.exe and the runtime are the same files as windows-1.1.3.\n\n`8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921  Kagekidan-windows-1.1.4.zip`\n\n## windows-1.1.4\n\nC'est windows-1.1.3, plus le choix de la langue du jeu. Restez sur windows-1.1.2 si vous ne voulez pas des trophées. Le jeu n'est pas inclus.\n\nDans le lanceur, le globe règle la langue du jeu. Quatre choix :\n\n- English\n- Français\n- Deutsch\n- Español\n\nLe prochain Jouer utilise cette langue pour les textes du jeu. Les noms des trophées et la carte dans le jeu utilisent la même langue. Les voix restent en japonais.\n\nLe bouton EN/FR est à part. Il ne fait passer que le lanceur de l'anglais au français. Il ne change pas le jeu.\n\nLa liste des trophées n'a plus ses propres boutons de langue. Le japonais, le coréen et le chinois ne sont pas proposés : cette version du jeu ne les affiche pas. Une langue déjà choisie dans windows-1.1.3 est gardée si elle fait partie des quatre ci-dessus.\n\nSeul le lanceur change. Kagekidan.exe et le runtime sont les mêmes fichiers que windows-1.1.3.\n",
+          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.4"
+        }
+      },
+      "linux": {
+        "repo": "HekamiAeon/Sakura-Wars-PS4RT",
+        "maintainer": "HekamiAeon",
+        "launch": "ps4rt-launch",
+        "beta": {
+          "version": "v1.1",
+          "tag": "v1.1",
+          "prerelease": false,
+          "published": "2026-10-30T02:56:37Z",
+          "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.1/Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
+          "file": "Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
+          "size": 33946146,
+          "sha256": "38d56687e6f97956a3710dd92749f00b2371e72f3e6729119b65376ec67ee0ce",
+          "notes": "# Sakura Wars PS4RT v1.1\r\n\r\nA Linux x86-64 update focused on graphics performance and a simpler player experience for **Sakura Wars (CUSA16429 v1.01)**.\r\n\r\n## What's new\r\n\r\n- **Graphics presets:** Native, High, Medium, and Lowest options for choosing between visual quality and performance. Medium and Lowest target weaker GPUs.\r\n- **GPU optimizations:** More efficient clearing of certain render targets; reduced dash motion-blur sampling and disabled character screen-space shadow effects on Medium and Lowest.\r\n- **Remembered game folder:** Provide `--game` on first launch. After a successful setup, subsequent launches can use `bash Play-Game.sh` alone. Use `--game` again if the folder moves or you want a different game extraction.\r\n- **Polished release packaging:** Restored the Crypto++ portable-builder recipe in the source archive, refined the player/source packaging, and kept licensing notices and required runtime assets.\r\n\r\n## Install and launch\r\n\r\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\r\n\r\n```bash\r\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\r\n```\r\n\r\nAfter successful setup:\r\n\r\n```bash\r\nbash Play-Game.sh\r\n```\r\n\r\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\r\n\r\n## Platform and notes\r\n\r\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\r\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\r\n- Graphics changes and gameplay were smoke-tested on Linux, including a low-end Radeon integrated GPU. Performance varies with hardware, scene, resolution and graphics settings.\r\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\r\n\r\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\r\n",
+          "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1"
+        },
+        "stable": {
+          "version": "v1.1",
+          "tag": "v1.1",
+          "prerelease": false,
+          "published": "2026-10-30T02:56:37Z",
+          "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.1/Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
+          "file": "Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
+          "size": 33946146,
+          "sha256": "38d56687e6f97956a3710dd92749f00b2371e72f3e6729119b65376ec67ee0ce",
+          "notes": "# Sakura Wars PS4RT v1.1\r\n\r\nA Linux x86-64 update focused on graphics performance and a simpler player experience for **Sakura Wars (CUSA16429 v1.01)**.\r\n\r\n## What's new\r\n\r\n- **Graphics presets:** Native, High, Medium, and Lowest options for choosing between visual quality and performance. Medium and Lowest target weaker GPUs.\r\n- **GPU optimizations:** More efficient clearing of certain render targets; reduced dash motion-blur sampling and disabled character screen-space shadow effects on Medium and Lowest.\r\n- **Remembered game folder:** Provide `--game` on first launch. After a successful setup, subsequent launches can use `bash Play-Game.sh` alone. Use `--game` again if the folder moves or you want a different game extraction.\r\n- **Polished release packaging:** Restored the Crypto++ portable-builder recipe in the source archive, refined the player/source packaging, and kept licensing notices and required runtime assets.\r\n\r\n## Install and launch\r\n\r\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\r\n\r\n```bash\r\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\r\n```\r\n\r\nAfter successful setup:\r\n\r\n```bash\r\nbash Play-Game.sh\r\n```\r\n\r\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\r\n\r\n## Platform and notes\r\n\r\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\r\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\r\n- Graphics changes and gameplay were smoke-tested on Linux, including a low-end Radeon integrated GPU. Performance varies with hardware, scene, resolution and graphics settings.\r\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\r\n\r\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\r\n",
+          "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1"
+        }
+      }
+    },
+    "star-ocean-5": {},
+    "valkyria-revolution": {},
+    "gundam-code-fairy": {}
+  }
+}
