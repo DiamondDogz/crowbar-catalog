@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "games": [
+    {
+      "id": "sakura-wars",
+      "name": "Sakura Wars",
+      "titleIds": ["CUSA16429"],
+      "match": "sakura\\s*wars|サクラ大戦",
+      "requiredVersion": "01.01",
+      "features": ["framerate", "outlines"],
+      "genre": "Action Adventure",
+      "glow": "#ff5fa2",
+      "synopsis": {
+        "fr": "Tokyo, années 1940, version steampunk : Seijuro Kamiyama reprend en main la Division Fleur pour sauver le Théâtre impérial et défendre la ville."
+      },
+      "runtimes": [
+        {
+          "platform": "windows",
+          "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
+          "tagPrefix": "windows-",
+          "asset": "*.zip",
+          "maintainer": "DiamondDogz",
+          "launch": "ps4rt-launch"
+        },
+        {
+          "platform": "linux",
+          "repo": "HekamiAeon/Sakura-Wars-PS4RT",
+          "asset": "*-linux-x86_64.tar.gz",
+          "checksum": "{asset}.sha256",
+          "maintainer": "HekamiAeon",
+          "launch": "ps4rt-launch"
+        }
+      ]
+    },
+    {
+      "id": "star-ocean-5",
+      "name": "Star Ocean: Integrity and Faithlessness",
+      "titleIds": [],
+      "match": "star\\s*ocean",
+      "genre": "Action RPG",
+      "glow": "#3fa9ff",
+      "synopsis": {
+        "fr": "Sur la planète Faykreed, l’épéiste Fidel protège son village avec Miki, jusqu’à ce qu’une mystérieuse fillette, Relia, les entraîne dans un conflit qui dépasse leur monde."
+      },
+      "runtimes": []
+    },
+    {
+      "id": "valkyria-revolution",
+      "name": "Valkyria Revolution",
+      "titleIds": ["CUSA06810"],
+      "match": "valkyria\\s*revolution",
+      "genre": "Action RPG",
+      "glow": "#5ec8ff",
+      "synopsis": {
+        "fr": "Le petit royaume de Jutland se soulève contre l’Empire Ruzi. Amleth mène une unité d’élite face à un ennemi qui manie la légendaire Valkyria."
+      },
+      "runtimes": []
+    },
+    {
+      "id": "gundam-code-fairy",
+      "name": "Mobile Suit Gundam Battle Operation Code Fairy",
+      "titleIds": [],
+      "match": "code\\s*fairy",
+      "genre": "Action",
+      "glow": "#a46bff",
+      "synopsis": {
+        "fr": "Pendant la Guerre d’un An, l’escouade spéciale Fairy de Zeon enchaîne les missions derrière les lignes ennemies."
+      },
+      "runtimes": []
+    }
+  ]
+}

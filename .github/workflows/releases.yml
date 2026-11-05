@@ -1,0 +1,50 @@
+name: Releases
+
+# Recalcule releases.json : toutes les heures, à chaque modification du catalogue, ou à la main.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    branches: [main]
+    paths: ["catalog.json", "scripts/**", ".github/workflows/releases.yml"]
+  pull_request:
+    paths: ["catalog.json", "scripts/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: releases
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tests
+        run: python -m unittest discover -s scripts -v
+
+      - name: Générer releases.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_releases.py
+
+      - name: Publier
+        if: github.event_name != 'pull_request'
+        run: |
+          if git diff --quiet -- releases.json && git ls-files --error-unmatch releases.json >/dev/null 2>&1; then
+            echo "Rien de nouveau."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add releases.json
+          git commit -m "releases.json : mise à jour automatique"
+          git push
