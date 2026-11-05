@@ -38,7 +38,7 @@ Les nouvelles versions de votre runtime sont ensuite prises en compte **toutes s
 | `asset` | Motif du fichier à télécharger dans la release (`*.zip`, `*-linux-x86_64.tar.gz`) |
 | `checksum` | Facultatif : fichier d'empreinte publié à côté (`{asset}.sha256`). Sinon, Crowbar utilise l'empreinte fournie par GitHub |
 | `maintainer` | Affiché aux joueurs avant l'installation |
-| `launch` | Façon de lancer le jeu, reconnue aussi d'après les fichiers du runtime. `ps4rt-launch` = `scripts/ps4rt_launch.py --game <dossier>` ; `ps4rt-run` = `run.py` avec `PS4RT_GAME_DIR` (runtimes livrés avec le launcher Ravn). Sous Windows, avec le Python de `python/` |
+| `launch` | Façon de lancer le jeu, reconnue aussi d'après les fichiers du runtime. `ps4rt-launch` = `scripts/ps4rt_launch.py --game <dossier>` ; `ps4rt-run` = `run.py` avec `PS4RT_GAME_DIR` (runtimes livrés avec le launcher Ravn) ; `native-play` = launcher natif sans Python, `bin/… Launcher.exe --play`, qui lance le jeu indiqué dans `out/launcher.ini`. Sous Windows, avec le Python de `python/` |
 
 Pour une fiche de jeu : `titleIds` (les CUSA reconnus), `match` (expression reconnaissant le titre du `param.sfo`), `requiredVersion` (version minimale du jeu exigée par le runtime), `features` (réglages propres à ce runtime : `framerate`, `outlines`), puis `name`, `genre`, `glow` et `synopsis`, affichés dans Crowbar.
 

@@ -35,14 +35,16 @@
     {
       "id": "star-ocean-5",
       "name": "Star Ocean: Integrity and Faithlessness",
-      "titleIds": [],
+      "titleIds": ["CUSA03219", "CUSA03246", "CUSA01722", "CUSA03567"],
       "match": "star\\s*ocean",
       "genre": "Action RPG",
       "glow": "#3fa9ff",
       "synopsis": {
         "fr": "Sur la planète Faykreed, l’épéiste Fidel protège son village avec Miki, jusqu’à ce qu’une mystérieuse fillette, Relia, les entraîne dans un conflit qui dépasse leur monde."
       },
-      "runtimes": []
+      "runtimes": [
+        {"platform": "windows", "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "ps4rt-star-ocean-5-windows-x64-*.zip", "maintainer": "Hoverbike51", "launch": "native-play"}
+      ]
     },
     {
       "id": "valkyria-revolution",
