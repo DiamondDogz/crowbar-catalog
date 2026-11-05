@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T11:38:04+00:00",
+  "generatedAt": "2026-11-05T11:46:31+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -31,7 +31,93 @@
           "sha256": "8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921",
           "notes": "It is windows-1.1.3, plus a language choice for the game. Stay on windows-1.1.2 if you do not want the trophies. The game is not included.\n\nIn the launcher, the globe sets the game language. Four choices:\n\n- English\n- Français\n- Deutsch\n- Español\n\nThe next Play uses that language for the game's text. Trophy names and the in-game trophy card use the same language. Spoken voices stay in Japanese.\n\nThe EN/FR button is separate. It only switches the launcher between English and French. It does not change the game.\n\nThe trophy list no longer has its own language buttons. Japanese, Korean and Chinese are not offered, because this version of the game does not display them. A language already chosen in windows-1.1.3 is kept when it is one of the four above.\n\nOnly the launcher changed. Kagekidan.exe and the runtime are the same files as windows-1.1.3.\n\n`8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921  Kagekidan-windows-1.1.4.zip`\n\n## windows-1.1.4\n\nC'est windows-1.1.3, plus le choix de la langue du jeu. Restez sur windows-1.1.2 si vous ne voulez pas des trophées. Le jeu n'est pas inclus.\n\nDans le lanceur, le globe règle la langue du jeu. Quatre choix :\n\n- English\n- Français\n- Deutsch\n- Español\n\nLe prochain Jouer utilise cette langue pour les textes du jeu. Les noms des trophées et la carte dans le jeu utilisent la même langue. Les voix restent en japonais.\n\nLe bouton EN/FR est à part. Il ne fait passer que le lanceur de l'anglais au français. Il ne change pas le jeu.\n\nLa liste des trophées n'a plus ses propres boutons de langue. Le japonais, le coréen et le chinois ne sont pas proposés : cette version du jeu ne les affiche pas. Une langue déjà choisie dans windows-1.1.3 est gardée si elle fait partie des quatre ci-dessus.\n\nSeul le lanceur change. Kagekidan.exe et le runtime sont les mêmes fichiers que windows-1.1.3.\n",
           "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.4"
-        }
+        },
+        "versions": [
+          {
+            "version": "1.1.4",
+            "tag": "windows-1.1.4",
+            "prerelease": false,
+            "published": "2026-11-04T04:25:14Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.4/Kagekidan-windows-1.1.4.zip",
+            "file": "Kagekidan-windows-1.1.4.zip",
+            "size": 87034569,
+            "sha256": "8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921",
+            "notes": "It is windows-1.1.3, plus a language choice for the game. Stay on windows-1.1.2 if you do not want the trophies. The game is not included.\n\nIn the launcher, the globe sets the game language. Four choices:\n\n- English\n- Français\n- Deutsch\n- Español\n\nThe next Play uses that language for the game's text. Trophy names and the in-game trophy card use the same language. Spoken voices stay in Japanese.\n\nThe EN/FR button is separate. It only switches the launcher between English and French. It does not change the game.\n\nThe trophy list no longer has its own language buttons. Japanese, Korean and Chines",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.4"
+          },
+          {
+            "version": "1.1.3",
+            "tag": "windows-1.1.3",
+            "prerelease": true,
+            "published": "2026-11-01T14:33:58Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.3/Kagekidan-windows-1.1.3.zip",
+            "file": "Kagekidan-windows-1.1.3.zip",
+            "size": 85337511,
+            "sha256": "58175a7f69d1320e88f768c26f29e76a062ee334d2f767e0c8899c50bd97d5f5",
+            "notes": "Experimental. Trophy support is new. Stay on windows-1.1.2 if you do not want it. The game is not included.\n\nTrophies are read from trophy00.trp in the game folder. Nothing is sent. When the game earns one, a card shows for a few seconds and does not take the controller. The launcher list updates while the game is running. The latest unlock is shown first. Hidden trophies stay hidden until earned. The game still receives the same answers as windows-1.1.2.\n\n`58175a7f69d1320e88f768c26f29e76a062ee334d2f767e0c8899c50bd97d5f5  Kagekidan-windows-1.1.3.zip`\n\n## windows-1.1.3\n\nExpérimental. Le support",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.3"
+          },
+          {
+            "version": "1.1.2",
+            "tag": "windows-1.1.2",
+            "prerelease": false,
+            "published": "2026-10-31T11:42:57Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.2/Kagekidan-windows-1.1.2.zip",
+            "file": "Kagekidan-windows-1.1.2.zip",
+            "size": 85325700,
+            "sha256": "b14d21678f5c03c409bee18bd7e1b0141a18ca54e1099965be0ad9fa738be5d2",
+            "notes": "Same tested game build as windows-1.1, plus a fix for an old NVIDIA driver. Commit `6879213`.\n\nSome drivers return from the optional shader-cache check with a bad pointer. The game used to stop at `ps4rt.exe+0x1c1ec8` (`Fault: read access to 0000000000000010` or `0000000000000011`). The AMD lines above that are warnings. They are normal on NVIDIA.\n\nThis build does not stop there. If the driver cannot give a cache key, shaders are compiled the normal way. The picture does not change. A current driver can still use the cache.\n\n`b14d21678f5c03c409bee18bd7e1b0141a18ca54e1099965be0ad9fa738be5d2  Ka",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.2"
+          },
+          {
+            "version": "1.1.1",
+            "tag": "windows-1.1.1",
+            "prerelease": false,
+            "published": "2026-10-31T09:52:55Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.1/Kagekidan-windows-1.1.1.zip",
+            "file": "Kagekidan-windows-1.1.1.zip",
+            "size": 85325229,
+            "sha256": "5491cdb77563434647e87b38dc79fe2d81cacd4aea4b615f843395ecaca69264",
+            "notes": "Same tested game build as windows-1.1. Commit `78a9b13`.\n\nFixes `[Errno 13] Permission denied` when the message names only the game folder. Windows refuses a directory check. The update had not failed. Older builds stopped there, including after a clean reinstall.\n\nIf the message names a file inside the folder, the folder is read-only or held by another program. Close it, or move the extracted game somewhere you can write.\n\n`5491cdb77563434647e87b38dc79fe2d81cacd4aea4b615f843395ecaca69264  Kagekidan-windows-1.1.1.zip`\n\nUnzip into a new folder. Do not turn off Microsoft Defender. The game is no",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.1"
+          },
+          {
+            "version": "1.1",
+            "tag": "windows-1.1",
+            "prerelease": false,
+            "published": "2026-10-31T08:26:01Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1/Kagekidan-windows-1.1.zip",
+            "file": "Kagekidan-windows-1.1.zip",
+            "size": 85323365,
+            "sha256": "c4b41194e45c3b9202511394cdbd9578f2dae3b12fc5128724693a1e0a6a9e93",
+            "notes": "## windows-1.1\n\nWindows port of upstream [Sakura-Wars-PS4RT v1.1](https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1), commit `29f8822014e8d55d110476088191634f23bc9ce2`. That commit is the code on upstream `main`. The two commits after it on `main` are documents only, and they are not required here. This archive is commit `f7bc904`.\n\nPublished by DiamondDogz. The runtime is HekamiAeon's. The launcher was written with Grok, by xAI. Not affiliated with SEGA. The game is not included.\n\nTested on 31 October 2026: the game starts.\n\n`c4b41194e45c3b9202511394cdbd9578f2dae3b12fc51287246",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1"
+          },
+          {
+            "version": "1.1-test",
+            "tag": "windows-1.1-test",
+            "prerelease": true,
+            "published": "2026-10-31T08:18:24Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1-test/Kagekidan-windows-1.1-test.zip",
+            "file": "Kagekidan-windows-1.1-test.zip",
+            "size": 85325954,
+            "sha256": "634948ba8b2d376812f9dabb7a7dc16e7aeeba431cfd82955c2cef0ef7d775d5",
+            "notes": "## windows-1.1-test\n\nSuperseded by [windows-1.1](https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1). Do not send this archive.\n\nSame `ps4rt.exe` as windows-1.1 (14,510,592 bytes), built from commit `f6e5f4c`, before the release notes and the README were updated. The publisher tested this file on 31 October 2026. The game started.\n\n`634948ba8b2d376812f9dabb7a7dc16e7aeeba431cfd82955c2cef0ef7d775d5  Kagekidan-windows-1.1-test.zip`\n\n### Test machine\n\nNot a minimum. windows-1.0 and windows-1.1 were started on:\n\n- Windows 11 Pro for Workstations, version 26H2\n- Intel ",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1-test"
+          },
+          {
+            "version": "1.0",
+            "tag": "windows-1.0",
+            "prerelease": false,
+            "published": "2026-10-30T11:23:34Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.0/Kagekidan-windows-1.0.zip",
+            "file": "Kagekidan-windows-1.0.zip",
+            "size": 85315757,
+            "sha256": "95108a97225d66044b7be8797c06b5b2cb9521c61436275c8e1b4f0d334e0159",
+            "notes": "## windows-1.0\n\nFirst Windows release. Upstream [Sakura-Wars-PS4RT v1.0](https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.0), commit `85ac44fdc1fe7e13fac325e6ecea3b523be27d1f`. This archive is commit `34ecef7`.\n\nPublished by DiamondDogz. The runtime is HekamiAeon's. The launcher was written with Grok, by xAI. Not affiliated with SEGA. The game is not included.\n\n`95108a97225d66044b7be8797c06b5b2cb9521c61436275c8e1b4f0d334e0159  Kagekidan-windows-1.0.zip`\n\n### Added\n\n- `Kagekidan.exe`, a Windows launcher. It does not open a browser. English by default, French from the EN button.\n-",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.0"
+          }
+        ]
       },
       "linux": {
         "repo": "HekamiAeon/Sakura-Wars-PS4RT",
@@ -61,7 +147,33 @@
           "sha256": "38d56687e6f97956a3710dd92749f00b2371e72f3e6729119b65376ec67ee0ce",
           "notes": "# Sakura Wars PS4RT v1.1\r\n\r\nA Linux x86-64 update focused on graphics performance and a simpler player experience for **Sakura Wars (CUSA16429 v1.01)**.\r\n\r\n## What's new\r\n\r\n- **Graphics presets:** Native, High, Medium, and Lowest options for choosing between visual quality and performance. Medium and Lowest target weaker GPUs.\r\n- **GPU optimizations:** More efficient clearing of certain render targets; reduced dash motion-blur sampling and disabled character screen-space shadow effects on Medium and Lowest.\r\n- **Remembered game folder:** Provide `--game` on first launch. After a successful setup, subsequent launches can use `bash Play-Game.sh` alone. Use `--game` again if the folder moves or you want a different game extraction.\r\n- **Polished release packaging:** Restored the Crypto++ portable-builder recipe in the source archive, refined the player/source packaging, and kept licensing notices and required runtime assets.\r\n\r\n## Install and launch\r\n\r\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\r\n\r\n```bash\r\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\r\n```\r\n\r\nAfter successful setup:\r\n\r\n```bash\r\nbash Play-Game.sh\r\n```\r\n\r\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\r\n\r\n## Platform and notes\r\n\r\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\r\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\r\n- Graphics changes and gameplay were smoke-tested on Linux, including a low-end Radeon integrated GPU. Performance varies with hardware, scene, resolution and graphics settings.\r\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\r\n\r\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\r\n",
           "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1"
-        }
+        },
+        "versions": [
+          {
+            "version": "v1.1",
+            "tag": "v1.1",
+            "prerelease": false,
+            "published": "2026-10-30T02:56:37Z",
+            "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.1/Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
+            "file": "Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
+            "size": 33946146,
+            "sha256": "38d56687e6f97956a3710dd92749f00b2371e72f3e6729119b65376ec67ee0ce",
+            "notes": "# Sakura Wars PS4RT v1.1\r\n\r\nA Linux x86-64 update focused on graphics performance and a simpler player experience for **Sakura Wars (CUSA16429 v1.01)**.\r\n\r\n## What's new\r\n\r\n- **Graphics presets:** Native, High, Medium, and Lowest options for choosing between visual quality and performance. Medium and Lowest target weaker GPUs.\r\n- **GPU optimizations:** More efficient clearing of certain render targets; reduced dash motion-blur sampling and disabled character screen-space shadow effects on Medium and Lowest.\r\n- **Remembered game folder:** Provide `--game` on first launch. After a successful set",
+            "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1"
+          },
+          {
+            "version": "v1.0",
+            "tag": "v1.0",
+            "prerelease": false,
+            "published": "2026-10-28T19:28:27Z",
+            "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.0/Sakura-Wars-PS4RT-85ac44f-linux-x86_64.tar.gz",
+            "file": "Sakura-Wars-PS4RT-85ac44f-linux-x86_64.tar.gz",
+            "size": 33936710,
+            "sha256": "33151d827c569dacadc4f8ef952f406433061b8e6180912a65f6e90d041589ed",
+            "notes": "# Sakura Wars PS4RT v1.0\n\nFirst Linux x86-64 release.\n\n## Features\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p, and 4K output\n- FSR 3.1 and bundled FSR 4 v07 support on compatible hardware\n- Custom illustrated Sakura Wars graphics overlay with in-game menu sounds\n- Original 30 FPS and experimental 60 FPS modes, including game-specific timing and combat fixes\n- Configurable outlines: Full, Silhouettes only, or Off\n- Display, VSync, sharpening, and anisotropic filtering settings\n- DualSense, XInput, and keyboard support\n- Integrated v1.01 update ",
+            "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.0"
+          }
+        ]
       }
     },
     "star-ocean-5": {},
@@ -94,7 +206,21 @@
           "sha256": "ee116cd234a81e45176044e2e5aa4debc2be871b6454339b3c8decfcc6c93aa7",
           "notes": "First Windows release of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nBuilt from HekamiAeon's [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) `main`, commit `635e142`: tag v1.2 plus one documentation commit.\n\nYou need your own extracted copy of the base game, **CUSA06810**, with no update, as the Linux release does. Unzip the archive anywhere and run `Ravn.exe`. The steps are in INSTALL.md inside the archive.\n\n- **Ravn**: game folder, graphics settings and trophy list. The theme and visuals are original; no SEGA art or sound is included.\n- **Settings**: those of the Linux release's in-game menu.\n  - Output: 1080p, 1440p or 4K.\n  - Window: windowed, borderless or fullscreen.\n  - Upscaling: Off / Original, FSR 3.1 or FSR 4 v07. FSR 4 needs a recent GPU and falls back to FSR 3.1.\n  - Anisotropic filtering, applied on restart.\n  - Sharpening.\n- **Trophies**: local, read from your `trophy00.trp`. Nothing is sent. A card shows in game when one unlocks.\n- In game, Insert, or L2 + R3, opens the overlay.\n\nTested on Windows 11 26H2 with an Intel Core i9-12900KF and an NVIDIA GeForce RTX 3090, Studio driver 617.42. The game started and played through the Molda campaign, and trophies unlocked. A complete playthrough is not verified.\n\nThe SHA-256 of `Ravn-windows-1.2.zip` is in `Ravn-windows-1.2.zip.sha256`.\n\n## windows-1.2\n\nPremière version Windows de Valkyria Revolution PS4RT, avec le lanceur Ravn. Non officielle, aucun lien avec SEGA. Le jeu n'est pas inclus.\n\nCompilée depuis le `main` de [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) de HekamiAeon, commit `635e142` : le tag v1.2 plus un commit de documentation.\n\nIl faut votre propre copie extraite du jeu de base, **CUSA06810**, sans mise à jour, comme pour la version Linux. Décompressez l'archive où vous voulez et lancez `Ravn.exe`. Les étapes sont dans INSTALL.md, dans l'archive.\n\n- **Ravn** : dossier du jeu, réglages graphiques et liste des trophées. Le thème et les visuels sont originaux ; aucune image ni aucun son de SEGA n'est inclus.\n- **Réglages** : ceux du menu en jeu de la version Linux.\n  - Sortie : 1080p, 1440p ou 4K.\n  - Fenêtre : fenêtré, sans bordure ou plein écran.\n  - Upscaling : Désactivé / Original, FSR 3.1 ou FSR 4 v07. FSR 4 demande un GPU récent et se replie sur FSR 3.1.\n  - Filtrage anisotrope, appliqué au redémarrage.\n  - Netteté.\n- **Trophées** : locaux, lus dans votre `trophy00.trp`. Rien n'est envoyé. Une carte s'affiche en jeu quand un trophée se débloque.\n- En jeu, Insert, ou L2 + R3, ouvre l'incrustation.\n\nTesté sous Windows 11 26H2 avec un Intel Core i9-12900KF et une NVIDIA GeForce RTX 3090, pilote Studio 617.42. Le jeu a démarré et a tourné jusqu'à la fin de la campagne de Molda, et des trophées se sont débloqués. Une partie complète n'a pas été vérifiée.\n\nLe SHA-256 de `Ravn-windows-1.2.zip` est dans `Ravn-windows-1.2.zip.sha256`.\n",
           "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
-        }
+        },
+        "versions": [
+          {
+            "version": "1.2",
+            "tag": "windows-1.2",
+            "prerelease": false,
+            "published": "2026-11-04T19:28:34Z",
+            "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2/Ravn-windows-1.2.zip",
+            "file": "Ravn-windows-1.2.zip",
+            "size": 84587696,
+            "sha256": "ee116cd234a81e45176044e2e5aa4debc2be871b6454339b3c8decfcc6c93aa7",
+            "notes": "First Windows release of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nBuilt from HekamiAeon's [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) `main`, commit `635e142`: tag v1.2 plus one documentation commit.\n\nYou need your own extracted copy of the base game, **CUSA06810**, with no update, as the Linux release does. Unzip the archive anywhere and run `Ravn.exe`. The steps are in INSTALL.md inside the archive.\n\n- **Ravn**: game folder, graphics settings and trophy list. The theme and visu",
+            "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
+          }
+        ]
       }
     },
     "gundam-code-fairy": {}
