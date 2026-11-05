@@ -54,7 +54,9 @@
       "synopsis": {
         "fr": "Le petit royaume de Jutland se soulève contre l’Empire Ruzi. Amleth mène une unité d’élite face à un ennemi qui manie la légendaire Valkyria."
       },
-      "runtimes": []
+      "runtimes": [
+        {"platform": "windows", "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows", "tagPrefix": "windows-", "asset": "*.zip", "checksum": "{asset}.sha256", "maintainer": "DiamondDogz", "launch": "ps4rt-run"}
+      ]
     },
     {
       "id": "gundam-code-fairy",
