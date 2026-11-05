@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T16:17:52+00:00",
+  "generatedAt": "2026-11-05T18:43:05+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -122,7 +122,7 @@
       "linux": {
         "repo": "HekamiAeon/Sakura-Wars-PS4RT",
         "maintainer": "HekamiAeon",
-        "stars": 40,
+        "stars": 41,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "v1.1",
