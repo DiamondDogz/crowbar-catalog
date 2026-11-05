@@ -39,6 +39,10 @@ def fetch_releases(repo: str) -> list[dict]:
     return json.loads(http_get(f"{API}/repos/{repo}/releases?per_page=50"))
 
 
+def fetch_repo(repo: str) -> dict:
+    return json.loads(http_get(f"{API}/repos/{repo}"))
+
+
 def parse_sha256(text: str, asset_name: str) -> str | None:
     """Lit un fichier .sha256 (« empreinte  nom » ou empreinte seule)."""
     for line in text.splitlines():
@@ -110,7 +114,7 @@ def resolve(releases: list[dict], spec: dict, read=http_get) -> dict:
     return out
 
 
-def build(catalog: dict, fetch=fetch_releases, read=http_get) -> tuple[dict, list[str]]:
+def build(catalog: dict, fetch=fetch_releases, read=http_get, info=fetch_repo) -> tuple[dict, list[str]]:
     result = {"schemaVersion": 1, "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"), "games": {}}
     problems: list[str] = []
     for game in catalog["games"]:
@@ -127,7 +131,11 @@ def build(catalog: dict, fetch=fetch_releases, read=http_get) -> tuple[dict, lis
                 names = sorted({a["name"] for r in releases for a in r.get("assets", [])})[:12]
                 problems.append(f"{game['id']}/{key} : aucune archive « {spec['asset']} » dans {spec['repo']} (fichiers vus : {', '.join(names) or 'aucun'})")
                 continue
-            entry[key] = {"repo": spec["repo"], "maintainer": spec.get("maintainer", ""),
+            try:
+                stars = int(info(spec["repo"]).get("stargazers_count", 0))
+            except (urllib.error.URLError, OSError, ValueError):
+                stars = None
+            entry[key] = {"repo": spec["repo"], "maintainer": spec.get("maintainer", ""), "stars": stars,
                           "launch": spec.get("launch", "ps4rt-launch"), **channels}
         result["games"][game["id"]] = entry
     return result, problems
@@ -142,7 +150,9 @@ def main() -> int:
     if args.offline:
         fake = json.loads(args.offline.read_text(encoding="utf-8"))
         fetch = lambda repo: fake.get(repo, [])
-    result, problems = build(catalog, fetch)
+        result, problems = build(catalog, fetch, info=lambda repo: {})
+    else:
+        result, problems = build(catalog, fetch)
     old = ROOT / "releases.json"
     if old.exists():
         previous = json.loads(old.read_text(encoding="utf-8"))

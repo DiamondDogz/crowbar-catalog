@@ -45,6 +45,11 @@ class Resolve(unittest.TestCase):
         self.assertEqual(result["games"]["jeu"], {})
         self.assertIn("autre.7z", problems[0])
 
+    def test_build_ajoute_le_nombre_d_etoiles(self):
+        catalog = {"games": [{"id": "jeu", "runtimes": [SPEC]}]}
+        result, _ = b.build(catalog, fetch=lambda repo: [rel("windows-1", "2026-01-01T00:00:00Z")], info=lambda repo: {"stargazers_count": 42})
+        self.assertEqual(result["games"]["jeu"]["windows"]["stars"], 42)
+
 
 if __name__ == "__main__":
     unittest.main()
