@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T22:45:01+00:00",
+  "generatedAt": "2026-11-06T00:44:46+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -208,13 +208,69 @@
             "page": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v0.4.0"
           }
         ]
+      },
+      "linux": {
+        "repo": "HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
+        "maintainer": "HekamiAeon",
+        "stars": 27,
+        "launch": "ps4rt-launch",
+        "beta": {
+          "version": "v1.2",
+          "tag": "v1.2",
+          "prerelease": false,
+          "published": "2026-10-29T20:13:30Z",
+          "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.2/star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
+          "file": "star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
+          "size": 37209463,
+          "sha256": "ae8a65f95a29ea95a87930b0f178d8fc72e1c8a02ce081fff793fd257b3d5cb3",
+          "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added optional `--data-dir` support while preserving the existing default save and settings location.\r\n- Preserved Restart Game behavior and graphics overrides.\r\n- Improved player instructions, archive layout tests, and build integrity checks.\r\n\r\n## Features\r\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\r\n- 1080p, 1440p, and 4K output\r\n- FSR 3.1 and bundled FSR 4 v07 support\r\n- Custom graphics overlay with menu sounds and Restart Game\r\n- Live Sync/Async shader compilation toggle\r\n- DualSense, XInput, and keyboard support\r\n- Configurable controller and keyboard mappings\r\n\r\n## Compatibility\r\nTested on Fedora Linux through Chapter 4, including battles, cinematics, exploration, and saving/loading. The v1.2 launcher, Restart Game, and gameplay smoke tests passed.\r\n\r\nA complete playthrough and broad Linux compatibility have not been verified. Sync mode favors visual consistency; Async may reduce shader compilation stutter but exhibit brief visual flickers.\r\n\r\n## Installation\r\nExtract the Linux x86-64 runtime archive.\r\n\r\nFirst launch:\r\n\r\n    bash Play-Game.sh --game \"/path/to/CUSA03219\"\r\n\r\nSubsequent launches:\r\n\r\n    bash Play-Game.sh\r\n\r\nRequirements: native x86-64 Linux, glibc 2.35+, Python 3, a compatible Vulkan driver, and your own extracted plaintext CUSA03219 game files.\r\n\r\nNo PS4 game files or firmware are included. See the repository README for details, limitations, and credits.\r\n",
+          "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2"
+        },
+        "stable": {
+          "version": "v1.2",
+          "tag": "v1.2",
+          "prerelease": false,
+          "published": "2026-10-29T20:13:30Z",
+          "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.2/star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
+          "file": "star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
+          "size": 37209463,
+          "sha256": "ae8a65f95a29ea95a87930b0f178d8fc72e1c8a02ce081fff793fd257b3d5cb3",
+          "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added optional `--data-dir` support while preserving the existing default save and settings location.\r\n- Preserved Restart Game behavior and graphics overrides.\r\n- Improved player instructions, archive layout tests, and build integrity checks.\r\n\r\n## Features\r\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\r\n- 1080p, 1440p, and 4K output\r\n- FSR 3.1 and bundled FSR 4 v07 support\r\n- Custom graphics overlay with menu sounds and Restart Game\r\n- Live Sync/Async shader compilation toggle\r\n- DualSense, XInput, and keyboard support\r\n- Configurable controller and keyboard mappings\r\n\r\n## Compatibility\r\nTested on Fedora Linux through Chapter 4, including battles, cinematics, exploration, and saving/loading. The v1.2 launcher, Restart Game, and gameplay smoke tests passed.\r\n\r\nA complete playthrough and broad Linux compatibility have not been verified. Sync mode favors visual consistency; Async may reduce shader compilation stutter but exhibit brief visual flickers.\r\n\r\n## Installation\r\nExtract the Linux x86-64 runtime archive.\r\n\r\nFirst launch:\r\n\r\n    bash Play-Game.sh --game \"/path/to/CUSA03219\"\r\n\r\nSubsequent launches:\r\n\r\n    bash Play-Game.sh\r\n\r\nRequirements: native x86-64 Linux, glibc 2.35+, Python 3, a compatible Vulkan driver, and your own extracted plaintext CUSA03219 game files.\r\n\r\nNo PS4 game files or firmware are included. See the repository README for details, limitations, and credits.\r\n",
+          "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2"
+        },
+        "versions": [
+          {
+            "version": "v1.2",
+            "tag": "v1.2",
+            "prerelease": false,
+            "published": "2026-10-29T20:13:30Z",
+            "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.2/star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
+            "file": "star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
+            "size": 37209463,
+            "sha256": "ae8a65f95a29ea95a87930b0f178d8fc72e1c8a02ce081fff793fd257b3d5cb3",
+            "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added optional `--data-dir` support while preserving the existing default save and settings location.\r\n- Preserved Restart Game behavior and graphics overrides.\r\n- Improved player instructions, archive layout tests, and buil",
+            "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2"
+          },
+          {
+            "version": "v1.1",
+            "tag": "v1.1",
+            "prerelease": false,
+            "published": "2026-10-21T23:55:16Z",
+            "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.1/star-ocean-5-ps4rt-linux-x86_64-412d2b1.tar.gz",
+            "file": "star-ocean-5-ps4rt-linux-x86_64-412d2b1.tar.gz",
+            "size": 60539080,
+            "sha256": "34639e1f38aef87c667a08c64f3f7650073be4ded2f1e6c389dbd8dd6bcbef06",
+            "notes": "**Superseded by [Star Ocean PS4RT v1.2](https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2).**\n\nThis release is retained for historical reference and rollback.\n\n---\n# Star Ocean: Integrity and Faithlessness PS4RT v1.1\n\nLinux x86-64 release.\n\n## What's New in v1.1\n- Improved compatibility across Linux distributions.\n- Lowered minimum glibc requirement to 2.35.\n- Bundled required runtime libraries, including FFmpeg 8 and SDL3, reducing external dependency requirements.\n- Improved library loading using relative paths.\n\n## Features\n- Original PS4 game code",
+            "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.1"
+          }
+        ]
       }
     },
     "valkyria-revolution": {
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 18,
+        "stars": 19,
         "launch": "ps4rt-run",
         "beta": {
           "version": "1.2",
@@ -252,6 +308,74 @@
             "sha256": "ee116cd234a81e45176044e2e5aa4debc2be871b6454339b3c8decfcc6c93aa7",
             "notes": "First Windows release of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nBuilt from HekamiAeon's [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) `main`, commit `635e142`: tag v1.2 plus one documentation commit.\n\nYou need your own extracted copy of the base game, **CUSA06810**, with no update, as the Linux release does. Unzip the archive anywhere and run `Ravn.exe`. The steps are in INSTALL.md inside the archive.\n\n- **Ravn**: game folder, graphics settings and trophy list. The theme and visu",
             "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
+          }
+        ]
+      },
+      "linux": {
+        "repo": "HekamiAeon/valkyria-revolution-ps4rt",
+        "maintainer": "HekamiAeon",
+        "stars": 11,
+        "launch": "ps4rt-launch",
+        "beta": {
+          "version": "v1.2",
+          "tag": "v1.2",
+          "prerelease": false,
+          "published": "2026-10-29T17:24:44Z",
+          "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.2/valkyria-revolution-linux-x86_64-d29d542.tar.gz",
+          "file": "valkyria-revolution-linux-x86_64-d29d542.tar.gz",
+          "size": 89519042,
+          "sha256": "53358f6dcb29445b195e6eb2d7bb23aebb8652ef00ac32bda546a15584248b2a",
+          "notes": "# Valkyria Revolution PS4RT v1.2\n\nLinux x86-64 release.\n\n## What's New in v1.2\n- **Improved player launcher:** Standardized the launcher as `Play-Game.sh` to match other PS4RT ports. Supply `--game` on the first launch; later launches reuse the remembered, validated game directory. The previous `Play-Valkyria.sh` remains available for compatibility with existing shortcuts.\n- **Cleaner source and distribution:** Removed obsolete Windows packaging infrastructure and unused launcher logic, including the Tkinter folder picker. Tightened the public source export and excluded unnecessary documentation from the player archive.\n- **Restart Game:** Added a Restart Game option to the PS4RT graphics overlay, with a confirmation prompt to avoid accidental restarts.\n- **Restored overlay assets:** Added the overlay background artwork and recorded navigation, confirm and cancel sounds to the repository so clean portable builds include them.\n- **Clearer setup guidance:** Improved the included `PLAYER_README.txt` and first-launch error message for players who have not yet configured their game directory.\n\n## Features\n- Original PS4 x86-64 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p and 4K output (the game renders internally at 1080p)\n- FSR 3.1 and bundled FSR 4 v07 support where hardware features permit\n- Anisotropic filtering up to 16x and adjustable sharpening\n- Custom illustrated graphics overlay with menu sounds, display-mode selection, and confirmation dialogs for Restart Game and Exit Game\n- DualSense, XInput and keyboard support, with configurable launch-time mappings\n- Save/load support with existing player saves and settings preserved\n\n## Compatibility\nTested on Fedora Linux through the opening three chapters, including cinematics, exploration, combat and initial saving/loading. The glibc 2.35 portable build and graphics overlay have also been gameplay smoke-tested on Fedora.\n\nA complete playthrough has not been verified.\n\nThis release targets **native x86-64 (AMD64) Linux CPUs**. ARM64 devices, including systems running x86-64 binaries through FEX or Box64, are not officially supported. Other Linux distributions, including SteamOS, remain unverified.\n\n## Installation\nDownload and extract the **Linux x86-64 runtime** archive, open a terminal inside its extracted directory, and run this once with your own game path:\n\n```bash\nbash Play-Game.sh --game \"/path/to/your/CUSA06810\"\n```\n\nOn later launches, the launcher remembers the validated game directory:\n\n```bash\nbash Play-Game.sh\n```\n\nYou can supply `--game` again at any time to choose and remember a different valid game location. See `PLAYER_README.txt` inside the player archive for details. The `--data-dir` option remains available for custom save/settings locations; supply the same custom location on subsequent launches.\n\n**Requirements:**\n- Linux x86-64 with glibc 2.35 or newer\n- Compatible Vulkan graphics driver and loader\n- Python 3\n- Your own extracted, plaintext Valkyria Revolution PS4 game files (CUSA06810)\n\nPlayers do not need Podman, a compiler, or separate installations of the twelve bundled application libraries, including FFmpeg 8 and SDL3. No `LD_LIBRARY_PATH` setup is required for normal play.\n\nThe original game files and PS4 firmware are **not** included. See the [repository README](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) for source instructions, known limitations, credits and licensing notices.\n",
+          "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.2"
+        },
+        "stable": {
+          "version": "v1.2",
+          "tag": "v1.2",
+          "prerelease": false,
+          "published": "2026-10-29T17:24:44Z",
+          "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.2/valkyria-revolution-linux-x86_64-d29d542.tar.gz",
+          "file": "valkyria-revolution-linux-x86_64-d29d542.tar.gz",
+          "size": 89519042,
+          "sha256": "53358f6dcb29445b195e6eb2d7bb23aebb8652ef00ac32bda546a15584248b2a",
+          "notes": "# Valkyria Revolution PS4RT v1.2\n\nLinux x86-64 release.\n\n## What's New in v1.2\n- **Improved player launcher:** Standardized the launcher as `Play-Game.sh` to match other PS4RT ports. Supply `--game` on the first launch; later launches reuse the remembered, validated game directory. The previous `Play-Valkyria.sh` remains available for compatibility with existing shortcuts.\n- **Cleaner source and distribution:** Removed obsolete Windows packaging infrastructure and unused launcher logic, including the Tkinter folder picker. Tightened the public source export and excluded unnecessary documentation from the player archive.\n- **Restart Game:** Added a Restart Game option to the PS4RT graphics overlay, with a confirmation prompt to avoid accidental restarts.\n- **Restored overlay assets:** Added the overlay background artwork and recorded navigation, confirm and cancel sounds to the repository so clean portable builds include them.\n- **Clearer setup guidance:** Improved the included `PLAYER_README.txt` and first-launch error message for players who have not yet configured their game directory.\n\n## Features\n- Original PS4 x86-64 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p and 4K output (the game renders internally at 1080p)\n- FSR 3.1 and bundled FSR 4 v07 support where hardware features permit\n- Anisotropic filtering up to 16x and adjustable sharpening\n- Custom illustrated graphics overlay with menu sounds, display-mode selection, and confirmation dialogs for Restart Game and Exit Game\n- DualSense, XInput and keyboard support, with configurable launch-time mappings\n- Save/load support with existing player saves and settings preserved\n\n## Compatibility\nTested on Fedora Linux through the opening three chapters, including cinematics, exploration, combat and initial saving/loading. The glibc 2.35 portable build and graphics overlay have also been gameplay smoke-tested on Fedora.\n\nA complete playthrough has not been verified.\n\nThis release targets **native x86-64 (AMD64) Linux CPUs**. ARM64 devices, including systems running x86-64 binaries through FEX or Box64, are not officially supported. Other Linux distributions, including SteamOS, remain unverified.\n\n## Installation\nDownload and extract the **Linux x86-64 runtime** archive, open a terminal inside its extracted directory, and run this once with your own game path:\n\n```bash\nbash Play-Game.sh --game \"/path/to/your/CUSA06810\"\n```\n\nOn later launches, the launcher remembers the validated game directory:\n\n```bash\nbash Play-Game.sh\n```\n\nYou can supply `--game` again at any time to choose and remember a different valid game location. See `PLAYER_README.txt` inside the player archive for details. The `--data-dir` option remains available for custom save/settings locations; supply the same custom location on subsequent launches.\n\n**Requirements:**\n- Linux x86-64 with glibc 2.35 or newer\n- Compatible Vulkan graphics driver and loader\n- Python 3\n- Your own extracted, plaintext Valkyria Revolution PS4 game files (CUSA06810)\n\nPlayers do not need Podman, a compiler, or separate installations of the twelve bundled application libraries, including FFmpeg 8 and SDL3. No `LD_LIBRARY_PATH` setup is required for normal play.\n\nThe original game files and PS4 firmware are **not** included. See the [repository README](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) for source instructions, known limitations, credits and licensing notices.\n",
+          "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.2"
+        },
+        "versions": [
+          {
+            "version": "v1.2",
+            "tag": "v1.2",
+            "prerelease": false,
+            "published": "2026-10-29T17:24:44Z",
+            "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.2/valkyria-revolution-linux-x86_64-d29d542.tar.gz",
+            "file": "valkyria-revolution-linux-x86_64-d29d542.tar.gz",
+            "size": 89519042,
+            "sha256": "53358f6dcb29445b195e6eb2d7bb23aebb8652ef00ac32bda546a15584248b2a",
+            "notes": "# Valkyria Revolution PS4RT v1.2\n\nLinux x86-64 release.\n\n## What's New in v1.2\n- **Improved player launcher:** Standardized the launcher as `Play-Game.sh` to match other PS4RT ports. Supply `--game` on the first launch; later launches reuse the remembered, validated game directory. The previous `Play-Valkyria.sh` remains available for compatibility with existing shortcuts.\n- **Cleaner source and distribution:** Removed obsolete Windows packaging infrastructure and unused launcher logic, including the Tkinter folder picker. Tightened the public source export and excluded unnecessary documentati",
+            "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.2"
+          },
+          {
+            "version": "v1.1",
+            "tag": "v1.1",
+            "prerelease": false,
+            "published": "2026-10-22T15:13:24Z",
+            "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.1/valkyria-revolution-linux-x86_64-35f35f5.tar.gz",
+            "file": "valkyria-revolution-linux-x86_64-35f35f5.tar.gz",
+            "size": 107992372,
+            "sha256": "50236a335c209dc1c72dfa397f18324fc95af579ea6257bddcbf7832c14dd09c",
+            "notes": "**Superseded by [Valkyria Revolution PS4RT v1.2](https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.2).**\n\nThis release is retained for historical reference and rollback.\n\n---\n# Valkyria Revolution PS4RT v1.1\n\nLinux x86-64 release.\n\n## What's New in v1.1\n- Improved compatibility across Linux distributions through a standardized Ubuntu 22.04 developer build environment.\n- Lowered the minimum glibc requirement for the prebuilt runtime to 2.35.\n- Bundled twelve application runtime libraries, including FFmpeg 8 and SDL3, reducing external dependencies.\n- Improved library loadi",
+            "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.1"
+          },
+          {
+            "version": "v1.0",
+            "tag": "v1.0",
+            "prerelease": false,
+            "published": "2026-10-17T05:02:51Z",
+            "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.0/valkyria-revolution-linux-x86_64-96dafd2.tar.gz",
+            "file": "valkyria-revolution-linux-x86_64-96dafd2.tar.gz",
+            "size": 91239548,
+            "sha256": "ba2a391a5fdee7f783a7d5dec044d6b7cc8fbe22d561888a77670f1b41f68f7f",
+            "notes": "# Valkyria Revolution PS4RT v0.1.0\r\n\r\nFirst experimental Linux x86-64 release.\r\n\r\nTested on Fedora 44 with Ryzen 7 9700X and RTX 3080 Ti.\r\n\r\n## Features\r\n\r\n- Original PS4 game code running through PS4RT on Linux\r\n- 1080p, 1440p and 4K output (1080p internal rendering)\r\n- FSR 3.1 and bundled FSR 4 v07\r\n- Anti-aliasing, up to 16x anisotropic filtering, and sharpening\r\n- DualSense, XInput, and keyboard support\r\n- Configurable keyboard and controller button mappings\r\n- Graphics menu: Insert or L2 + R3\r\n- Exit Game with confirmation\r\n\r\n## Installation\r\n\r\nExtract the Linux runtime archive and run:\r\n",
+            "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.0"
           }
         ]
       }
