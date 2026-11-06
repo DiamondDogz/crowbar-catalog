@@ -131,13 +131,15 @@
         "x-rlyeh": "Ot mglni Faykreed, ng wgathmgl Fidel uryogafh oth nagy'hu epub Miki, shy y r'lafhul uroth, Relia, sotcth othrl epr'l y uruifht ha agnath nnafh epsh"
       },
       "runtimes": [
-        {"platform": "windows", "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "ps4rt-star-ocean-5-windows-x64-*.zip", "maintainer": "Hoverbike51", "launch": "native-play", "trophies": false}
+        {"platform": "windows", "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "ps4rt-star-ocean-5-windows-x64-*.zip", "maintainer": "Hoverbike51", "launch": "native-play", "trophies": false},
+        {"platform": "linux", "repo": "HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "star-ocean-5-ps4rt-linux-x86_64-*.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false}
       ]
     },
     {
       "id": "valkyria-revolution",
       "name": "Valkyria Revolution",
       "titleIds": ["CUSA06810"],
+      "languages": [1],
       "match": "valkyria\\s*revolution",
       "genre": "Action RPG",
       "genreLocalized": {
@@ -187,7 +189,8 @@
         "x-rlyeh": "Ng ah'afh hazhl 'h Jutland eprl ph'zhsot ng Ruzi Rlnyal Amleth athph ui agnul nisot ph'zhsot ui nglro ngl aihu ng ph'afhafh Ghroph"
       },
       "runtimes": [
-        {"platform": "windows", "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows", "tagPrefix": "windows-", "asset": "*.zip", "checksum": "{asset}.sha256", "maintainer": "DiamondDogz", "launch": "ps4rt-run", "trophies": true}
+        {"platform": "windows", "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows", "tagPrefix": "windows-", "asset": "*.zip", "checksum": "{asset}.sha256", "maintainer": "DiamondDogz", "launch": "ps4rt-run", "trophies": true},
+        {"platform": "linux", "repo": "HekamiAeon/valkyria-revolution-ps4rt", "asset": "valkyria-revolution-linux-x86_64-*.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false}
       ]
     },
     {
