@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-06T14:59:50+00:00",
+  "generatedAt": "2026-11-06T20:52:25+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -270,7 +270,7 @@
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 20,
+        "stars": 21,
         "launch": "ps4rt-run",
         "beta": {
           "version": "1.2",
