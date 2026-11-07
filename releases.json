@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-07T18:45:08+00:00",
+  "generatedAt": "2026-11-07T22:43:11+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -314,7 +314,7 @@
       "linux": {
         "repo": "HekamiAeon/valkyria-revolution-ps4rt",
         "maintainer": "HekamiAeon",
-        "stars": 11,
+        "stars": 12,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "v1.2",
