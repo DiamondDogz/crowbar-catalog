@@ -1,0 +1,71 @@
+name: Add a runtime
+description: Offer your Crowbar compatible PS4RT runtime in Crowbar's catalog. An Action checks your release and opens the pull request.
+title: "Add a runtime: "
+labels: ["add-runtime"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Your release must contain a `crowbar.json` at its root ([how](https://github.com/DiamondDogz/crowbar-sdk)). Run `crowbar-check` on it first.
+        After you submit, an Action downloads your latest release, checks its SHA-256 and runs `crowbar-check`, then answers here. Edit this issue to run the check again.
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: The game's catalog id (sakura-wars, valkyria-revolution, star-ocean-5), or a new one in lower case with dashes.
+      placeholder: valkyria-revolution
+    validations: { required: true }
+  - type: input
+    id: name
+    attributes:
+      label: Game name
+      description: Only for a game not in the catalog yet.
+  - type: input
+    id: ids
+    attributes:
+      label: CUSA ids
+      description: Only for a game not in the catalog yet, separated by commas.
+      placeholder: CUSA06810
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository
+      description: The repository whose releases hold the runtime.
+      placeholder: owner/repo
+    validations: { required: true }
+  - type: input
+    id: asset
+    attributes:
+      label: Release file
+      description: The file to download from each release, with * for the part that changes.
+      placeholder: my-game-linux-x86_64-*.tar.gz
+    validations: { required: true }
+  - type: dropdown
+    id: platform
+    attributes:
+      label: System
+      options: [windows, linux]
+    validations: { required: true }
+  - type: input
+    id: checksum
+    attributes:
+      label: Checksum file
+      description: Optional. A .sha256 file published next to it; otherwise GitHub's own digest is used.
+      placeholder: "{asset}.sha256"
+  - type: input
+    id: tag
+    attributes:
+      label: Tag prefix
+      description: Optional. Only use releases whose tag starts with this, e.g. windows-
+  - type: input
+    id: maintainer
+    attributes:
+      label: Maintainer
+      description: The name shown in Crowbar. Default the repository owner.
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Rules
+      options:
+        - label: My release contains no game file, no key, no firmware and no third-party binary I may not redistribute
+          required: true

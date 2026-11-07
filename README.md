@@ -14,6 +14,10 @@ Nothing in this repository is a game, a key or a Sony file: only names, links an
 
 ## Adding or updating a port
 
+**Easiest:** make your runtime Crowbar compatible with [crowbar-sdk](https://github.com/DiamondDogz/crowbar-sdk) (a `crowbar.json` in your release), then fill in the [Add a runtime](https://github.com/DiamondDogz/crowbar-catalog/issues/new?template=add-runtime.yml) form. An Action downloads your latest release, checks its SHA-256 and runs `crowbar-check`, answers on the issue and opens the pull request for review. Editing the issue runs the check again.
+
+By hand:
+
 1. Publish your runtime as a **GitHub release** on your own repository, with an archive ready to unzip (`.zip` for Windows, `.tar.gz` for Linux). Mark test versions as **Pre-release**: they only reach players who chose the beta channel.
 2. Propose a change to `catalog.json` (a *pull request*) that adds your runtime to the game's entry:
 
@@ -47,6 +51,7 @@ After that, new versions of your runtime are picked up **on their own**: just pu
 
 The `launch` values:
 
+- `crowbar-json`: the runtime ships a `crowbar.json` ([format](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md)) that says how to launch it and what it supports.
 - `ps4rt-launch`: `scripts/ps4rt_launch.py --game <folder>`.
 - `ps4rt-run`: `run.py` with `PS4RT_GAME_DIR`, for runtimes shipped with the Ravn launcher.
 - `native-play`: a native launcher without Python, `bin/… Launcher.exe --play`, which launches the game named in `out/launcher.ini`.

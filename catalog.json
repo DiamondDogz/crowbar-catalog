@@ -58,24 +58,8 @@
         "x-rlyeh": "Yogiaha Tokyo nog ng 1940s: Seijuro Kamiyama ulzh nnyog 'h ng Cthni Huothsot f' yehkn ng Athnagha Ggy'rl ep y'ur ng knyog"
       },
       "runtimes": [
-        {
-          "platform": "windows",
-          "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
-          "tagPrefix": "windows-",
-          "asset": "*.zip",
-          "maintainer": "DiamondDogz",
-          "launch": "ps4rt-launch",
-          "trophies": true
-        },
-        {
-          "platform": "linux",
-          "repo": "HekamiAeon/Sakura-Wars-PS4RT",
-          "asset": "*-linux-x86_64.tar.gz",
-          "checksum": "{asset}.sha256",
-          "maintainer": "HekamiAeon",
-          "launch": "ps4rt-launch",
-          "trophies": false
-        }
+        {"platform": "windows", "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows", "tagPrefix": "windows-", "asset": "*.zip", "maintainer": "DiamondDogz", "launch": "ps4rt-launch", "trophies": true},
+        {"platform": "linux", "repo": "HekamiAeon/Sakura-Wars-PS4RT", "asset": "*-linux-x86_64.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false}
       ]
     },
     {

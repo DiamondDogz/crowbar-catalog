@@ -1,0 +1,79 @@
+name: Add a runtime
+
+# An « Add a runtime » issue: check the release, then open a pull request a maintainer reviews.
+# The issue text is untrusted: it only reaches the Python script through a file.
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: add-runtime-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    if: contains(github.event.issue.labels.*.name, 'add-runtime')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: DiamondDogz/crowbar-sdk
+          path: sdk
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check the release
+        id: run
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/body.md"
+          if python scripts/add_runtime.py --body "$RUNNER_TEMP/body.md" --report "$RUNNER_TEMP/report.md" --sdk sdk; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open the pull request
+        if: steps.run.outputs.ok == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ github.event.issue.number }}
+          AUTHOR: ${{ github.event.issue.user.login }}
+        run: |
+          branch="add-runtime/$NUMBER"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          git add catalog.json
+          if git diff --cached --quiet; then
+            printf '\nLe catalogue contient déjà exactement cette entrée.\n' >> "$RUNNER_TEMP/report.md"
+            exit 0
+          fi
+          git commit -m "Catalogue : runtime proposé dans #$NUMBER"
+          git push --force origin "$branch"
+          if ! gh pr view "$branch" >/dev/null 2>&1; then
+            printf 'Proposé par @%s dans #%s, vérifié automatiquement.\n\nCloses #%s\n' "$AUTHOR" "$NUMBER" "$NUMBER" > "$RUNNER_TEMP/pr.md"
+            cat "$RUNNER_TEMP/report.md" >> "$RUNNER_TEMP/pr.md"
+            gh pr create --head "$branch" --title "Catalogue : runtime de #$NUMBER" --body-file "$RUNNER_TEMP/pr.md"
+          fi
+
+      - name: Answer on the issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          [ -f "$RUNNER_TEMP/report.md" ] || echo "La vérification n'a pas pu se terminer : voir le journal de l'Action." > "$RUNNER_TEMP/report.md"
+          gh issue comment "$NUMBER" --body-file "$RUNNER_TEMP/report.md"
