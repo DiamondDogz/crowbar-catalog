@@ -115,7 +115,7 @@
         "x-rlyeh": "Ot mglni Faykreed, ng wgathmgl Fidel uryogafh oth nagy'hu epub Miki, shy y r'lafhul uroth, Relia, sotcth othrl epr'l y uruifht ha agnath nnafh epsh"
       },
       "runtimes": [
-        {"platform": "windows", "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "ps4rt-star-ocean-5-windows-x64-*.zip", "maintainer": "Hoverbike51", "launch": "native-play", "trophies": false},
+        {"platform": "windows", "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "ps4rt-star-ocean-5-windows-x64-*.zip", "maintainer": "Hoverbike51", "launch": "native-play", "trophies": true},
         {"platform": "linux", "repo": "HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT", "asset": "star-ocean-5-ps4rt-linux-x86_64-*.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false}
       ]
     },
@@ -180,8 +180,9 @@
     {
       "id": "gundam-code-fairy",
       "name": "Mobile Suit Gundam Battle Operation Code Fairy",
-      "titleIds": [],
+      "titleIds": ["CUSA28763"],
       "match": "code\\s*fairy",
+      "requiredVersion": "01.03",
       "genre": "Action",
       "genreLocalized": {
         "fr": "Action",
@@ -229,7 +230,9 @@
         "ar": "خلال حرب السنة الواحدة، تنفّذ فرقة Fairy الخاصة التابعة لزيون مهمة تلو الأخرى خلف خطوط العدو.",
         "x-rlyeh": "Ah'ai ng Nag Hakn Fht, Nirl ggurzh Fairy ursh ggepcth y y'shgg afhul y'shgg afhul nglro ah'agn"
       },
-      "runtimes": []
+      "runtimes": [
+        {"platform": "linux", "repo": "HekamiAeon/GBO-Code-Fairy-PS4RT", "asset": "*-linux-x86_64.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false}
+      ]
     }
   ]
 }
