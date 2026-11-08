@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T10:15:33+00:00",
+  "generatedAt": "2026-11-08T16:41:24+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -180,7 +180,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 36,
+        "stars": 38,
         "launch": "native-play",
         "beta": {
           "version": "v1.0.0",
