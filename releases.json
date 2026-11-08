@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T02:26:50+00:00",
+  "generatedAt": "2026-11-08T10:15:33+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 35,
+        "stars": 37,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "1.1.4",
@@ -180,21 +180,45 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 34,
+        "stars": 36,
         "launch": "native-play",
         "beta": {
-          "version": "v0.4.0",
-          "tag": "v0.4.0",
-          "prerelease": true,
-          "published": "2026-11-01T18:13:05Z",
-          "url": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v0.4.0/ps4rt-star-ocean-5-windows-x64-v0.4.0-latest.zip",
-          "file": "ps4rt-star-ocean-5-windows-x64-v0.4.0-latest.zip",
-          "size": 90728062,
-          "sha256": "82d8f695dd85d0438037fe9722f4b8674170b0902df77f0b0bbf7c13cdb61f36",
-          "notes": "# Star Ocean 5 — Windows v0.4.0 Experimental\r\n\r\nExperimental native Windows 10/11 x64 host for **STAR OCEAN: Integrity and Faithlessness**, based on the game-specific PS4RT compatibility runtime and an adapted shadPS4 Vulkan renderer.\r\n\r\n**Download:** `ps4rt-star-ocean-5-windows-x64-v0.4.0-latest.zip`\r\n\r\n## Highlights\r\n\r\n- Reduced rendering overhead and improved frame-time consistency in tested gameplay.\r\n- Updated Cockpit launcher with larger controls, improved responsiveness and 12 interface languages.\r\n- Tabbed in-game settings: Display, Image, Smoothness, Controller and Performance.\r\n- Native C++ game preparation and independent PKG extraction with destination selection and progress reporting.\r\n- GPU and target-monitor selection, verified output resolutions and windowed image fitting.\r\n- FSR 3.1 and FSR 4 v07 support where permitted by hardware and runtime checks.\r\n- Improved keyboard profiles, customizable keyboard bindings, controller dead zones and vibration handling.\r\n- Unified save backups, refreshed save previews and direct access to save locations.\r\n- Selectable console text, scrolling, diagnostic export and optional local performance capture.\r\n- Native GitHub update support with package verification and recovery backups.\r\n- Cleaner distribution layout: internal applications and DLLs are stored in `bin`.\r\n- Illustrated English launcher and in-game menu guides included.\r\n\r\n## Installation\r\n\r\n1. Extract the **entire ZIP** into a writable folder.\r\n2. Open **Star Ocean 5 Launcher.exe** at the package root.\r\n3. Select your own extracted PS4 game directory or import a supported PKG.\r\n4. Wait for validation and preparation, review your settings, then select **Play**.\r\n\r\nKeep all supplied folders together. Players do not need Python, MSYS2, PowerShell or .NET. A compatible **x86-64 CPU** and a working **Vulkan 1.3 graphics driver** are required.\r\n\r\nOpen the in-game settings with **Insert**, or hold **L2** and click **R3**.\r\n\r\n## Compatibility and known limitations\r\n\r\n- **CUSA03219** is the tested PS4 edition. Recognized alternative PS4 editions are accepted with an untested warning.\r\n- This remains an experimental release; a complete playthrough and compatibility across all hardware have not been established.\r\n- Variable-resolution presets can be refused in some scenes. **Original 1080p** remains the conservative baseline.\r\n- Asynchronous shaders can reduce compilation stalls but may cause temporary visual artifacts.\r\n- Anisotropic filtering changes require restarting the game.\r\n- Ultrawide output uses image fitting; native ultrawide camera/HUD adaptation is not included.\r\n- PKG import requires a supported package and a valid creation passcode. Unknown retail-license keys are not recovered.\r\n\r\n\r\n### Take a look at:\r\n\r\n- [Illustrated launcher guide](docs/LAUNCHER_GUIDE.md): setup, saves, video, input, updates and diagnostics.\r\n- [Illustrated in-game menu guide](docs/IN_GAME_MENU_GUIDE.md): the five tabs, live settings and preset limits.\r\n- [Complete Windows changelog](CHANGELOG.md): current changes, earlier development stages and known limits.\r\n\r\n**No game files, firmware or keys are included.** Original project code, third-party components and game assets retain their respective authorship and licenses.\r\n**Full Changelog**: https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/compare/v0.3.5...v0.4.0",
-          "page": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v0.4.0"
+          "version": "v1.0.0",
+          "tag": "v1.0.0",
+          "prerelease": false,
+          "published": "2026-11-08T06:40:22Z",
+          "url": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.0.0/ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip",
+          "file": "ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip",
+          "size": 95418064,
+          "sha256": "dbe128e6b148c4c4db55d2192189632f8a34181d9e7830648ea32890b69f15d7",
+          "notes": "# Star Ocean 5 PS4RT v1.0.0 — Major Windows Update\r\n\r\nNative Windows 10/11 x64 host for **STAR OCEAN: Integrity and Faithlessness**, based on the game-specific PS4RT compatibility runtime and an adapted shadPS4 Vulkan renderer.\r\n\r\nThis milestone brings significant improvements to the experimental native Windows 10/11 port of *Star Ocean 5: Integrity and Faithlessness*, introducing ultrawide rendering, customizable HUD layouts, expanded graphics options, native cheats, enhanced controls, and a more complete Windows launcher experience.\r\n\r\n**Download:** `ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip`\r\n\r\n## What's Changed\r\n\r\n* Record trophy unlocks to PS4RT_TROPHY_FILE by @shinseiryuu in https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/pull/1\r\n\r\n- Added native **21:9 and 32:9 ultrawide scene rendering**.\r\n- Improved compatibility with 16:9, 21:9 and 32:9 HUD layout presets.\r\n- Added customizable HUD JSON profiles accessible through the launcher and in-game menu.\r\n- Improved menu and loading-screen presentation without stretching original artwork.\r\n- Added manual internal rendering resolutions: **720p, 1080p, 1440p and 2160p**.\r\n- Integrated experimental **NVIDIA DLSS Super Resolution**.\r\n- Improved AMD FSR reconstruction compatibility and fallback handling.\r\n- Improved rendering stability, color conversion, memory diagnostics and Windows runtime compatibility.\r\n- Expanded the **Cockpit Launcher** and in-game menu with dedicated **Cheats** and **Tweaks** sections.\r\n- Added improved GPU, display and performance monitoring.\r\n- Added optional exploration leader switching and camera-follow controls.\r\n- Added configurable movement speed: **x1, x1.5 and x2**.\r\n- Improved keyboard, mouse and controller support, including controller reconnection.\r\n- Added hold-to-accelerate functionality.\r\n- Updated all **12 supported interface languages**.\r\n- Improved interface scaling, navigation and customization.\r\n\r\n### ⚡ Native Cheats\r\n\r\nIntroduced eight version-checked native cheats, including:\r\n\r\n- Infinite HP and MP (independent controls)\r\n- Fast Level Up\r\n- Maximum Stats\r\n- Maximum Money\r\n- Maximum Skill Points\r\n- One-Hit Kills\r\n- Movement Speed\r\n\r\nCheats include compatibility checks against recognized executable versions. Certain cheats may affect scripted encounters or produce persistent gameplay changes.\r\n\r\n**Developed and maintained by Hoverbike51**\r\n\r\n*Star Ocean 5 PS4RT — Native Windows 10/11 Development Branch*\r\n\r\n## New Contributors\r\n* @shinseiryuu made their first contribution in https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/pull/1\r\n\r\n## Installation\r\n\r\n1. Extract the **entire ZIP** into a writable folder.\r\n2. Open **Star Ocean 5 Launcher.exe** at the package root.\r\n3. Select your own extracted PS4 game directory or import a supported PKG.\r\n4. Wait for validation and preparation, review your settings, then select **Play**.\r\n\r\nKeep all supplied folders together. Players do not need Python, MSYS2, PowerShell or .NET. A compatible **x86-64 CPU** and a working **Vulkan 1.3 graphics driver** are required.\r\n\r\nOpen the in-game settings with **Insert**, or hold **L2** and click **R3**.\r\n\r\n### Custom HUD preset can be obtained [here!](https://github.com/Hoverbike51/hoverbike51.github.io/tree/main/SO5-HUD-Layout-Studio)\r\n\r\n### Take a look at:\r\n\r\n- [Illustrated launcher guide](docs/LAUNCHER_GUIDE.md): setup, saves, video, input, updates and diagnostics.\r\n- [Illustrated in-game menu guide](docs/IN_GAME_MENU_GUIDE.md): the five tabs, live settings and preset limits.\r\n- [Complete Windows changelog](CHANGELOG.md): current changes, earlier development stages and known limits.\r\n\r\n**No game files, firmware or keys are included.** Original project code, third-party components and game assets retain their respective authorship and licenses.\r\n\r\n**Full Changelog**: https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/compare/v0.4.0...v1.0.0",
+          "page": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.0.0"
+        },
+        "stable": {
+          "version": "v1.0.0",
+          "tag": "v1.0.0",
+          "prerelease": false,
+          "published": "2026-11-08T06:40:22Z",
+          "url": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.0.0/ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip",
+          "file": "ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip",
+          "size": 95418064,
+          "sha256": "dbe128e6b148c4c4db55d2192189632f8a34181d9e7830648ea32890b69f15d7",
+          "notes": "# Star Ocean 5 PS4RT v1.0.0 — Major Windows Update\r\n\r\nNative Windows 10/11 x64 host for **STAR OCEAN: Integrity and Faithlessness**, based on the game-specific PS4RT compatibility runtime and an adapted shadPS4 Vulkan renderer.\r\n\r\nThis milestone brings significant improvements to the experimental native Windows 10/11 port of *Star Ocean 5: Integrity and Faithlessness*, introducing ultrawide rendering, customizable HUD layouts, expanded graphics options, native cheats, enhanced controls, and a more complete Windows launcher experience.\r\n\r\n**Download:** `ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip`\r\n\r\n## What's Changed\r\n\r\n* Record trophy unlocks to PS4RT_TROPHY_FILE by @shinseiryuu in https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/pull/1\r\n\r\n- Added native **21:9 and 32:9 ultrawide scene rendering**.\r\n- Improved compatibility with 16:9, 21:9 and 32:9 HUD layout presets.\r\n- Added customizable HUD JSON profiles accessible through the launcher and in-game menu.\r\n- Improved menu and loading-screen presentation without stretching original artwork.\r\n- Added manual internal rendering resolutions: **720p, 1080p, 1440p and 2160p**.\r\n- Integrated experimental **NVIDIA DLSS Super Resolution**.\r\n- Improved AMD FSR reconstruction compatibility and fallback handling.\r\n- Improved rendering stability, color conversion, memory diagnostics and Windows runtime compatibility.\r\n- Expanded the **Cockpit Launcher** and in-game menu with dedicated **Cheats** and **Tweaks** sections.\r\n- Added improved GPU, display and performance monitoring.\r\n- Added optional exploration leader switching and camera-follow controls.\r\n- Added configurable movement speed: **x1, x1.5 and x2**.\r\n- Improved keyboard, mouse and controller support, including controller reconnection.\r\n- Added hold-to-accelerate functionality.\r\n- Updated all **12 supported interface languages**.\r\n- Improved interface scaling, navigation and customization.\r\n\r\n### ⚡ Native Cheats\r\n\r\nIntroduced eight version-checked native cheats, including:\r\n\r\n- Infinite HP and MP (independent controls)\r\n- Fast Level Up\r\n- Maximum Stats\r\n- Maximum Money\r\n- Maximum Skill Points\r\n- One-Hit Kills\r\n- Movement Speed\r\n\r\nCheats include compatibility checks against recognized executable versions. Certain cheats may affect scripted encounters or produce persistent gameplay changes.\r\n\r\n**Developed and maintained by Hoverbike51**\r\n\r\n*Star Ocean 5 PS4RT — Native Windows 10/11 Development Branch*\r\n\r\n## New Contributors\r\n* @shinseiryuu made their first contribution in https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/pull/1\r\n\r\n## Installation\r\n\r\n1. Extract the **entire ZIP** into a writable folder.\r\n2. Open **Star Ocean 5 Launcher.exe** at the package root.\r\n3. Select your own extracted PS4 game directory or import a supported PKG.\r\n4. Wait for validation and preparation, review your settings, then select **Play**.\r\n\r\nKeep all supplied folders together. Players do not need Python, MSYS2, PowerShell or .NET. A compatible **x86-64 CPU** and a working **Vulkan 1.3 graphics driver** are required.\r\n\r\nOpen the in-game settings with **Insert**, or hold **L2** and click **R3**.\r\n\r\n### Custom HUD preset can be obtained [here!](https://github.com/Hoverbike51/hoverbike51.github.io/tree/main/SO5-HUD-Layout-Studio)\r\n\r\n### Take a look at:\r\n\r\n- [Illustrated launcher guide](docs/LAUNCHER_GUIDE.md): setup, saves, video, input, updates and diagnostics.\r\n- [Illustrated in-game menu guide](docs/IN_GAME_MENU_GUIDE.md): the five tabs, live settings and preset limits.\r\n- [Complete Windows changelog](CHANGELOG.md): current changes, earlier development stages and known limits.\r\n\r\n**No game files, firmware or keys are included.** Original project code, third-party components and game assets retain their respective authorship and licenses.\r\n\r\n**Full Changelog**: https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/compare/v0.4.0...v1.0.0",
+          "page": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.0.0"
         },
         "versions": [
+          {
+            "version": "v1.0.0",
+            "tag": "v1.0.0",
+            "prerelease": false,
+            "published": "2026-11-08T06:40:22Z",
+            "url": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.0.0/ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip",
+            "file": "ps4rt-star-ocean-5-windows-x64-v1.0.0-latest.zip",
+            "size": 95418064,
+            "sha256": "dbe128e6b148c4c4db55d2192189632f8a34181d9e7830648ea32890b69f15d7",
+            "notes": "# Star Ocean 5 PS4RT v1.0.0 — Major Windows Update\r\n\r\nNative Windows 10/11 x64 host for **STAR OCEAN: Integrity and Faithlessness**, based on the game-specific PS4RT compatibility runtime and an adapted shadPS4 Vulkan renderer.\r\n\r\nThis milestone brings significant improvements to the experimental native Windows 10/11 port of *Star Ocean 5: Integrity and Faithlessness*, introducing ultrawide rendering, customizable HUD layouts, expanded graphics options, native cheats, enhanced controls, and a more complete Windows launcher experience.\r\n\r\n**Download:** `ps4rt-star-ocean-5-windows-x64-v1.0.0-lat",
+            "page": "https://github.com/Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.0.0"
+          },
           {
             "version": "v0.4.0",
             "tag": "v0.4.0",
@@ -270,7 +294,7 @@
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 23,
+        "stars": 24,
         "launch": "ps4rt-run",
         "beta": {
           "version": "1.2",
