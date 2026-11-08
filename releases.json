@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T16:41:24+00:00",
+  "generatedAt": "2026-11-08T18:18:55+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -404,6 +404,51 @@
         ]
       }
     },
-    "gundam-code-fairy": {}
+    "gundam-code-fairy": {
+      "linux": {
+        "repo": "HekamiAeon/GBO-Code-Fairy-PS4RT",
+        "maintainer": "HekamiAeon",
+        "stars": 1,
+        "launch": "ps4rt-launch",
+        "beta": {
+          "version": "v1.0",
+          "tag": "v1.0",
+          "prerelease": false,
+          "published": "2026-11-08T02:00:41Z",
+          "url": "https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT/releases/download/v1.0/CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz",
+          "file": "CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz",
+          "size": 39449973,
+          "sha256": "60cab4ba8fca1003a4e17b81f082399f110fdf6a000df3bb01094adb058b4c0d",
+          "notes": "# Code Fairy PS4RT v1.0\n\nFirst Linux x86-64 release of **MOBILE SUIT GUNDAM BATTLE OPERATION Code Fairy (CUSA28763 v01.03)**.\n\n## Features\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\n- 720p, 1080p, 1440p, and 4K output, with experimental 21:9, 24:9, and 32:9 ultrawide support up to 5120×1440\n- FSR 1, FSR 3.1, and bundled FSR 4 v07 support on compatible hardware\n- Custom Code Fairy graphics overlay with artwork, menu sounds, and an FPS/performance display\n- Max, Medium, and Low graphics presets, including adjustable shadow resolution\n- Original 60 FPS gameplay with an optional 30 FPS cap for lower-power hardware\n- Sharpening, anisotropic filtering, display, and resolution settings\n- Keyboard and gamepad input support, with configurable input mapping\n- Local achievements with unlock notifications, trophy icons, and progress tracking (no PSN synchronization)\n- Integrated v01.03 update installer and installation of all three episodic volume unlock-key PKGs through the in-game overlay\n\n## Compatibility\nTested on Fedora Linux with AMD/RADV graphics through **Chapter 9 (Volume 2)**, including the tutorial, battles, bosses, cinematics, menus, saving/loading, and completion of Volume 1. The portable Linux player was also smoke-tested with its bundled overlay, FSR assets, and local achievement notifications.\n\n## Installation\nDownload and extract the attached `CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz` player archive into a writable folder, then run:\n\n```bash\nbash Play-Game.sh --game \"/path/to/your/CUSA28763\"\n```\n\nAfter the first successful setup, the launcher remembers the game directory. Subsequent launches can use `bash Play-Game.sh` without `--game`.\n\nRequires your own extracted, plaintext **CUSA28763** PS4 game files. **Game version v01.03 is mandatory.** If your extraction is v01.00, the included setup utility can apply your own matching v01.03 update PKG. **Back up the original game folder first:** the update modifies the selected extraction in place.\n\n**All three volume unlock-key PKGs are required to access the complete episodic campaign.** These are story unlocks, not conventional optional DLC. Install your own matching packages using **Install DLC...** in the PS4RT Graphics overlay, then restart the game. PS4RT does not bypass locked volumes.\n\nNo game files, update PKGs, volume keys, PS4 firmware, or user saves are included. Players must supply their own legally obtained content.\n\nRequires native **Linux x86-64**, **glibc 2.35+**, **Python 3**, and working **Vulkan** graphics drivers. The portable archive bundles its application libraries and native PKG installer; no compilation is required to play.\n\nSee the [repository README](https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT) for detailed setup instructions, supported graphics options, known limitations, source code, and credits.\n",
+          "page": "https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT/releases/tag/v1.0"
+        },
+        "stable": {
+          "version": "v1.0",
+          "tag": "v1.0",
+          "prerelease": false,
+          "published": "2026-11-08T02:00:41Z",
+          "url": "https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT/releases/download/v1.0/CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz",
+          "file": "CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz",
+          "size": 39449973,
+          "sha256": "60cab4ba8fca1003a4e17b81f082399f110fdf6a000df3bb01094adb058b4c0d",
+          "notes": "# Code Fairy PS4RT v1.0\n\nFirst Linux x86-64 release of **MOBILE SUIT GUNDAM BATTLE OPERATION Code Fairy (CUSA28763 v01.03)**.\n\n## Features\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\n- 720p, 1080p, 1440p, and 4K output, with experimental 21:9, 24:9, and 32:9 ultrawide support up to 5120×1440\n- FSR 1, FSR 3.1, and bundled FSR 4 v07 support on compatible hardware\n- Custom Code Fairy graphics overlay with artwork, menu sounds, and an FPS/performance display\n- Max, Medium, and Low graphics presets, including adjustable shadow resolution\n- Original 60 FPS gameplay with an optional 30 FPS cap for lower-power hardware\n- Sharpening, anisotropic filtering, display, and resolution settings\n- Keyboard and gamepad input support, with configurable input mapping\n- Local achievements with unlock notifications, trophy icons, and progress tracking (no PSN synchronization)\n- Integrated v01.03 update installer and installation of all three episodic volume unlock-key PKGs through the in-game overlay\n\n## Compatibility\nTested on Fedora Linux with AMD/RADV graphics through **Chapter 9 (Volume 2)**, including the tutorial, battles, bosses, cinematics, menus, saving/loading, and completion of Volume 1. The portable Linux player was also smoke-tested with its bundled overlay, FSR assets, and local achievement notifications.\n\n## Installation\nDownload and extract the attached `CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz` player archive into a writable folder, then run:\n\n```bash\nbash Play-Game.sh --game \"/path/to/your/CUSA28763\"\n```\n\nAfter the first successful setup, the launcher remembers the game directory. Subsequent launches can use `bash Play-Game.sh` without `--game`.\n\nRequires your own extracted, plaintext **CUSA28763** PS4 game files. **Game version v01.03 is mandatory.** If your extraction is v01.00, the included setup utility can apply your own matching v01.03 update PKG. **Back up the original game folder first:** the update modifies the selected extraction in place.\n\n**All three volume unlock-key PKGs are required to access the complete episodic campaign.** These are story unlocks, not conventional optional DLC. Install your own matching packages using **Install DLC...** in the PS4RT Graphics overlay, then restart the game. PS4RT does not bypass locked volumes.\n\nNo game files, update PKGs, volume keys, PS4 firmware, or user saves are included. Players must supply their own legally obtained content.\n\nRequires native **Linux x86-64**, **glibc 2.35+**, **Python 3**, and working **Vulkan** graphics drivers. The portable archive bundles its application libraries and native PKG installer; no compilation is required to play.\n\nSee the [repository README](https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT) for detailed setup instructions, supported graphics options, known limitations, source code, and credits.\n",
+          "page": "https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT/releases/tag/v1.0"
+        },
+        "versions": [
+          {
+            "version": "v1.0",
+            "tag": "v1.0",
+            "prerelease": false,
+            "published": "2026-11-08T02:00:41Z",
+            "url": "https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT/releases/download/v1.0/CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz",
+            "file": "CUSA28763-v1.0-49ea9f0-linux-x86_64.tar.gz",
+            "size": 39449973,
+            "sha256": "60cab4ba8fca1003a4e17b81f082399f110fdf6a000df3bb01094adb058b4c0d",
+            "notes": "# Code Fairy PS4RT v1.0\n\nFirst Linux x86-64 release of **MOBILE SUIT GUNDAM BATTLE OPERATION Code Fairy (CUSA28763 v01.03)**.\n\n## Features\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\n- 720p, 1080p, 1440p, and 4K output, with experimental 21:9, 24:9, and 32:9 ultrawide support up to 5120×1440\n- FSR 1, FSR 3.1, and bundled FSR 4 v07 support on compatible hardware\n- Custom Code Fairy graphics overlay with artwork, menu sounds, and an FPS/performance display\n- Max, Medium, and Low graphics presets, including adjustable shadow resolution\n- Original 60 FPS gameplay",
+            "page": "https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT/releases/tag/v1.0"
+          }
+        ]
+      }
+    }
   }
 }
