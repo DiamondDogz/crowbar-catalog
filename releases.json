@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T07:56:02+00:00",
+  "generatedAt": "2026-11-10T02:04:14+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 38,
+        "stars": 39,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "1.1.4",
@@ -180,7 +180,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 39,
+        "stars": 40,
         "launch": "native-play",
         "beta": {
           "version": "v1.0.1",
@@ -248,7 +248,7 @@
       "linux": {
         "repo": "HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "HekamiAeon",
-        "stars": 28,
+        "stars": 29,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "v1.2",
@@ -350,7 +350,7 @@
       "linux": {
         "repo": "HekamiAeon/valkyria-revolution-ps4rt",
         "maintainer": "HekamiAeon",
-        "stars": 12,
+        "stars": 13,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "v1.2",
