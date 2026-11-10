@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T02:04:14+00:00",
+  "generatedAt": "2026-11-10T09:45:15+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -306,7 +306,7 @@
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 25,
+        "stars": 26,
         "launch": "ps4rt-run",
         "beta": {
           "version": "1.2",
@@ -420,7 +420,7 @@
       "linux": {
         "repo": "HekamiAeon/GBO-Code-Fairy-PS4RT",
         "maintainer": "HekamiAeon",
-        "stars": 1,
+        "stars": 2,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "v1.0",
