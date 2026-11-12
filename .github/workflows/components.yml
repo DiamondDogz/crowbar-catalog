@@ -1,0 +1,45 @@
+name: Components
+
+# Composants facultatifs de Crowbar (lecteur vidéo) : components.json, chaque lundi ou à la main.
+on:
+  schedule:
+    - cron: "41 5 * * 1"
+  push:
+    branches: [main]
+    paths: ["scripts/build_components.py", ".github/workflows/components.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: components
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Tests
+        run: python -m unittest discover -s scripts -p "test_build_components.py" -v
+      - name: Générer components.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_components.py
+      - name: Publier
+        run: |
+          if git diff --quiet -- components.json && git ls-files --error-unmatch components.json >/dev/null 2>&1; then
+            echo "Rien de nouveau."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add components.json
+          git commit -m "components.json : mise à jour automatique"
+          git pull --rebase -q
+          git push
