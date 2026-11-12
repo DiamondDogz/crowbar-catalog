@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T04:22:38+00:00",
+  "generatedAt": "2026-11-12T09:47:24+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -180,7 +180,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 42,
+        "stars": 43,
         "launch": "native-play",
         "beta": {
           "version": "v1.0.1",
@@ -420,7 +420,7 @@
       "linux": {
         "repo": "HekamiAeon/GBO-Code-Fairy-PS4RT",
         "maintainer": "HekamiAeon",
-        "stars": 2,
+        "stars": 4,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "v1.0",
@@ -464,7 +464,7 @@
       "windows": {
         "repo": "DiamondDogz/GBO-Code-Fairy-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 0,
+        "stars": 3,
         "launch": "crowbar-json",
         "beta": {
           "version": "1.0",
