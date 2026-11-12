@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-12T13:55:15Z",
+  "video": {
+    "windows": {
+      "version": "20261111",
+      "file": "mpv-x86_64-20261111-git-bcde6b93cc.7z",
+      "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261111/mpv-x86_64-20261111-git-bcde6b93cc.7z",
+      "size": 34181485,
+      "sha256": "f259b5fd4b5c395617c948a4fadcdf55bba1c5282fb7c13e88626b3f71072baf",
+      "exe": "mpv.exe",
+      "source": "https://github.com/shinchiro/mpv-winbuild-cmake",
+      "license": "GPL-2.0-or-later"
+    }
+  }
+}
