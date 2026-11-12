@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T22:02:44+00:00",
+  "generatedAt": "2026-11-12T22:12:20+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -464,7 +464,7 @@
       "windows": {
         "repo": "DiamondDogz/GBO-Code-Fairy-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 7,
+        "stars": 8,
         "launch": "crowbar-json",
         "beta": {
           "version": "1.0",
