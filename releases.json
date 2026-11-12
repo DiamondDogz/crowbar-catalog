@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T02:50:11+00:00",
+  "generatedAt": "2026-11-12T01:31:48+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 42,
+        "stars": 44,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "1.1.4",
@@ -180,7 +180,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 41,
+        "stars": 42,
         "launch": "native-play",
         "beta": {
           "version": "v1.0.1",
