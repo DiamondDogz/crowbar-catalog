@@ -48,6 +48,7 @@ After that, new versions of your runtime are picked up **on their own**: just pu
 | `checksum` | Optional: a checksum file published next to it (`{asset}.sha256`). Otherwise, Crowbar uses the checksum GitHub provides |
 | `maintainer` | Shown to players before installation |
 | `launch` | How to launch the game; Crowbar also recognises it from the runtime's files. See below |
+| `trophies` | `true` when the runtime records trophy unlocks ([format](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md#2-trophies)). Crowbar then shows them live, in the profile and to the player's friends |
 
 The `launch` values:
 
@@ -59,6 +60,8 @@ The `launch` values:
 
 On Windows, Python scripts run with the runtime's own Python in `python/`.
 
+**Pause from the Guide** needs no field. Crowbar passes `PS4RT_CONTROL_DIR` to every runtime, whatever its `launch`; a runtime that answers there ([SPEC §4](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md#pause-from-the-guide-optional-pause-true), crowbar-sdk 1.2) gets a real pause when the player presses Guide, the others keep running under the menu. A test version with the pause goes out as a **Pre-release** first, like any test version.
+
 A game entry can also have these fields:
 
 - `titleIds`: the CUSA numbers it recognises.
@@ -66,6 +69,7 @@ A game entry can also have these fields:
 - `requiredVersion`: the minimum game version the runtime needs.
 - `languages`: the languages of the game's text, as PS4 system language numbers (0 Japanese, 1 English, 2 French, 3 Spanish, 4 German…). Without it, Crowbar reads them from the trophy file.
 - `features`: settings specific to this runtime (`framerate`, `outlines`).
+- `options`: the settings Crowbar shows for the game, per platform (`{"windows": [...], "linux": [...]}`), in the format of `options` in [crowbar.json](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md#settings-screen-optional-options): ini key, labels in English and French, values, default. A runtime that ships its own `options` in `crowbar.json` takes precedence; the catalog's are for runtimes without one, and for a new version not published yet.
 - `name`, `genre`, `glow` and `synopsis`, shown in Crowbar.
 
 `synopsis` and `genreLocalized` take one text per language, keyed by Crowbar's language codes: `fr`, `fr-CA`, `en-US`, `en-GB`, `ja`, `es`, `es-419`, `de`, `it`, `nl`, `pt-PT`, `pt-BR`, `ru`, `ko`, `zh-Hant`, `zh-Hans`, `fi`, `sv`, `da`, `no`, `pl`, `tr` and `ar`.
