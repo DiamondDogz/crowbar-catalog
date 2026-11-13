@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T21:45:51+00:00",
+  "generatedAt": "2026-11-13T22:05:39+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -9,16 +9,16 @@
         "stars": 45,
         "launch": "ps4rt-launch",
         "beta": {
-          "version": "1.2-rc.6",
-          "tag": "windows-1.2-rc.6",
+          "version": "1.2-rc.7",
+          "tag": "windows-1.2-rc.7",
           "prerelease": true,
-          "published": "2026-11-13T21:45:02Z",
-          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.2-rc.6/Kagekidan-windows-1.2-rc.6.zip",
-          "file": "Kagekidan-windows-1.2-rc.6.zip",
-          "size": 83057054,
-          "sha256": "6aed5d7cdce58a00d557a97b625b2708ca94de4f2b53dc44e63aaf0f1b193b96",
-          "notes": "windows-1.1.5 with a runtime built from branch sakura-1.2 (ad28924): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: 6aed5d7cdce58a00d557a97b625b2708ca94de4f2b53dc44e63aaf0f1b193b96\n",
-          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.2-rc.6"
+          "published": "2026-11-13T22:04:28Z",
+          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.2-rc.7/Kagekidan-windows-1.2-rc.7.zip",
+          "file": "Kagekidan-windows-1.2-rc.7.zip",
+          "size": 83057137,
+          "sha256": "cb789cc313be7c8b93f63d99ff36b66829ed500db5373d07c4d71f5fc405c93c",
+          "notes": "windows-1.1.5 with a runtime built from branch sakura-1.2 (e3e1bc4): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: cb789cc313be7c8b93f63d99ff36b66829ed500db5373d07c4d71f5fc405c93c\n",
+          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.2-rc.7"
         },
         "stable": {
           "version": "1.1.5",
@@ -33,6 +33,18 @@
           "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.5"
         },
         "versions": [
+          {
+            "version": "1.2-rc.7",
+            "tag": "windows-1.2-rc.7",
+            "prerelease": true,
+            "published": "2026-11-13T22:04:28Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.2-rc.7/Kagekidan-windows-1.2-rc.7.zip",
+            "file": "Kagekidan-windows-1.2-rc.7.zip",
+            "size": 83057137,
+            "sha256": "cb789cc313be7c8b93f63d99ff36b66829ed500db5373d07c4d71f5fc405c93c",
+            "notes": "windows-1.1.5 with a runtime built from branch sakura-1.2 (e3e1bc4): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: cb789cc313be7c8b93f63d99ff36b66829ed500db5373d07c4d71f5fc405c93c\n",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.2-rc.7"
+          },
           {
             "version": "1.2-rc.6",
             "tag": "windows-1.2-rc.6",
@@ -140,18 +152,6 @@
             "sha256": "5491cdb77563434647e87b38dc79fe2d81cacd4aea4b615f843395ecaca69264",
             "notes": "Same tested game build as windows-1.1. Commit `78a9b13`.\n\nFixes `[Errno 13] Permission denied` when the message names only the game folder. Windows refuses a directory check. The update had not failed. Older builds stopped there, including after a clean reinstall.\n\nIf the message names a file inside the folder, the folder is read-only or held by another program. Close it, or move the extracted game somewhere you can write.\n\n`5491cdb77563434647e87b38dc79fe2d81cacd4aea4b615f843395ecaca69264  Kagekidan-windows-1.1.1.zip`\n\nUnzip into a new folder. Do not turn off Microsoft Defender. The game is no",
             "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.1"
-          },
-          {
-            "version": "1.1",
-            "tag": "windows-1.1",
-            "prerelease": false,
-            "published": "2026-10-31T08:26:01Z",
-            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1/Kagekidan-windows-1.1.zip",
-            "file": "Kagekidan-windows-1.1.zip",
-            "size": 85323365,
-            "sha256": "c4b41194e45c3b9202511394cdbd9578f2dae3b12fc5128724693a1e0a6a9e93",
-            "notes": "## windows-1.1\n\nWindows port of upstream [Sakura-Wars-PS4RT v1.1](https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1), commit `29f8822014e8d55d110476088191634f23bc9ce2`. That commit is the code on upstream `main`. The two commits after it on `main` are documents only, and they are not required here. This archive is commit `f7bc904`.\n\nPublished by DiamondDogz. The runtime is HekamiAeon's. The launcher was written with Grok, by xAI. Not affiliated with SEGA. The game is not included.\n\nTested on 31 October 2026: the game starts.\n\n`c4b41194e45c3b9202511394cdbd9578f2dae3b12fc51287246",
-            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1"
           }
         ]
       },
@@ -357,16 +357,16 @@
         "stars": 27,
         "launch": "ps4rt-run",
         "beta": {
-          "version": "1.2.1",
-          "tag": "windows-1.2.1",
-          "prerelease": false,
-          "published": "2026-11-13T19:28:53Z",
-          "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2.1/Ravn-windows-1.2.1.zip",
-          "file": "Ravn-windows-1.2.1.zip",
-          "size": 85146580,
-          "sha256": "67f3a3fdfafdbc986fe7234d69938ac6bd9a9d9f57fca577b9efffe592d70d06",
-          "notes": "Windows port of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nwindows-1.2 plus:\n\n- With [Crowbar](https://github.com/DiamondDogz/crowbar), the Guide button pauses the game (crowbar-sdk 1.2): picture, sound and timers stop while its menu is open, and the controller goes back to the game once released. During a movie, Crowbar says the game cannot pause yet.\n- The Windows build on GitHub works again (GitHub's own MSYS2 no longer mixes with the build's).\n\nAvec [Crowbar](https://github.com/DiamondDogz/crowbar), le bouton Guide met le jeu en pause (image, son et minuteries arrêtés tant que son menu est ouvert ; pendant une cinématique, Crowbar indique que le jeu ne peut pas encore se mettre en pause).\n\nYou need your own extracted copy of the base game, CUSA06810, with no update. See INSTALL.md inside the archive.\n\nSHA-256 of `Ravn-windows-1.2.1.zip`: `67f3a3fdfafdbc986fe7234d69938ac6bd9a9d9f57fca577b9efffe592d70d06`\n",
-          "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2.1"
+          "version": "1.2.2-rc.8",
+          "tag": "windows-1.2.2-rc.8",
+          "prerelease": true,
+          "published": "2026-11-13T22:00:56Z",
+          "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2.2-rc.8/Ravn-windows-1.2.2-rc.8.zip",
+          "file": "Ravn-windows-1.2.2-rc.8.zip",
+          "size": 85154020,
+          "sha256": "e9a264ac0157913760e78e88b6467f784f2a3ec509959d7c847a594b735884a1",
+          "notes": "Test build of branch crowbar-pause (7fe1bba): Crowbar's Guide pause, test-profile unlock and quit (crowbar-sdk 1.2 to 1.4).\n\nSHA-256: e9a264ac0157913760e78e88b6467f784f2a3ec509959d7c847a594b735884a1\n",
+          "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2.2-rc.8"
         },
         "stable": {
           "version": "1.2.1",
@@ -381,6 +381,18 @@
           "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2.1"
         },
         "versions": [
+          {
+            "version": "1.2.2-rc.8",
+            "tag": "windows-1.2.2-rc.8",
+            "prerelease": true,
+            "published": "2026-11-13T22:00:56Z",
+            "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2.2-rc.8/Ravn-windows-1.2.2-rc.8.zip",
+            "file": "Ravn-windows-1.2.2-rc.8.zip",
+            "size": 85154020,
+            "sha256": "e9a264ac0157913760e78e88b6467f784f2a3ec509959d7c847a594b735884a1",
+            "notes": "Test build of branch crowbar-pause (7fe1bba): Crowbar's Guide pause, test-profile unlock and quit (crowbar-sdk 1.2 to 1.4).\n\nSHA-256: e9a264ac0157913760e78e88b6467f784f2a3ec509959d7c847a594b735884a1\n",
+            "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2.2-rc.8"
+          },
           {
             "version": "1.2.1",
             "tag": "windows-1.2.1",
@@ -539,16 +551,16 @@
         "stars": 10,
         "launch": "crowbar-json",
         "beta": {
-          "version": "1.0.1",
-          "tag": "windows-1.0.1",
-          "prerelease": false,
-          "published": "2026-11-13T19:15:57Z",
-          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.1/GBO-Code-Fairy-PS4RT-Windows-1.0.1.zip",
-          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.1.zip",
-          "size": 93595407,
-          "sha256": "4696059f4b8cf0259adbd5279a47a7f8684b777c18860404c132d6558166b761",
-          "notes": "Windows port of [GBO-Code-Fairy-PS4RT](https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT), upstream `main` at `0252c9d` (v1.0 plus two commits).\n\n- Unzip, then open `SiegZeon.exe`. The game must be your own extracted CUSA28763 folder. The 01.03 update and the three volume keys stay PKG files: the launcher installs them.\n- The launcher is in English, with French on the EN button.\n- Crowbar compatible (`crowbar.json`): Crowbar can start it and records trophies.\n- New in 1.0.1: the Guide button of [Crowbar](https://github.com/DiamondDogz/crowbar) pauses the game (crowbar-sdk 1.2): picture, sound and timers stop while its menu is open. During a movie, Crowbar says the game cannot pause yet.\n- See [INSTALL.md](https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/blob/windows/INSTALL.md).\n\nDécompressez, puis ouvrez `SiegZeon.exe`. Le jeu doit être votre propre dossier CUSA28763 extrait. La mise à jour 01.03 et les trois clés de volume restent des PKG : le lanceur les installe. Le lanceur est en anglais, le bouton EN passe au français. Compatible Crowbar. Nouveau en 1.0.1 : le bouton Guide de Crowbar met le jeu en pause (image, son et minuteries arrêtés tant que son menu est ouvert ; pendant une cinématique, Crowbar indique que le jeu ne peut pas encore se mettre en pause).\n\nSHA-256 of `GBO-Code-Fairy-PS4RT-Windows-1.0.1.zip`: `4696059f4b8cf0259adbd5279a47a7f8684b777c18860404c132d6558166b761`\n\nUnofficial. The game is not included.\n",
-          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1"
+          "version": "1.0.2-rc.6",
+          "tag": "windows-1.0.2-rc.6",
+          "prerelease": true,
+          "published": "2026-11-13T21:58:50Z",
+          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.2-rc.6/GBO-Code-Fairy-PS4RT-Windows-1.0.2-rc.6.zip",
+          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.2-rc.6.zip",
+          "size": 93600456,
+          "sha256": "d7801adb75ef9a768e4677d7496a8ad2b5222c228db16f61a02c23efca5b7752",
+          "notes": "Test build of branch crowbar-sdk-1.4 (aae38dc): pause from Crowbar's Guide menu.\n\nSHA-256: d7801adb75ef9a768e4677d7496a8ad2b5222c228db16f61a02c23efca5b7752\n",
+          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.2-rc.6"
         },
         "stable": {
           "version": "1.0.1",
@@ -563,6 +575,18 @@
           "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1"
         },
         "versions": [
+          {
+            "version": "1.0.2-rc.6",
+            "tag": "windows-1.0.2-rc.6",
+            "prerelease": true,
+            "published": "2026-11-13T21:58:50Z",
+            "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.2-rc.6/GBO-Code-Fairy-PS4RT-Windows-1.0.2-rc.6.zip",
+            "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.2-rc.6.zip",
+            "size": 93600456,
+            "sha256": "d7801adb75ef9a768e4677d7496a8ad2b5222c228db16f61a02c23efca5b7752",
+            "notes": "Test build of branch crowbar-sdk-1.4 (aae38dc): pause from Crowbar's Guide menu.\n\nSHA-256: d7801adb75ef9a768e4677d7496a8ad2b5222c228db16f61a02c23efca5b7752\n",
+            "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.2-rc.6"
+          },
           {
             "version": "1.0.1",
             "tag": "windows-1.0.1",
