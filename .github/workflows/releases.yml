@@ -1,9 +1,9 @@
 name: Releases
 
-# Recalcule releases.json : toutes les heures, à chaque modification du catalogue, ou à la main.
+# Recalcule releases.json : toutes les 10 minutes (Crowbar le relit aussi souvent), à chaque modification du catalogue, ou à la main.
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "*/10 * * * *"
   push:
     branches: [main]
     paths: ["catalog.json", "scripts/**", ".github/workflows/releases.yml"]
