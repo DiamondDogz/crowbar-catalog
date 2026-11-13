@@ -3251,6 +3251,46 @@
         {"platform": "windows", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true},
         {"platform": "linux", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-x86_64.AppImage", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
       ]
+    },
+    {
+      "id": "odin-sphere-leifthrasir",
+      "name": "Odin Sphere Leifthrasir",
+      "titleIds": ["CUSA05083", "CUSA01290", "CUSA05262", "CUSA03873"],
+      "match": "odin\\s*sphere",
+      "genre": "Action",
+      "genreLocalized": {
+        "fr": "Action",
+        "en-US": "Action"
+      },
+      "glow": "#7a4e9a",
+      "synopsis": {
+        "fr": "Cinq héros croisent leurs destins dans un royaume en guerre, entre contes et combats.",
+        "en-US": "Five heroes cross paths in a kingdom at war, between fairy tales and battles."
+      },
+      "runtimes": [
+        {"platform": "windows", "repo": "saulob/odin-sphere-leifthrasir-pc", "asset": "OdinSphereLeifthrasirPC-*-windows-x64.zip", "maintainer": "saulob", "launch": "trg", "trophies": true},
+        {"platform": "linux", "repo": "saulob/odin-sphere-leifthrasir-pc", "asset": "OdinSphereLeifthrasirPC-*-x86_64.AppImage", "maintainer": "saulob", "launch": "trg", "trophies": true}
+      ]
+    },
+    {
+      "id": "13-sentinels-aegis-rim",
+      "name": "13 Sentinels: Aegis Rim",
+      "titleIds": ["CUSA19610", "CUSA19620", "CUSA10602", "CUSA18093"],
+      "match": "13\\s*sentinels|sentinels:\\s*aegis",
+      "genre": "Adventure",
+      "genreLocalized": {
+        "fr": "Aventure",
+        "en-US": "Adventure"
+      },
+      "glow": "#3d7ea6",
+      "synopsis": {
+        "fr": "Treize adolescents défendent leur ville contre une invasion, chacun depuis son époque.",
+        "en-US": "Thirteen teenagers defend their city against an invasion, each from their own time."
+      },
+      "runtimes": [
+        {"platform": "windows", "repo": "saulob/13-sentinels-aegis-rim-pc", "asset": "13SentinelsAegisRimPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true},
+        {"platform": "linux", "repo": "saulob/13-sentinels-aegis-rim-pc", "asset": "13SentinelsAegisRimPC-*-x86_64.AppImage", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
+      ]
     }
   ]
 }

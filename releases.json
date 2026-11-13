@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T00:29:47+00:00",
+  "generatedAt": "2026-11-13T00:49:40+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -498,7 +498,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 412,
+        "stars": 413,
         "launch": "trg",
         "beta": {
           "version": "v1.1.1",
@@ -650,7 +650,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 412,
+        "stars": 413,
         "launch": "trg",
         "beta": {
           "version": "v1.1.1",
@@ -796,6 +796,282 @@
             "sha256": "93bb10e912634bd550539504bce79a20763cb4a3ee2285d3a5a010e281669c4c",
             "notes": "## Dragon's Crown Pro PC Port v0.6.0\n\nAdds support for the Japanese and Asia / Hong Kong PS4 releases, Aspect Ratio options, local offline PS4 Trophies and Traditional Chinese text for the Asia / Hong Kong build. This is an unofficial fan-made port, not affiliated with or endorsed by Vanillaware, Atlus, SEGA, Sony Interactive Entertainment or any other rights holder.\n\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package.\n\n### Highlights\n\n- **More regions**: the US build plus the Japanese (`CUSA07001` 1.00, 1.02, 1.03) and Asia / Hong Kong (`CUSA1020",
             "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.6.0"
+          }
+        ]
+      }
+    },
+    "odin-sphere-leifthrasir": {
+      "windows": {
+        "repo": "saulob/odin-sphere-leifthrasir-pc",
+        "maintainer": "saulob",
+        "stars": 188,
+        "launch": "trg",
+        "beta": {
+          "version": "v0.2.3",
+          "tag": "v0.2.3",
+          "prerelease": false,
+          "published": "2026-11-04T15:52:54Z",
+          "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.3/OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip",
+          "file": "OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip",
+          "size": 17018248,
+          "sha256": "b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2",
+          "notes": "# Odin Sphere Leifthrasir PC v0.2.3\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.2, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Hong Kong (`CUSA03873`) Xbox controller prompts**: Xbox prompt compatibility is improved for the Hong Kong 1.00\n  game files reported in issue #4, in Refined and Classic mode.\n- **Stricter release security checks**: the Windows package, both Windows executables and the Linux AppImage are now\n  scanned separately before a release is published.\n\n## Fixes and compatibility\n- **Hong Kong controller prompts**: `CUSA03873` 1.00 remains a supported build. Xbox prompt compatibility is\n  improved for the known Hong Kong button-art file reported in issue #4. Any other file is still checked as strictly as\n  before. The fix is based on that file's known identity and on the project's synthetic test coverage; it has not yet\n  been confirmed on a real Hong Kong installation, and the launcher's log says when this compatibility path is used.\n- **Release security**: the v0.2.2 Windows executable triggered a Microsoft Defender machine-learning detection on\n  VirusTotal while other tested builds with the same source did not. No malicious or unexpected code was found during\n  review. v0.2.3 introduces stricter release verification: the Windows package and its executables are scanned\n  separately, because a clean package scan does not cover the programs inside it.\n\n## Supported builds\n| Build | Title ID | Version |\n| --- | --- | --- |\n| USA | `CUSA05083` | 1.00 and 1.01 |\n| Japan | `CUSA01290` | 1.00 and 1.02 |\n| Europe | `CUSA05262` | 1.00 and 1.01 |\n| Hong Kong | `CUSA03873` | 1.00 |\n\nAny other version is refused, and the log then holds diagnostic information useful for adding it.\n\n## Downloads\n- **Windows:** `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip`\n- **Linux / Steam Deck (experimental):** `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage`, glibc 2.31 or newer\n\nInstallation steps, requirements and known limitations are in the\n[README](https://github.com/saulob/odin-sphere-leifthrasir-pc#readme).\n\n## GitHub issues\n- [#4 - Hong Kong build (`CUSA03873`)](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/4): Hong Kong\n  controller prompt compatibility is improved. It stays open until the reporter has tested v0.2.3.\n- [#15 - Microsoft Defender detection of the v0.2.2 executable](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/15):\n  release-security and false-positive investigation. v0.2.3 is scanned file by file; the result is listed below.\n\n### Security\n\nEach release file is scanned with VirusTotal before publication. A VirusTotal scan is an additional check, not a\nguarantee of safety, so please also verify the SHA-256 of your download.\n\n| File | VirusTotal |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | [VirusTotal](https://www.virustotal.com/gui/file/b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2?nocache=1) |\n| `odin_sphere_leifthrasir.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/6a45aee57185bf606620f6f359fdfd5413f55854a687f0366b4951be0ab06a66) |\n| `trg-updater.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/7a1bc7beaeb6fa047bbe1aeef0040c85d3de1039fa3032cb60d83a315de66eaa) |\n| `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage` | [VirusTotal](https://www.virustotal.com/gui/file/6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d?nocache=1) |\n\n## Checksums\n| File | SHA-256 |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | `b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2` |\n| `odin_sphere_leifthrasir.exe` (inside the ZIP) | `6a45aee57185bf606620f6f359fdfd5413f55854a687f036",
+          "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.3"
+        },
+        "stable": {
+          "version": "v0.2.3",
+          "tag": "v0.2.3",
+          "prerelease": false,
+          "published": "2026-11-04T15:52:54Z",
+          "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.3/OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip",
+          "file": "OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip",
+          "size": 17018248,
+          "sha256": "b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2",
+          "notes": "# Odin Sphere Leifthrasir PC v0.2.3\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.2, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Hong Kong (`CUSA03873`) Xbox controller prompts**: Xbox prompt compatibility is improved for the Hong Kong 1.00\n  game files reported in issue #4, in Refined and Classic mode.\n- **Stricter release security checks**: the Windows package, both Windows executables and the Linux AppImage are now\n  scanned separately before a release is published.\n\n## Fixes and compatibility\n- **Hong Kong controller prompts**: `CUSA03873` 1.00 remains a supported build. Xbox prompt compatibility is\n  improved for the known Hong Kong button-art file reported in issue #4. Any other file is still checked as strictly as\n  before. The fix is based on that file's known identity and on the project's synthetic test coverage; it has not yet\n  been confirmed on a real Hong Kong installation, and the launcher's log says when this compatibility path is used.\n- **Release security**: the v0.2.2 Windows executable triggered a Microsoft Defender machine-learning detection on\n  VirusTotal while other tested builds with the same source did not. No malicious or unexpected code was found during\n  review. v0.2.3 introduces stricter release verification: the Windows package and its executables are scanned\n  separately, because a clean package scan does not cover the programs inside it.\n\n## Supported builds\n| Build | Title ID | Version |\n| --- | --- | --- |\n| USA | `CUSA05083` | 1.00 and 1.01 |\n| Japan | `CUSA01290` | 1.00 and 1.02 |\n| Europe | `CUSA05262` | 1.00 and 1.01 |\n| Hong Kong | `CUSA03873` | 1.00 |\n\nAny other version is refused, and the log then holds diagnostic information useful for adding it.\n\n## Downloads\n- **Windows:** `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip`\n- **Linux / Steam Deck (experimental):** `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage`, glibc 2.31 or newer\n\nInstallation steps, requirements and known limitations are in the\n[README](https://github.com/saulob/odin-sphere-leifthrasir-pc#readme).\n\n## GitHub issues\n- [#4 - Hong Kong build (`CUSA03873`)](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/4): Hong Kong\n  controller prompt compatibility is improved. It stays open until the reporter has tested v0.2.3.\n- [#15 - Microsoft Defender detection of the v0.2.2 executable](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/15):\n  release-security and false-positive investigation. v0.2.3 is scanned file by file; the result is listed below.\n\n### Security\n\nEach release file is scanned with VirusTotal before publication. A VirusTotal scan is an additional check, not a\nguarantee of safety, so please also verify the SHA-256 of your download.\n\n| File | VirusTotal |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | [VirusTotal](https://www.virustotal.com/gui/file/b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2?nocache=1) |\n| `odin_sphere_leifthrasir.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/6a45aee57185bf606620f6f359fdfd5413f55854a687f0366b4951be0ab06a66) |\n| `trg-updater.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/7a1bc7beaeb6fa047bbe1aeef0040c85d3de1039fa3032cb60d83a315de66eaa) |\n| `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage` | [VirusTotal](https://www.virustotal.com/gui/file/6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d?nocache=1) |\n\n## Checksums\n| File | SHA-256 |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | `b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2` |\n| `odin_sphere_leifthrasir.exe` (inside the ZIP) | `6a45aee57185bf606620f6f359fdfd5413f55854a687f036",
+          "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.3"
+        },
+        "versions": [
+          {
+            "version": "v0.2.3",
+            "tag": "v0.2.3",
+            "prerelease": false,
+            "published": "2026-11-04T15:52:54Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.3/OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip",
+            "file": "OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip",
+            "size": 17018248,
+            "sha256": "b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.3\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.2, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Hong Kong (`CUSA03873`) Xbox controller prompts**: Xbox prompt compatibility is improved for the Hong Kong 1.00\n  game files reported in issue #4, in Refined and Classic mode.\n- **Stricter release",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.3"
+          },
+          {
+            "version": "v0.2.2",
+            "tag": "v0.2.2",
+            "prerelease": false,
+            "published": "2026-11-04T03:18:28Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.2/OdinSphereLeifthrasirPC-v0.2.2-windows-x64.zip",
+            "file": "OdinSphereLeifthrasirPC-v0.2.2-windows-x64.zip",
+            "size": 17018110,
+            "sha256": "f85f36c85185246a3fe283aa2109184ae3ab26aa56ce0b237724dc7cd1e167ea",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.2\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.1, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **EXIT GAME** is now in the native title menu, in Refined and Classic mode, on Windows and Linux.\n- **Xbox controller prompts** now cover every supported build, including copies of the game files th",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.2"
+          },
+          {
+            "version": "v0.2.1",
+            "tag": "v0.2.1",
+            "prerelease": false,
+            "published": "2026-10-31T22:28:28Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.1/OdinSphereLeifthrasirPC-v0.2.1-windows-x64.zip",
+            "file": "OdinSphereLeifthrasirPC-v0.2.1-windows-x64.zip",
+            "size": 16035315,
+            "sha256": "45a401a227b8e2e9444e0c0d3edd38a2c1faf34b5edbc7e361f19cf5b6c58014",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.1\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.0, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **CUSA03873 1.00 Hong Kong** is supported.\n- **CUSA05083 1.01 USA** is supported.\n- **Netherworld hang follow-up**: a second cause of the freeze reported in Issue #6 is fixed.\n\n## Fixes and compatib",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.1"
+          },
+          {
+            "version": "v0.2.0",
+            "tag": "v0.2.0",
+            "prerelease": false,
+            "published": "2026-10-31T05:28:07Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.0/OdinSphereLeifthrasirPC-v0.2.0-windows-x64.zip",
+            "file": "OdinSphereLeifthrasirPC-v0.2.0-windows-x64.zip",
+            "size": 16013242,
+            "sha256": "b893eab52118ab6f1b28b57744a04a80251af4e3cd0d2cb41e1fb17457c5da3c",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.0\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.1.0, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Unlock Bookshelf** (Gameplay, Off by default): the attic Bookshelf is usable from the start, with every entry and the\n  Special artwork. Your save is not changed, trophies use your real progressio",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.0"
+          },
+          {
+            "version": "v0.1.0",
+            "tag": "v0.1.0",
+            "prerelease": false,
+            "published": "2026-10-27T22:05:19Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.1.0/OdinSphereLeifthrasirPC-v0.1.0-windows-x64.zip",
+            "file": "OdinSphereLeifthrasirPC-v0.1.0-windows-x64.zip",
+            "size": 15957945,
+            "sha256": "c984e55d595372491eaa7ec86bb3b97a4ce708b1812dd578790a2231d100aea7",
+            "notes": "# Odin Sphere Leifthrasir PC v0.1.0 — First public release\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port: the game's own x86-64 code runs directly on the PC, with\na replacement for the PS4 system libraries and a Vulkan renderer derived from shadPS4. It runs natively on Windows, and\nexperimentally on Linux and Steam Deck as an AppImage. It is not an emulator, and on Linux it does not use Wine or Proton.\n\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\n## Highlights\n- **Native execution** of the Odin Sphere Leifthrasir PS4",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.1.0"
+          }
+        ]
+      },
+      "linux": {
+        "repo": "saulob/odin-sphere-leifthrasir-pc",
+        "maintainer": "saulob",
+        "stars": 188,
+        "launch": "trg",
+        "beta": {
+          "version": "v0.2.3",
+          "tag": "v0.2.3",
+          "prerelease": false,
+          "published": "2026-11-04T15:52:54Z",
+          "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.3/OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage",
+          "file": "OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage",
+          "size": 16570688,
+          "sha256": "6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d",
+          "notes": "# Odin Sphere Leifthrasir PC v0.2.3\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.2, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Hong Kong (`CUSA03873`) Xbox controller prompts**: Xbox prompt compatibility is improved for the Hong Kong 1.00\n  game files reported in issue #4, in Refined and Classic mode.\n- **Stricter release security checks**: the Windows package, both Windows executables and the Linux AppImage are now\n  scanned separately before a release is published.\n\n## Fixes and compatibility\n- **Hong Kong controller prompts**: `CUSA03873` 1.00 remains a supported build. Xbox prompt compatibility is\n  improved for the known Hong Kong button-art file reported in issue #4. Any other file is still checked as strictly as\n  before. The fix is based on that file's known identity and on the project's synthetic test coverage; it has not yet\n  been confirmed on a real Hong Kong installation, and the launcher's log says when this compatibility path is used.\n- **Release security**: the v0.2.2 Windows executable triggered a Microsoft Defender machine-learning detection on\n  VirusTotal while other tested builds with the same source did not. No malicious or unexpected code was found during\n  review. v0.2.3 introduces stricter release verification: the Windows package and its executables are scanned\n  separately, because a clean package scan does not cover the programs inside it.\n\n## Supported builds\n| Build | Title ID | Version |\n| --- | --- | --- |\n| USA | `CUSA05083` | 1.00 and 1.01 |\n| Japan | `CUSA01290` | 1.00 and 1.02 |\n| Europe | `CUSA05262` | 1.00 and 1.01 |\n| Hong Kong | `CUSA03873` | 1.00 |\n\nAny other version is refused, and the log then holds diagnostic information useful for adding it.\n\n## Downloads\n- **Windows:** `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip`\n- **Linux / Steam Deck (experimental):** `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage`, glibc 2.31 or newer\n\nInstallation steps, requirements and known limitations are in the\n[README](https://github.com/saulob/odin-sphere-leifthrasir-pc#readme).\n\n## GitHub issues\n- [#4 - Hong Kong build (`CUSA03873`)](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/4): Hong Kong\n  controller prompt compatibility is improved. It stays open until the reporter has tested v0.2.3.\n- [#15 - Microsoft Defender detection of the v0.2.2 executable](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/15):\n  release-security and false-positive investigation. v0.2.3 is scanned file by file; the result is listed below.\n\n### Security\n\nEach release file is scanned with VirusTotal before publication. A VirusTotal scan is an additional check, not a\nguarantee of safety, so please also verify the SHA-256 of your download.\n\n| File | VirusTotal |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | [VirusTotal](https://www.virustotal.com/gui/file/b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2?nocache=1) |\n| `odin_sphere_leifthrasir.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/6a45aee57185bf606620f6f359fdfd5413f55854a687f0366b4951be0ab06a66) |\n| `trg-updater.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/7a1bc7beaeb6fa047bbe1aeef0040c85d3de1039fa3032cb60d83a315de66eaa) |\n| `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage` | [VirusTotal](https://www.virustotal.com/gui/file/6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d?nocache=1) |\n\n## Checksums\n| File | SHA-256 |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | `b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2` |\n| `odin_sphere_leifthrasir.exe` (inside the ZIP) | `6a45aee57185bf606620f6f359fdfd5413f55854a687f036",
+          "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.3"
+        },
+        "stable": {
+          "version": "v0.2.3",
+          "tag": "v0.2.3",
+          "prerelease": false,
+          "published": "2026-11-04T15:52:54Z",
+          "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.3/OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage",
+          "file": "OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage",
+          "size": 16570688,
+          "sha256": "6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d",
+          "notes": "# Odin Sphere Leifthrasir PC v0.2.3\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.2, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Hong Kong (`CUSA03873`) Xbox controller prompts**: Xbox prompt compatibility is improved for the Hong Kong 1.00\n  game files reported in issue #4, in Refined and Classic mode.\n- **Stricter release security checks**: the Windows package, both Windows executables and the Linux AppImage are now\n  scanned separately before a release is published.\n\n## Fixes and compatibility\n- **Hong Kong controller prompts**: `CUSA03873` 1.00 remains a supported build. Xbox prompt compatibility is\n  improved for the known Hong Kong button-art file reported in issue #4. Any other file is still checked as strictly as\n  before. The fix is based on that file's known identity and on the project's synthetic test coverage; it has not yet\n  been confirmed on a real Hong Kong installation, and the launcher's log says when this compatibility path is used.\n- **Release security**: the v0.2.2 Windows executable triggered a Microsoft Defender machine-learning detection on\n  VirusTotal while other tested builds with the same source did not. No malicious or unexpected code was found during\n  review. v0.2.3 introduces stricter release verification: the Windows package and its executables are scanned\n  separately, because a clean package scan does not cover the programs inside it.\n\n## Supported builds\n| Build | Title ID | Version |\n| --- | --- | --- |\n| USA | `CUSA05083` | 1.00 and 1.01 |\n| Japan | `CUSA01290` | 1.00 and 1.02 |\n| Europe | `CUSA05262` | 1.00 and 1.01 |\n| Hong Kong | `CUSA03873` | 1.00 |\n\nAny other version is refused, and the log then holds diagnostic information useful for adding it.\n\n## Downloads\n- **Windows:** `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip`\n- **Linux / Steam Deck (experimental):** `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage`, glibc 2.31 or newer\n\nInstallation steps, requirements and known limitations are in the\n[README](https://github.com/saulob/odin-sphere-leifthrasir-pc#readme).\n\n## GitHub issues\n- [#4 - Hong Kong build (`CUSA03873`)](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/4): Hong Kong\n  controller prompt compatibility is improved. It stays open until the reporter has tested v0.2.3.\n- [#15 - Microsoft Defender detection of the v0.2.2 executable](https://github.com/saulob/odin-sphere-leifthrasir-pc/issues/15):\n  release-security and false-positive investigation. v0.2.3 is scanned file by file; the result is listed below.\n\n### Security\n\nEach release file is scanned with VirusTotal before publication. A VirusTotal scan is an additional check, not a\nguarantee of safety, so please also verify the SHA-256 of your download.\n\n| File | VirusTotal |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | [VirusTotal](https://www.virustotal.com/gui/file/b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2?nocache=1) |\n| `odin_sphere_leifthrasir.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/6a45aee57185bf606620f6f359fdfd5413f55854a687f0366b4951be0ab06a66) |\n| `trg-updater.exe` (Windows, inside the ZIP) | [VirusTotal](https://www.virustotal.com/gui/file/7a1bc7beaeb6fa047bbe1aeef0040c85d3de1039fa3032cb60d83a315de66eaa) |\n| `OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage` | [VirusTotal](https://www.virustotal.com/gui/file/6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d?nocache=1) |\n\n## Checksums\n| File | SHA-256 |\n| --- | --- |\n| `OdinSphereLeifthrasirPC-v0.2.3-windows-x64.zip` | `b3712ecb5ad6b0b0cbf5ef8bc4c4b6cc8a1d117ebb3c2b2b40e48b0516853ac2` |\n| `odin_sphere_leifthrasir.exe` (inside the ZIP) | `6a45aee57185bf606620f6f359fdfd5413f55854a687f036",
+          "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.3"
+        },
+        "versions": [
+          {
+            "version": "v0.2.3",
+            "tag": "v0.2.3",
+            "prerelease": false,
+            "published": "2026-11-04T15:52:54Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.3/OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage",
+            "file": "OdinSphereLeifthrasirPC-v0.2.3-x86_64.AppImage",
+            "size": 16570688,
+            "sha256": "6bf58d0cd7af0ff7dd32826ebd75b5f8b29db54f70a152c83af6aec5b7306a4d",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.3\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.2, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Hong Kong (`CUSA03873`) Xbox controller prompts**: Xbox prompt compatibility is improved for the Hong Kong 1.00\n  game files reported in issue #4, in Refined and Classic mode.\n- **Stricter release",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.3"
+          },
+          {
+            "version": "v0.2.2",
+            "tag": "v0.2.2",
+            "prerelease": false,
+            "published": "2026-11-04T03:18:28Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.2/OdinSphereLeifthrasirPC-v0.2.2-x86_64.AppImage",
+            "file": "OdinSphereLeifthrasirPC-v0.2.2-x86_64.AppImage",
+            "size": 16566592,
+            "sha256": "3fc2111f31a057cfee02fc93d66766b977f26a4c8ebacada2d43201e34ed0c4d",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.2\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.1, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **EXIT GAME** is now in the native title menu, in Refined and Classic mode, on Windows and Linux.\n- **Xbox controller prompts** now cover every supported build, including copies of the game files th",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.2"
+          },
+          {
+            "version": "v0.2.1",
+            "tag": "v0.2.1",
+            "prerelease": false,
+            "published": "2026-10-31T22:28:28Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.1/OdinSphereLeifthrasirPC-v0.2.1-x86_64.AppImage",
+            "file": "OdinSphereLeifthrasirPC-v0.2.1-x86_64.AppImage",
+            "size": 15436096,
+            "sha256": "ad348500a75045c6416005fbce811d140a6b103314ca2ea4f1d331f57d8bdaee",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.1\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.2.0, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **CUSA03873 1.00 Hong Kong** is supported.\n- **CUSA05083 1.01 USA** is supported.\n- **Netherworld hang follow-up**: a second cause of the freeze reported in Issue #6 is fixed.\n\n## Fixes and compatib",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.1"
+          },
+          {
+            "version": "v0.2.0",
+            "tag": "v0.2.0",
+            "prerelease": false,
+            "published": "2026-10-31T05:28:07Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.2.0/OdinSphereLeifthrasirPC-v0.2.0-x86_64.AppImage",
+            "file": "OdinSphereLeifthrasirPC-v0.2.0-x86_64.AppImage",
+            "size": 15419712,
+            "sha256": "a4e4d30ce9f555fee48d3dc04ccc6c6a4c12545fe49bcd10cc916a4022e113ed",
+            "notes": "# Odin Sphere Leifthrasir PC v0.2.0\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port, for Windows and, experimentally, Linux and Steam Deck.\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\nIf you use v0.1.0, the launcher offers this release with **UPDATE NOW**. Your game files, saves, settings and logs are kept.\n\n## Highlights\n- **Unlock Bookshelf** (Gameplay, Off by default): the attic Bookshelf is usable from the start, with every entry and the\n  Special artwork. Your save is not changed, trophies use your real progressio",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.2.0"
+          },
+          {
+            "version": "v0.1.0",
+            "tag": "v0.1.0",
+            "prerelease": false,
+            "published": "2026-10-27T22:05:19Z",
+            "url": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/download/v0.1.0/OdinSphereLeifthrasirPC-v0.1.0-x86_64.AppImage",
+            "file": "OdinSphereLeifthrasirPC-v0.1.0-x86_64.AppImage",
+            "size": 15358272,
+            "sha256": "f879f2991872d91f459e2c4baa689777be5e1ca8decb800e62ed2d68e638f403",
+            "notes": "# Odin Sphere Leifthrasir PC v0.1.0 — First public release\n\nOdin Sphere Leifthrasir for PlayStation 4 as a native PC port: the game's own x86-64 code runs directly on the PC, with\na replacement for the PS4 system libraries and a Vulkan renderer derived from shadPS4. It runs natively on Windows, and\nexperimentally on Linux and Steam Deck as an AppImage. It is not an emulator, and on Linux it does not use Wine or Proton.\n\n**No game files are included.** You need your own legally obtained Odin Sphere Leifthrasir PS4 package.\n\n## Highlights\n- **Native execution** of the Odin Sphere Leifthrasir PS4",
+            "page": "https://github.com/saulob/odin-sphere-leifthrasir-pc/releases/tag/v0.1.0"
+          }
+        ]
+      }
+    },
+    "13-sentinels-aegis-rim": {
+      "windows": {
+        "repo": "saulob/13-sentinels-aegis-rim-pc",
+        "maintainer": "saulob",
+        "stars": 94,
+        "launch": "trg",
+        "beta": {
+          "version": "v0.1.0",
+          "tag": "v0.1.0",
+          "prerelease": false,
+          "published": "2026-11-09T00:35:23Z",
+          "url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+          "file": "13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+          "size": 63614016,
+          "sha256": "38eae395367bef6e65e32d9897e69732b877d3669f787ccefe571c0ee72c6ce3",
+          "notes": "## 13 Sentinels: Aegis Rim PC Port v0.1.0\r\n\r\n**v0.1.0 is the first release.** 13 Sentinels: Aegis Rim for PlayStation 4 runs natively on Windows and Linux: the game's own code runs on the PC with a replacement for the PS4 system libraries and a Vulkan renderer. Windows and Linux ship together, from the same version and with the same game support.\r\n\r\nNo game files are included. You need your own legally obtained, decrypted 13 Sentinels: Aegis Rim PS4 package (.pkg) of a supported build.\r\n\r\n## Highlights\r\n\r\n- **Nine supported game builds** in four regions: USA, Europe, Japan and Asia, base games and updates.\r\n- **Launcher** with **Install Game**, **Install Update** and **Remove Update**; the newest installed update of the region you installed last starts, with no version to pick.\r\n- **Render resolutions** from 480p to 4K, with the game's PS4 Pro path above 1080p, at **60 FPS**.\r\n- **Xbox controller prompts** throughout the game, or the original PlayStation art.\r\n- **Skip Intro** and **Exit Game** on the title menu.\r\n- **Bug Report** from the launcher, sent only when you press **Send report**.\r\n- **Windows x64 ZIP** and **Linux x86_64 AppImage** with the same applicable features.\r\n\r\n## Supported game versions\r\n\r\n| Region | Title ID | Versions |\r\n| --- | --- | --- |\r\n| USA | CUSA19610 | 1.00 (base), 1.01, 1.02 |\r\n| Europe | CUSA19620 | 1.00 (base), 1.01 |\r\n| Japan | CUSA10602 | 1.00 (base), 1.03, 1.04 |\r\n| Asia | CUSA18093 | 1.00 (base) |\r\n\r\nEach update is installed over the base package of the same region; an update for another Title ID is refused. Any other build is refused with an explanation.\r\n\r\nCUSA19610 USA is the primary development build and has received the most gameplay testing. Europe, Japan and Asia have been verified to install, boot, start the game and pass focused compatibility checks, but they have not been fully played from start to finish. Region-specific issues may still exist.\r\n\r\n## Windows, Linux and Steam Deck\r\n\r\nThe Linux AppImage has the same applicable feature set as Windows. Both are built from the same sources, the same supported-build tables and the same game patches, and the release gate compares the two platforms' feature contracts for all nine builds before a release is prepared\n\nLinux and Steam Deck use the same integrated TRG launcher and the same applicable launcher pages and options as Windows, including Play, Display, Graphics, Gameplay, Controls, Trophies, Bug Report and About. Platform-specific Windows-only options such as Direct3D 11 and Allow overlay programs are hidden on Linux\n\nSteam Deck uses the Linux x86_64 AppImage directly and does not require Wine or Proton. Support is experimental because the AppImage has been built and validated headlessly but has not yet been gameplay-tested on real Linux or Steam Deck hardware\r\n\r\nWhat differs is what only one operating system has:\r\n\r\n- **Direct3D 11 (ANGLE)** is a Windows renderer; Linux offers Vulkan and OpenGL.\r\n- **Allow overlay programs** is a Windows option; Linux overlays (Vulkan layers, `LD_PRELOAD`) attach without it.\r\n- Updates: Windows replaces the program files with `trg-updater.exe`; the AppImage replaces itself, keeps its permissions and starts again from the same file.\r\n- **Install Game** uses the Windows file dialog, or on Linux `zenity`/`kdialog` when installed and the launcher's own file chooser otherwise.\r\n\r\n## Features\r\n\r\n- **Install Game**, **Install Update**, **Remove Update** and **Reinstall game**, with saves and settings kept and a failed install leaving the previous one as it was.\r\n- **Render resolution**: 480p, 720p, Native (1080p), 1440p, 1800p and 4K. The picture stays 16:9, with black bars on other window shapes.\r\n- **60 FPS**, VSync, Windowed and Borderless Fullscreen (F11), monitor and graphics card choice, SMAA, texture filtering, FSR 1 and RCAS.\r\n- **Text language** of the build's own languages, and the game's own **voice** options.\r\n- **Controllers**: Xbox controllers with Xbox button prompts in the menus, help s",
+          "page": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0"
+        },
+        "stable": {
+          "version": "v0.1.0",
+          "tag": "v0.1.0",
+          "prerelease": false,
+          "published": "2026-11-09T00:35:23Z",
+          "url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+          "file": "13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+          "size": 63614016,
+          "sha256": "38eae395367bef6e65e32d9897e69732b877d3669f787ccefe571c0ee72c6ce3",
+          "notes": "## 13 Sentinels: Aegis Rim PC Port v0.1.0\r\n\r\n**v0.1.0 is the first release.** 13 Sentinels: Aegis Rim for PlayStation 4 runs natively on Windows and Linux: the game's own code runs on the PC with a replacement for the PS4 system libraries and a Vulkan renderer. Windows and Linux ship together, from the same version and with the same game support.\r\n\r\nNo game files are included. You need your own legally obtained, decrypted 13 Sentinels: Aegis Rim PS4 package (.pkg) of a supported build.\r\n\r\n## Highlights\r\n\r\n- **Nine supported game builds** in four regions: USA, Europe, Japan and Asia, base games and updates.\r\n- **Launcher** with **Install Game**, **Install Update** and **Remove Update**; the newest installed update of the region you installed last starts, with no version to pick.\r\n- **Render resolutions** from 480p to 4K, with the game's PS4 Pro path above 1080p, at **60 FPS**.\r\n- **Xbox controller prompts** throughout the game, or the original PlayStation art.\r\n- **Skip Intro** and **Exit Game** on the title menu.\r\n- **Bug Report** from the launcher, sent only when you press **Send report**.\r\n- **Windows x64 ZIP** and **Linux x86_64 AppImage** with the same applicable features.\r\n\r\n## Supported game versions\r\n\r\n| Region | Title ID | Versions |\r\n| --- | --- | --- |\r\n| USA | CUSA19610 | 1.00 (base), 1.01, 1.02 |\r\n| Europe | CUSA19620 | 1.00 (base), 1.01 |\r\n| Japan | CUSA10602 | 1.00 (base), 1.03, 1.04 |\r\n| Asia | CUSA18093 | 1.00 (base) |\r\n\r\nEach update is installed over the base package of the same region; an update for another Title ID is refused. Any other build is refused with an explanation.\r\n\r\nCUSA19610 USA is the primary development build and has received the most gameplay testing. Europe, Japan and Asia have been verified to install, boot, start the game and pass focused compatibility checks, but they have not been fully played from start to finish. Region-specific issues may still exist.\r\n\r\n## Windows, Linux and Steam Deck\r\n\r\nThe Linux AppImage has the same applicable feature set as Windows. Both are built from the same sources, the same supported-build tables and the same game patches, and the release gate compares the two platforms' feature contracts for all nine builds before a release is prepared\n\nLinux and Steam Deck use the same integrated TRG launcher and the same applicable launcher pages and options as Windows, including Play, Display, Graphics, Gameplay, Controls, Trophies, Bug Report and About. Platform-specific Windows-only options such as Direct3D 11 and Allow overlay programs are hidden on Linux\n\nSteam Deck uses the Linux x86_64 AppImage directly and does not require Wine or Proton. Support is experimental because the AppImage has been built and validated headlessly but has not yet been gameplay-tested on real Linux or Steam Deck hardware\r\n\r\nWhat differs is what only one operating system has:\r\n\r\n- **Direct3D 11 (ANGLE)** is a Windows renderer; Linux offers Vulkan and OpenGL.\r\n- **Allow overlay programs** is a Windows option; Linux overlays (Vulkan layers, `LD_PRELOAD`) attach without it.\r\n- Updates: Windows replaces the program files with `trg-updater.exe`; the AppImage replaces itself, keeps its permissions and starts again from the same file.\r\n- **Install Game** uses the Windows file dialog, or on Linux `zenity`/`kdialog` when installed and the launcher's own file chooser otherwise.\r\n\r\n## Features\r\n\r\n- **Install Game**, **Install Update**, **Remove Update** and **Reinstall game**, with saves and settings kept and a failed install leaving the previous one as it was.\r\n- **Render resolution**: 480p, 720p, Native (1080p), 1440p, 1800p and 4K. The picture stays 16:9, with black bars on other window shapes.\r\n- **60 FPS**, VSync, Windowed and Borderless Fullscreen (F11), monitor and graphics card choice, SMAA, texture filtering, FSR 1 and RCAS.\r\n- **Text language** of the build's own languages, and the game's own **voice** options.\r\n- **Controllers**: Xbox controllers with Xbox button prompts in the menus, help s",
+          "page": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0"
+        },
+        "versions": [
+          {
+            "version": "v0.1.0",
+            "tag": "v0.1.0",
+            "prerelease": false,
+            "published": "2026-11-09T00:35:23Z",
+            "url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+            "file": "13SentinelsAegisRimPC-v0.1.0-windows-x64.zip",
+            "size": 63614016,
+            "sha256": "38eae395367bef6e65e32d9897e69732b877d3669f787ccefe571c0ee72c6ce3",
+            "notes": "## 13 Sentinels: Aegis Rim PC Port v0.1.0\r\n\r\n**v0.1.0 is the first release.** 13 Sentinels: Aegis Rim for PlayStation 4 runs natively on Windows and Linux: the game's own code runs on the PC with a replacement for the PS4 system libraries and a Vulkan renderer. Windows and Linux ship together, from the same version and with the same game support.\r\n\r\nNo game files are included. You need your own legally obtained, decrypted 13 Sentinels: Aegis Rim PS4 package (.pkg) of a supported build.\r\n\r\n## Highlights\r\n\r\n- **Nine supported game builds** in four regions: USA, Europe, Japan and Asia, base games",
+            "page": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0"
+          }
+        ]
+      },
+      "linux": {
+        "repo": "saulob/13-sentinels-aegis-rim-pc",
+        "maintainer": "saulob",
+        "stars": 94,
+        "launch": "trg",
+        "beta": {
+          "version": "v0.1.0",
+          "tag": "v0.1.0",
+          "prerelease": false,
+          "published": "2026-11-09T00:35:23Z",
+          "url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+          "file": "13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+          "size": 20748608,
+          "sha256": "2f902c70be6a83ba69b7ff96938ed8149302464c0efda8026c95bf9f6b62b83a",
+          "notes": "## 13 Sentinels: Aegis Rim PC Port v0.1.0\r\n\r\n**v0.1.0 is the first release.** 13 Sentinels: Aegis Rim for PlayStation 4 runs natively on Windows and Linux: the game's own code runs on the PC with a replacement for the PS4 system libraries and a Vulkan renderer. Windows and Linux ship together, from the same version and with the same game support.\r\n\r\nNo game files are included. You need your own legally obtained, decrypted 13 Sentinels: Aegis Rim PS4 package (.pkg) of a supported build.\r\n\r\n## Highlights\r\n\r\n- **Nine supported game builds** in four regions: USA, Europe, Japan and Asia, base games and updates.\r\n- **Launcher** with **Install Game**, **Install Update** and **Remove Update**; the newest installed update of the region you installed last starts, with no version to pick.\r\n- **Render resolutions** from 480p to 4K, with the game's PS4 Pro path above 1080p, at **60 FPS**.\r\n- **Xbox controller prompts** throughout the game, or the original PlayStation art.\r\n- **Skip Intro** and **Exit Game** on the title menu.\r\n- **Bug Report** from the launcher, sent only when you press **Send report**.\r\n- **Windows x64 ZIP** and **Linux x86_64 AppImage** with the same applicable features.\r\n\r\n## Supported game versions\r\n\r\n| Region | Title ID | Versions |\r\n| --- | --- | --- |\r\n| USA | CUSA19610 | 1.00 (base), 1.01, 1.02 |\r\n| Europe | CUSA19620 | 1.00 (base), 1.01 |\r\n| Japan | CUSA10602 | 1.00 (base), 1.03, 1.04 |\r\n| Asia | CUSA18093 | 1.00 (base) |\r\n\r\nEach update is installed over the base package of the same region; an update for another Title ID is refused. Any other build is refused with an explanation.\r\n\r\nCUSA19610 USA is the primary development build and has received the most gameplay testing. Europe, Japan and Asia have been verified to install, boot, start the game and pass focused compatibility checks, but they have not been fully played from start to finish. Region-specific issues may still exist.\r\n\r\n## Windows, Linux and Steam Deck\r\n\r\nThe Linux AppImage has the same applicable feature set as Windows. Both are built from the same sources, the same supported-build tables and the same game patches, and the release gate compares the two platforms' feature contracts for all nine builds before a release is prepared\n\nLinux and Steam Deck use the same integrated TRG launcher and the same applicable launcher pages and options as Windows, including Play, Display, Graphics, Gameplay, Controls, Trophies, Bug Report and About. Platform-specific Windows-only options such as Direct3D 11 and Allow overlay programs are hidden on Linux\n\nSteam Deck uses the Linux x86_64 AppImage directly and does not require Wine or Proton. Support is experimental because the AppImage has been built and validated headlessly but has not yet been gameplay-tested on real Linux or Steam Deck hardware\r\n\r\nWhat differs is what only one operating system has:\r\n\r\n- **Direct3D 11 (ANGLE)** is a Windows renderer; Linux offers Vulkan and OpenGL.\r\n- **Allow overlay programs** is a Windows option; Linux overlays (Vulkan layers, `LD_PRELOAD`) attach without it.\r\n- Updates: Windows replaces the program files with `trg-updater.exe`; the AppImage replaces itself, keeps its permissions and starts again from the same file.\r\n- **Install Game** uses the Windows file dialog, or on Linux `zenity`/`kdialog` when installed and the launcher's own file chooser otherwise.\r\n\r\n## Features\r\n\r\n- **Install Game**, **Install Update**, **Remove Update** and **Reinstall game**, with saves and settings kept and a failed install leaving the previous one as it was.\r\n- **Render resolution**: 480p, 720p, Native (1080p), 1440p, 1800p and 4K. The picture stays 16:9, with black bars on other window shapes.\r\n- **60 FPS**, VSync, Windowed and Borderless Fullscreen (F11), monitor and graphics card choice, SMAA, texture filtering, FSR 1 and RCAS.\r\n- **Text language** of the build's own languages, and the game's own **voice** options.\r\n- **Controllers**: Xbox controllers with Xbox button prompts in the menus, help s",
+          "page": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0"
+        },
+        "stable": {
+          "version": "v0.1.0",
+          "tag": "v0.1.0",
+          "prerelease": false,
+          "published": "2026-11-09T00:35:23Z",
+          "url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+          "file": "13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+          "size": 20748608,
+          "sha256": "2f902c70be6a83ba69b7ff96938ed8149302464c0efda8026c95bf9f6b62b83a",
+          "notes": "## 13 Sentinels: Aegis Rim PC Port v0.1.0\r\n\r\n**v0.1.0 is the first release.** 13 Sentinels: Aegis Rim for PlayStation 4 runs natively on Windows and Linux: the game's own code runs on the PC with a replacement for the PS4 system libraries and a Vulkan renderer. Windows and Linux ship together, from the same version and with the same game support.\r\n\r\nNo game files are included. You need your own legally obtained, decrypted 13 Sentinels: Aegis Rim PS4 package (.pkg) of a supported build.\r\n\r\n## Highlights\r\n\r\n- **Nine supported game builds** in four regions: USA, Europe, Japan and Asia, base games and updates.\r\n- **Launcher** with **Install Game**, **Install Update** and **Remove Update**; the newest installed update of the region you installed last starts, with no version to pick.\r\n- **Render resolutions** from 480p to 4K, with the game's PS4 Pro path above 1080p, at **60 FPS**.\r\n- **Xbox controller prompts** throughout the game, or the original PlayStation art.\r\n- **Skip Intro** and **Exit Game** on the title menu.\r\n- **Bug Report** from the launcher, sent only when you press **Send report**.\r\n- **Windows x64 ZIP** and **Linux x86_64 AppImage** with the same applicable features.\r\n\r\n## Supported game versions\r\n\r\n| Region | Title ID | Versions |\r\n| --- | --- | --- |\r\n| USA | CUSA19610 | 1.00 (base), 1.01, 1.02 |\r\n| Europe | CUSA19620 | 1.00 (base), 1.01 |\r\n| Japan | CUSA10602 | 1.00 (base), 1.03, 1.04 |\r\n| Asia | CUSA18093 | 1.00 (base) |\r\n\r\nEach update is installed over the base package of the same region; an update for another Title ID is refused. Any other build is refused with an explanation.\r\n\r\nCUSA19610 USA is the primary development build and has received the most gameplay testing. Europe, Japan and Asia have been verified to install, boot, start the game and pass focused compatibility checks, but they have not been fully played from start to finish. Region-specific issues may still exist.\r\n\r\n## Windows, Linux and Steam Deck\r\n\r\nThe Linux AppImage has the same applicable feature set as Windows. Both are built from the same sources, the same supported-build tables and the same game patches, and the release gate compares the two platforms' feature contracts for all nine builds before a release is prepared\n\nLinux and Steam Deck use the same integrated TRG launcher and the same applicable launcher pages and options as Windows, including Play, Display, Graphics, Gameplay, Controls, Trophies, Bug Report and About. Platform-specific Windows-only options such as Direct3D 11 and Allow overlay programs are hidden on Linux\n\nSteam Deck uses the Linux x86_64 AppImage directly and does not require Wine or Proton. Support is experimental because the AppImage has been built and validated headlessly but has not yet been gameplay-tested on real Linux or Steam Deck hardware\r\n\r\nWhat differs is what only one operating system has:\r\n\r\n- **Direct3D 11 (ANGLE)** is a Windows renderer; Linux offers Vulkan and OpenGL.\r\n- **Allow overlay programs** is a Windows option; Linux overlays (Vulkan layers, `LD_PRELOAD`) attach without it.\r\n- Updates: Windows replaces the program files with `trg-updater.exe`; the AppImage replaces itself, keeps its permissions and starts again from the same file.\r\n- **Install Game** uses the Windows file dialog, or on Linux `zenity`/`kdialog` when installed and the launcher's own file chooser otherwise.\r\n\r\n## Features\r\n\r\n- **Install Game**, **Install Update**, **Remove Update** and **Reinstall game**, with saves and settings kept and a failed install leaving the previous one as it was.\r\n- **Render resolution**: 480p, 720p, Native (1080p), 1440p, 1800p and 4K. The picture stays 16:9, with black bars on other window shapes.\r\n- **60 FPS**, VSync, Windowed and Borderless Fullscreen (F11), monitor and graphics card choice, SMAA, texture filtering, FSR 1 and RCAS.\r\n- **Text language** of the build's own languages, and the game's own **voice** options.\r\n- **Controllers**: Xbox controllers with Xbox button prompts in the menus, help s",
+          "page": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0"
+        },
+        "versions": [
+          {
+            "version": "v0.1.0",
+            "tag": "v0.1.0",
+            "prerelease": false,
+            "published": "2026-11-09T00:35:23Z",
+            "url": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/download/v0.1.0/13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+            "file": "13SentinelsAegisRimPC-v0.1.0-x86_64.AppImage",
+            "size": 20748608,
+            "sha256": "2f902c70be6a83ba69b7ff96938ed8149302464c0efda8026c95bf9f6b62b83a",
+            "notes": "## 13 Sentinels: Aegis Rim PC Port v0.1.0\r\n\r\n**v0.1.0 is the first release.** 13 Sentinels: Aegis Rim for PlayStation 4 runs natively on Windows and Linux: the game's own code runs on the PC with a replacement for the PS4 system libraries and a Vulkan renderer. Windows and Linux ship together, from the same version and with the same game support.\r\n\r\nNo game files are included. You need your own legally obtained, decrypted 13 Sentinels: Aegis Rim PS4 package (.pkg) of a supported build.\r\n\r\n## Highlights\r\n\r\n- **Nine supported game builds** in four regions: USA, Europe, Japan and Asia, base games",
+            "page": "https://github.com/saulob/13-sentinels-aegis-rim-pc/releases/tag/v0.1.0"
           }
         ]
       }
