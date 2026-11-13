@@ -3231,6 +3231,25 @@
           }
         ]
       }
+    },
+    {
+      "id": "dragons-crown-pro",
+      "name": "Dragon's Crown Pro",
+      "titleIds": ["CUSA10454", "CUSA07001", "CUSA10209", "CUSA10487"],
+      "match": "dragon'?s\\s*crown",
+      "genre": "Action",
+      "genreLocalized": {
+        "fr": "Action",
+        "en-US": "Action"
+      },
+      "glow": "#c9842a",
+      "synopsis": {
+        "fr": "Quatre aventuriers explorent les labyrinthes du royaume en quête d’un trésor maudit.",
+        "en-US": "Four adventurers explore the kingdom's labyrinths in search of a cursed treasure."
+      },
+      "runtimes": [
+        {"platform": "windows", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
+      ]
     }
   ]
 }

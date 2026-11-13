@@ -55,6 +55,7 @@ The `launch` values:
 - `ps4rt-launch`: `scripts/ps4rt_launch.py --game <folder>`.
 - `ps4rt-run`: `run.py` with `PS4RT_GAME_DIR`, for runtimes shipped with the Ravn launcher.
 - `native-play`: a native launcher without Python, `bin/… Launcher.exe --play`, which launches the game named in `out/launcher.ini`.
+- `trg`: a TRG port (`dragons_crown_pro.exe` at the runtime root). Crowbar writes the ini and skips the port's launcher.
 
 On Windows, Python scripts run with the runtime's own Python in `python/`.
 
