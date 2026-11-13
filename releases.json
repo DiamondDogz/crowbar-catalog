@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T13:28:55+00:00",
+  "generatedAt": "2026-11-13T14:13:33+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -479,18 +479,30 @@
         "stars": 9,
         "launch": "crowbar-json",
         "beta": {
-          "version": "1.0.1-pause.4",
-          "tag": "windows-1.0.1-pause.4",
+          "version": "1.0.1-pause.5",
+          "tag": "windows-1.0.1-pause.5",
           "prerelease": true,
-          "published": "2026-11-13T13:25:23Z",
-          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.1-pause.4/GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.4.zip",
-          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.4.zip",
-          "size": 93602961,
-          "sha256": "f51d06f9ea9d668c3f0d3e16fa76f5bb3f980a73dccd234f8d6562759df8d523",
-          "notes": "Test build of branch crowbar-pause (5fd5cc4): pause from Crowbar's Guide menu.\n\nSHA-256: f51d06f9ea9d668c3f0d3e16fa76f5bb3f980a73dccd234f8d6562759df8d523\n",
-          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1-pause.4"
+          "published": "2026-11-13T14:10:23Z",
+          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.1-pause.5/GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.5.zip",
+          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.5.zip",
+          "size": 93603018,
+          "sha256": "ed06dc0675ce0635769edfbdac7810c23dea9e4ac3b99c8936d5ec2cff63b7a4",
+          "notes": "Test build of branch crowbar-pause (d8ce0db): pause from Crowbar's Guide menu.\n\nSHA-256: ed06dc0675ce0635769edfbdac7810c23dea9e4ac3b99c8936d5ec2cff63b7a4\n",
+          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1-pause.5"
         },
         "versions": [
+          {
+            "version": "1.0.1-pause.5",
+            "tag": "windows-1.0.1-pause.5",
+            "prerelease": true,
+            "published": "2026-11-13T14:10:23Z",
+            "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.1-pause.5/GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.5.zip",
+            "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.5.zip",
+            "size": 93603018,
+            "sha256": "ed06dc0675ce0635769edfbdac7810c23dea9e4ac3b99c8936d5ec2cff63b7a4",
+            "notes": "Test build of branch crowbar-pause (d8ce0db): pause from Crowbar's Guide menu.\n\nSHA-256: ed06dc0675ce0635769edfbdac7810c23dea9e4ac3b99c8936d5ec2cff63b7a4\n",
+            "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1-pause.5"
+          },
           {
             "version": "1.0.1-pause.4",
             "tag": "windows-1.0.1-pause.4",
