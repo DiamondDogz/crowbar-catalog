@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T14:16:00+00:00",
+  "generatedAt": "2026-11-13T15:41:08+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -9,16 +9,16 @@
         "stars": 45,
         "launch": "ps4rt-launch",
         "beta": {
-          "version": "1.1.4",
-          "tag": "windows-1.1.4",
-          "prerelease": false,
-          "published": "2026-11-04T04:25:14Z",
-          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.4/Kagekidan-windows-1.1.4.zip",
-          "file": "Kagekidan-windows-1.1.4.zip",
-          "size": 87034569,
-          "sha256": "8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921",
-          "notes": "It is windows-1.1.3, plus a language choice for the game. Stay on windows-1.1.2 if you do not want the trophies. The game is not included.\n\nIn the launcher, the globe sets the game language. Four choices:\n\n- English\n- Français\n- Deutsch\n- Español\n\nThe next Play uses that language for the game's text. Trophy names and the in-game trophy card use the same language. Spoken voices stay in Japanese.\n\nThe EN/FR button is separate. It only switches the launcher between English and French. It does not change the game.\n\nThe trophy list no longer has its own language buttons. Japanese, Korean and Chinese are not offered, because this version of the game does not display them. A language already chosen in windows-1.1.3 is kept when it is one of the four above.\n\nOnly the launcher changed. Kagekidan.exe and the runtime are the same files as windows-1.1.3.\n\n`8756c6a0bb35131abaad9e23f044299cb16670547a22d2f3c75ec540da404921  Kagekidan-windows-1.1.4.zip`\n\n## windows-1.1.4\n\nC'est windows-1.1.3, plus le choix de la langue du jeu. Restez sur windows-1.1.2 si vous ne voulez pas des trophées. Le jeu n'est pas inclus.\n\nDans le lanceur, le globe règle la langue du jeu. Quatre choix :\n\n- English\n- Français\n- Deutsch\n- Español\n\nLe prochain Jouer utilise cette langue pour les textes du jeu. Les noms des trophées et la carte dans le jeu utilisent la même langue. Les voix restent en japonais.\n\nLe bouton EN/FR est à part. Il ne fait passer que le lanceur de l'anglais au français. Il ne change pas le jeu.\n\nLa liste des trophées n'a plus ses propres boutons de langue. Le japonais, le coréen et le chinois ne sont pas proposés : cette version du jeu ne les affiche pas. Une langue déjà choisie dans windows-1.1.3 est gardée si elle fait partie des quatre ci-dessus.\n\nSeul le lanceur change. Kagekidan.exe et le runtime sont les mêmes fichiers que windows-1.1.3.\n",
-          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.4"
+          "version": "1.1.5-pause.1",
+          "tag": "windows-1.1.5-pause.1",
+          "prerelease": true,
+          "published": "2026-11-13T15:09:19Z",
+          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.5-pause.1/Kagekidan-windows-1.1.5-pause.1.zip",
+          "file": "Kagekidan-windows-1.1.5-pause.1.zip",
+          "size": 78800433,
+          "sha256": "4465864ed5386ba9f07059bbd75d2f2316e249dbb206d3c62ac0baa7da078ea5",
+          "notes": "windows-1.1.4 with a runtime built from branch crowbar-pause (cdaacb5): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: 4465864ed5386ba9f07059bbd75d2f2316e249dbb206d3c62ac0baa7da078ea5\n",
+          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.5-pause.1"
         },
         "stable": {
           "version": "1.1.4",
@@ -33,6 +33,18 @@
           "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.4"
         },
         "versions": [
+          {
+            "version": "1.1.5-pause.1",
+            "tag": "windows-1.1.5-pause.1",
+            "prerelease": true,
+            "published": "2026-11-13T15:09:19Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.1.5-pause.1/Kagekidan-windows-1.1.5-pause.1.zip",
+            "file": "Kagekidan-windows-1.1.5-pause.1.zip",
+            "size": 78800433,
+            "sha256": "4465864ed5386ba9f07059bbd75d2f2316e249dbb206d3c62ac0baa7da078ea5",
+            "notes": "windows-1.1.4 with a runtime built from branch crowbar-pause (cdaacb5): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: 4465864ed5386ba9f07059bbd75d2f2316e249dbb206d3c62ac0baa7da078ea5\n",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.5-pause.1"
+          },
           {
             "version": "1.1.4",
             "tag": "windows-1.1.4",
@@ -192,7 +204,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 44,
+        "stars": 45,
         "launch": "native-play",
         "beta": {
           "version": "v1.0.1",
@@ -321,16 +333,16 @@
         "stars": 27,
         "launch": "ps4rt-run",
         "beta": {
-          "version": "1.2",
-          "tag": "windows-1.2",
-          "prerelease": false,
-          "published": "2026-11-04T19:28:34Z",
-          "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2/Ravn-windows-1.2.zip",
-          "file": "Ravn-windows-1.2.zip",
-          "size": 84587696,
-          "sha256": "ee116cd234a81e45176044e2e5aa4debc2be871b6454339b3c8decfcc6c93aa7",
-          "notes": "First Windows release of Valkyria Revolution PS4RT, with the Ravn launcher. Unofficial, not affiliated with SEGA. The game is not included.\n\nBuilt from HekamiAeon's [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) `main`, commit `635e142`: tag v1.2 plus one documentation commit.\n\nYou need your own extracted copy of the base game, **CUSA06810**, with no update, as the Linux release does. Unzip the archive anywhere and run `Ravn.exe`. The steps are in INSTALL.md inside the archive.\n\n- **Ravn**: game folder, graphics settings and trophy list. The theme and visuals are original; no SEGA art or sound is included.\n- **Settings**: those of the Linux release's in-game menu.\n  - Output: 1080p, 1440p or 4K.\n  - Window: windowed, borderless or fullscreen.\n  - Upscaling: Off / Original, FSR 3.1 or FSR 4 v07. FSR 4 needs a recent GPU and falls back to FSR 3.1.\n  - Anisotropic filtering, applied on restart.\n  - Sharpening.\n- **Trophies**: local, read from your `trophy00.trp`. Nothing is sent. A card shows in game when one unlocks.\n- In game, Insert, or L2 + R3, opens the overlay.\n\nTested on Windows 11 26H2 with an Intel Core i9-12900KF and an NVIDIA GeForce RTX 3090, Studio driver 617.42. The game started and played through the Molda campaign, and trophies unlocked. A complete playthrough is not verified.\n\nThe SHA-256 of `Ravn-windows-1.2.zip` is in `Ravn-windows-1.2.zip.sha256`.\n\n## windows-1.2\n\nPremière version Windows de Valkyria Revolution PS4RT, avec le lanceur Ravn. Non officielle, aucun lien avec SEGA. Le jeu n'est pas inclus.\n\nCompilée depuis le `main` de [valkyria-revolution-ps4rt](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) de HekamiAeon, commit `635e142` : le tag v1.2 plus un commit de documentation.\n\nIl faut votre propre copie extraite du jeu de base, **CUSA06810**, sans mise à jour, comme pour la version Linux. Décompressez l'archive où vous voulez et lancez `Ravn.exe`. Les étapes sont dans INSTALL.md, dans l'archive.\n\n- **Ravn** : dossier du jeu, réglages graphiques et liste des trophées. Le thème et les visuels sont originaux ; aucune image ni aucun son de SEGA n'est inclus.\n- **Réglages** : ceux du menu en jeu de la version Linux.\n  - Sortie : 1080p, 1440p ou 4K.\n  - Fenêtre : fenêtré, sans bordure ou plein écran.\n  - Upscaling : Désactivé / Original, FSR 3.1 ou FSR 4 v07. FSR 4 demande un GPU récent et se replie sur FSR 3.1.\n  - Filtrage anisotrope, appliqué au redémarrage.\n  - Netteté.\n- **Trophées** : locaux, lus dans votre `trophy00.trp`. Rien n'est envoyé. Une carte s'affiche en jeu quand un trophée se débloque.\n- En jeu, Insert, ou L2 + R3, ouvre l'incrustation.\n\nTesté sous Windows 11 26H2 avec un Intel Core i9-12900KF et une NVIDIA GeForce RTX 3090, pilote Studio 617.42. Le jeu a démarré et a tourné jusqu'à la fin de la campagne de Molda, et des trophées se sont débloqués. Une partie complète n'a pas été vérifiée.\n\nLe SHA-256 de `Ravn-windows-1.2.zip` est dans `Ravn-windows-1.2.zip.sha256`.\n",
-          "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
+          "version": "1.2.1-pause.6",
+          "tag": "windows-1.2.1-pause.6",
+          "prerelease": true,
+          "published": "2026-11-13T15:40:23Z",
+          "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2.1-pause.6/Ravn-windows-1.2.1-pause.6.zip",
+          "file": "Ravn-windows-1.2.1-pause.6.zip",
+          "size": 85158195,
+          "sha256": "f5535363f3f777801b385adca2526fe7d014ff183941db737cf5e1cd64bbfc08",
+          "notes": "Test build of branch crowbar-pause (8af9644): pause from Crowbar's Guide menu (crowbar-sdk 1.2).\n\nSHA-256: f5535363f3f777801b385adca2526fe7d014ff183941db737cf5e1cd64bbfc08\n",
+          "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2.1-pause.6"
         },
         "stable": {
           "version": "1.2",
@@ -345,6 +357,18 @@
           "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2"
         },
         "versions": [
+          {
+            "version": "1.2.1-pause.6",
+            "tag": "windows-1.2.1-pause.6",
+            "prerelease": true,
+            "published": "2026-11-13T15:40:23Z",
+            "url": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/download/windows-1.2.1-pause.6/Ravn-windows-1.2.1-pause.6.zip",
+            "file": "Ravn-windows-1.2.1-pause.6.zip",
+            "size": 85158195,
+            "sha256": "f5535363f3f777801b385adca2526fe7d014ff183941db737cf5e1cd64bbfc08",
+            "notes": "Test build of branch crowbar-pause (8af9644): pause from Crowbar's Guide menu (crowbar-sdk 1.2).\n\nSHA-256: f5535363f3f777801b385adca2526fe7d014ff183941db737cf5e1cd64bbfc08\n",
+            "page": "https://github.com/DiamondDogz/Valkyria-Revolution-PS4RT-Windows/releases/tag/windows-1.2.1-pause.6"
+          },
           {
             "version": "1.2",
             "tag": "windows-1.2",
@@ -546,7 +570,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 418,
+        "stars": 419,
         "launch": "trg",
         "beta": {
           "version": "v1.1.1",
@@ -698,7 +722,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 418,
+        "stars": 419,
         "launch": "trg",
         "beta": {
           "version": "v1.1.1",
@@ -852,7 +876,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 188,
+        "stars": 189,
         "launch": "trg",
         "beta": {
           "version": "v0.2.3",
@@ -944,7 +968,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 188,
+        "stars": 189,
         "launch": "trg",
         "beta": {
           "version": "v0.2.3",
@@ -1038,7 +1062,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 99,
+        "stars": 100,
         "launch": "trg",
         "beta": {
           "version": "v0.1.0",
@@ -1082,7 +1106,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 99,
+        "stars": 100,
         "launch": "trg",
         "beta": {
           "version": "v0.1.0",
