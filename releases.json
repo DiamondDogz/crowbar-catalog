@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T14:13:33+00:00",
+  "generatedAt": "2026-11-13T14:16:00+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -476,7 +476,7 @@
       "windows": {
         "repo": "DiamondDogz/GBO-Code-Fairy-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 9,
+        "stars": 10,
         "launch": "crowbar-json",
         "beta": {
           "version": "1.0.1-pause.5",
@@ -489,6 +489,18 @@
           "sha256": "ed06dc0675ce0635769edfbdac7810c23dea9e4ac3b99c8936d5ec2cff63b7a4",
           "notes": "Test build of branch crowbar-pause (d8ce0db): pause from Crowbar's Guide menu.\n\nSHA-256: ed06dc0675ce0635769edfbdac7810c23dea9e4ac3b99c8936d5ec2cff63b7a4\n",
           "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1-pause.5"
+        },
+        "stable": {
+          "version": "1.0",
+          "tag": "windows-1.0",
+          "prerelease": false,
+          "published": "2026-11-12T04:22:14Z",
+          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0/GBO-Code-Fairy-PS4RT-Windows-1.0.zip",
+          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.zip",
+          "size": 93597793,
+          "sha256": "586d7b37987f407730c41e63a77d588b0a369892d4a7b3d01713df08bc84e293",
+          "notes": "Pre-release. Windows port of [GBO-Code-Fairy-PS4RT](https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT), upstream `main` at `0252c9d` (v1.0 plus two commits).\n\n- Unzip, then open `SiegZeon.exe`. The game must be your own extracted CUSA28763 folder. The 01.03 update and the three volume keys stay PKG files: the launcher installs them.\n- The launcher is in English, with French on the EN button.\n- Crowbar compatible (`crowbar.json`): Crowbar can start it and records trophies.\n- Needs more testing before a stable release. See [INSTALL.md](https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/blob/windows/INSTALL.md).\n\nPréversion. Décompressez, puis ouvrez `SiegZeon.exe`. Le jeu doit être votre propre dossier CUSA28763 extrait. La mise à jour 01.03 et les trois clés de volume restent des PKG : le lanceur les installe. Le lanceur est en anglais, le bouton EN passe au français. Compatible Crowbar.\n\nSHA-256 of `GBO-Code-Fairy-PS4RT-Windows-1.0.zip`: `586d7b37987f407730c41e63a77d588b0a369892d4a7b3d01713df08bc84e293`\n\nUnofficial. The game is not included.\n",
+          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0"
         },
         "versions": [
           {
@@ -518,7 +530,7 @@
           {
             "version": "1.0",
             "tag": "windows-1.0",
-            "prerelease": true,
+            "prerelease": false,
             "published": "2026-11-12T04:22:14Z",
             "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0/GBO-Code-Fairy-PS4RT-Windows-1.0.zip",
             "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.zip",
