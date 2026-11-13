@@ -59,7 +59,7 @@
       },
       "runtimes": [
         {"platform": "windows", "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows", "tagPrefix": "windows-", "asset": "*.zip", "maintainer": "DiamondDogz", "launch": "ps4rt-launch", "trophies": true},
-        {"platform": "linux", "repo": "HekamiAeon/Sakura-Wars-PS4RT", "asset": "*-linux-x86_64.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false}
+        {"platform": "linux", "repo": "HekamiAeon/Sakura-Wars-PS4RT", "asset": "*-linux-x86_64.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": true}
       ],
       "options": {
         "windows": [
@@ -2446,7 +2446,7 @@
         "x-rlyeh": "Ah'ai ng Nag Hakn Fht, Nirl ggurzh Fairy ursh ggepcth y y'shgg afhul y'shgg afhul nglro ah'agn"
       },
       "runtimes": [
-        {"platform": "linux", "repo": "HekamiAeon/GBO-Code-Fairy-PS4RT", "asset": "*-linux-x86_64.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": false},
+        {"platform": "linux", "repo": "HekamiAeon/GBO-Code-Fairy-PS4RT", "asset": "*-linux-x86_64.tar.gz", "checksum": "{asset}.sha256", "maintainer": "HekamiAeon", "launch": "ps4rt-launch", "trophies": true},
         {"platform": "windows", "repo": "DiamondDogz/GBO-Code-Fairy-PS4RT-Windows", "tagPrefix": "windows-", "asset": "GBO-Code-Fairy-PS4RT-Windows-*.zip", "checksum": "{asset}.sha256", "maintainer": "DiamondDogz", "launch": "crowbar-json", "trophies": true}
       ],
       "options": {
