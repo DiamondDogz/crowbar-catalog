@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T00:49:40+00:00",
+  "generatedAt": "2026-11-13T13:28:55+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 44,
+        "stars": 45,
         "launch": "ps4rt-launch",
         "beta": {
           "version": "1.1.4",
@@ -125,30 +125,42 @@
         "stars": 43,
         "launch": "ps4rt-launch",
         "beta": {
-          "version": "v1.1",
-          "tag": "v1.1",
+          "version": "v1.2",
+          "tag": "v1.2",
           "prerelease": false,
-          "published": "2026-10-30T02:56:37Z",
-          "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.1/Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
-          "file": "Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
-          "size": 33946146,
-          "sha256": "38d56687e6f97956a3710dd92749f00b2371e72f3e6729119b65376ec67ee0ce",
-          "notes": "# Sakura Wars PS4RT v1.1\r\n\r\nA Linux x86-64 update focused on graphics performance and a simpler player experience for **Sakura Wars (CUSA16429 v1.01)**.\r\n\r\n## What's new\r\n\r\n- **Graphics presets:** Native, High, Medium, and Lowest options for choosing between visual quality and performance. Medium and Lowest target weaker GPUs.\r\n- **GPU optimizations:** More efficient clearing of certain render targets; reduced dash motion-blur sampling and disabled character screen-space shadow effects on Medium and Lowest.\r\n- **Remembered game folder:** Provide `--game` on first launch. After a successful setup, subsequent launches can use `bash Play-Game.sh` alone. Use `--game` again if the folder moves or you want a different game extraction.\r\n- **Polished release packaging:** Restored the Crypto++ portable-builder recipe in the source archive, refined the player/source packaging, and kept licensing notices and required runtime assets.\r\n\r\n## Install and launch\r\n\r\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\r\n\r\n```bash\r\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\r\n```\r\n\r\nAfter successful setup:\r\n\r\n```bash\r\nbash Play-Game.sh\r\n```\r\n\r\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\r\n\r\n## Platform and notes\r\n\r\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\r\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\r\n- Graphics changes and gameplay were smoke-tested on Linux, including a low-end Radeon integrated GPU. Performance varies with hardware, scene, resolution and graphics settings.\r\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\r\n\r\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\r\n",
-          "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1"
+          "published": "2026-11-13T02:55:17Z",
+          "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.2/Sakura-Wars-PS4RT-b45cfaa-linux-x86_64.tar.gz",
+          "file": "Sakura-Wars-PS4RT-b45cfaa-linux-x86_64.tar.gz",
+          "size": 38286851,
+          "sha256": "92b1cc6795c3d9d27a40c373ed928e1dd7b32a3641708d4fb42c61a874ecfa3f",
+          "notes": "# Sakura Wars PS4RT v1.2\n\nA Linux x86-64 update adding achievements, a game-language option, new internal resolutions and experimental ultrawide for **Sakura Wars (CUSA16429 v1.01)**.\n\n## What's new\n\n- **Achievements:** Game-triggered trophies are now tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- **Game language:** A **Game language** option in the overlay switches the game between **English, French, German and Spanish** after **Apply and restart**. Trophy text follows the selected language. Saves are not changed.\n- **Internal resolutions:** Choose the resolution the game renders at: 1024×576, 720p, 1080p, 1440p or native 4K. Changing it requires a restart.\n- **Ultrawide (experimental):** 21:9 (2560×1080, 3440×1440), 24:9 (3840×1440) and 32:9 (3840×1080, 5120×1440) internal resolutions show more of the game world instead of stretching the image. Pre-rendered videos stay 16:9.\n- **FSR 1:** A new lightweight spatial upscaler option alongside FSR 3.1 and FSR 4.\n- **FSR fixes:** The FSR output resolution is now chosen separately from the internal resolution, and only matching outputs are offered. FSR 4 no longer brightens and dims near bright lights, and edges get correct motion with this game's depth format. FSR now works on the **Lowest** preset, and the Teletron and minimap display correctly with FSR at every internal resolution.\n- **Stall fixes:** Removed GPU readback stalls that dropped frames at 4K.\n- **NVIDIA startup fix:** Avoids a startup crash some players reported on NVIDIA GPUs.\n- **Small additions:** **F12** saves a screenshot of the game image, the compact Graphics menu has the FPS counter toggle, and a first launch now starts in borderless mode.\n\n## Install and launch\n\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\n\n```bash\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\n```\n\nAfter successful setup:\n\n```bash\nbash Play-Game.sh\n```\n\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\n\n**Keep your save data when upgrading:** saves, achievements and settings are stored inside the player folder, so a new PS4RT version starts without them. To keep your progress, copy `out/CUSA16429/user/` (save data and achievements) and `out/CUSA16429/ps4rt.ini` (settings) from your previous version's folder into the new one **before its first launch**. Copying later replaces any saves made in the new version.\n\n## Platform and notes\n\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\n\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\n",
+          "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.2"
         },
         "stable": {
-          "version": "v1.1",
-          "tag": "v1.1",
+          "version": "v1.2",
+          "tag": "v1.2",
           "prerelease": false,
-          "published": "2026-10-30T02:56:37Z",
-          "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.1/Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
-          "file": "Sakura-Wars-PS4RT-29f8822-linux-x86_64.tar.gz",
-          "size": 33946146,
-          "sha256": "38d56687e6f97956a3710dd92749f00b2371e72f3e6729119b65376ec67ee0ce",
-          "notes": "# Sakura Wars PS4RT v1.1\r\n\r\nA Linux x86-64 update focused on graphics performance and a simpler player experience for **Sakura Wars (CUSA16429 v1.01)**.\r\n\r\n## What's new\r\n\r\n- **Graphics presets:** Native, High, Medium, and Lowest options for choosing between visual quality and performance. Medium and Lowest target weaker GPUs.\r\n- **GPU optimizations:** More efficient clearing of certain render targets; reduced dash motion-blur sampling and disabled character screen-space shadow effects on Medium and Lowest.\r\n- **Remembered game folder:** Provide `--game` on first launch. After a successful setup, subsequent launches can use `bash Play-Game.sh` alone. Use `--game` again if the folder moves or you want a different game extraction.\r\n- **Polished release packaging:** Restored the Crypto++ portable-builder recipe in the source archive, refined the player/source packaging, and kept licensing notices and required runtime assets.\r\n\r\n## Install and launch\r\n\r\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\r\n\r\n```bash\r\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\r\n```\r\n\r\nAfter successful setup:\r\n\r\n```bash\r\nbash Play-Game.sh\r\n```\r\n\r\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\r\n\r\n## Platform and notes\r\n\r\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\r\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\r\n- Graphics changes and gameplay were smoke-tested on Linux, including a low-end Radeon integrated GPU. Performance varies with hardware, scene, resolution and graphics settings.\r\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\r\n\r\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\r\n",
-          "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.1"
+          "published": "2026-11-13T02:55:17Z",
+          "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.2/Sakura-Wars-PS4RT-b45cfaa-linux-x86_64.tar.gz",
+          "file": "Sakura-Wars-PS4RT-b45cfaa-linux-x86_64.tar.gz",
+          "size": 38286851,
+          "sha256": "92b1cc6795c3d9d27a40c373ed928e1dd7b32a3641708d4fb42c61a874ecfa3f",
+          "notes": "# Sakura Wars PS4RT v1.2\n\nA Linux x86-64 update adding achievements, a game-language option, new internal resolutions and experimental ultrawide for **Sakura Wars (CUSA16429 v1.01)**.\n\n## What's new\n\n- **Achievements:** Game-triggered trophies are now tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- **Game language:** A **Game language** option in the overlay switches the game between **English, French, German and Spanish** after **Apply and restart**. Trophy text follows the selected language. Saves are not changed.\n- **Internal resolutions:** Choose the resolution the game renders at: 1024×576, 720p, 1080p, 1440p or native 4K. Changing it requires a restart.\n- **Ultrawide (experimental):** 21:9 (2560×1080, 3440×1440), 24:9 (3840×1440) and 32:9 (3840×1080, 5120×1440) internal resolutions show more of the game world instead of stretching the image. Pre-rendered videos stay 16:9.\n- **FSR 1:** A new lightweight spatial upscaler option alongside FSR 3.1 and FSR 4.\n- **FSR fixes:** The FSR output resolution is now chosen separately from the internal resolution, and only matching outputs are offered. FSR 4 no longer brightens and dims near bright lights, and edges get correct motion with this game's depth format. FSR now works on the **Lowest** preset, and the Teletron and minimap display correctly with FSR at every internal resolution.\n- **Stall fixes:** Removed GPU readback stalls that dropped frames at 4K.\n- **NVIDIA startup fix:** Avoids a startup crash some players reported on NVIDIA GPUs.\n- **Small additions:** **F12** saves a screenshot of the game image, the compact Graphics menu has the FPS counter toggle, and a first launch now starts in borderless mode.\n\n## Install and launch\n\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA16429** game folder:\n\n```bash\nbash Play-Game.sh --game \"/absolute/path/to/CUSA16429\"\n```\n\nAfter successful setup:\n\n```bash\nbash Play-Game.sh\n```\n\nThe game must be updated to **v1.01**. If your extraction is v1.00, the included setup interface can apply your matching update PKG. **This modifies the selected extracted game directory in place**, so keep a backup if you need the unpatched v1.00 files. The native update and optional DLC installers remain available; they do not download game content.\n\n**Keep your save data when upgrading:** saves, achievements and settings are stored inside the player folder, so a new PS4RT version starts without them. To keep your progress, copy `out/CUSA16429/user/` (save data and achievements) and `out/CUSA16429/ps4rt.ini` (settings) from your previous version's folder into the new one **before its first launch**. Copying later replaces any saves made in the new version.\n\n## Platform and notes\n\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\n\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\n",
+          "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.2"
         },
         "versions": [
+          {
+            "version": "v1.2",
+            "tag": "v1.2",
+            "prerelease": false,
+            "published": "2026-11-13T02:55:17Z",
+            "url": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/download/v1.2/Sakura-Wars-PS4RT-b45cfaa-linux-x86_64.tar.gz",
+            "file": "Sakura-Wars-PS4RT-b45cfaa-linux-x86_64.tar.gz",
+            "size": 38286851,
+            "sha256": "92b1cc6795c3d9d27a40c373ed928e1dd7b32a3641708d4fb42c61a874ecfa3f",
+            "notes": "# Sakura Wars PS4RT v1.2\n\nA Linux x86-64 update adding achievements, a game-language option, new internal resolutions and experimental ultrawide for **Sakura Wars (CUSA16429 v1.01)**.\n\n## What's new\n\n- **Achievements:** Game-triggered trophies are now tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- **Game language:** A **Game language** option in the overlay switches the game between **English, French, German and Sp",
+            "page": "https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.2"
+          },
           {
             "version": "v1.1",
             "tag": "v1.1",
@@ -180,7 +192,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 43,
+        "stars": 44,
         "launch": "native-play",
         "beta": {
           "version": "v1.0.1",
@@ -306,7 +318,7 @@
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 26,
+        "stars": 27,
         "launch": "ps4rt-run",
         "beta": {
           "version": "1.2",
@@ -464,21 +476,33 @@
       "windows": {
         "repo": "DiamondDogz/GBO-Code-Fairy-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 8,
+        "stars": 9,
         "launch": "crowbar-json",
         "beta": {
-          "version": "1.0",
-          "tag": "windows-1.0",
+          "version": "1.0.1-pause.4",
+          "tag": "windows-1.0.1-pause.4",
           "prerelease": true,
-          "published": "2026-11-12T04:22:14Z",
-          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0/GBO-Code-Fairy-PS4RT-Windows-1.0.zip",
-          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.zip",
-          "size": 93597793,
-          "sha256": "586d7b37987f407730c41e63a77d588b0a369892d4a7b3d01713df08bc84e293",
-          "notes": "Pre-release. Windows port of [GBO-Code-Fairy-PS4RT](https://github.com/HekamiAeon/GBO-Code-Fairy-PS4RT), upstream `main` at `0252c9d` (v1.0 plus two commits).\n\n- Unzip, then open `SiegZeon.exe`. The game must be your own extracted CUSA28763 folder. The 01.03 update and the three volume keys stay PKG files: the launcher installs them.\n- The launcher is in English, with French on the EN button.\n- Crowbar compatible (`crowbar.json`): Crowbar can start it and records trophies.\n- Needs more testing before a stable release. See [INSTALL.md](https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/blob/windows/INSTALL.md).\n\nPréversion. Décompressez, puis ouvrez `SiegZeon.exe`. Le jeu doit être votre propre dossier CUSA28763 extrait. La mise à jour 01.03 et les trois clés de volume restent des PKG : le lanceur les installe. Le lanceur est en anglais, le bouton EN passe au français. Compatible Crowbar.\n\nSHA-256 of `GBO-Code-Fairy-PS4RT-Windows-1.0.zip`: `586d7b37987f407730c41e63a77d588b0a369892d4a7b3d01713df08bc84e293`\n\nUnofficial. The game is not included.\n",
-          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0"
+          "published": "2026-11-13T13:25:23Z",
+          "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.1-pause.4/GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.4.zip",
+          "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.4.zip",
+          "size": 93602961,
+          "sha256": "f51d06f9ea9d668c3f0d3e16fa76f5bb3f980a73dccd234f8d6562759df8d523",
+          "notes": "Test build of branch crowbar-pause (5fd5cc4): pause from Crowbar's Guide menu.\n\nSHA-256: f51d06f9ea9d668c3f0d3e16fa76f5bb3f980a73dccd234f8d6562759df8d523\n",
+          "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1-pause.4"
         },
         "versions": [
+          {
+            "version": "1.0.1-pause.4",
+            "tag": "windows-1.0.1-pause.4",
+            "prerelease": true,
+            "published": "2026-11-13T13:25:23Z",
+            "url": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/download/windows-1.0.1-pause.4/GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.4.zip",
+            "file": "GBO-Code-Fairy-PS4RT-Windows-1.0.1-pause.4.zip",
+            "size": 93602961,
+            "sha256": "f51d06f9ea9d668c3f0d3e16fa76f5bb3f980a73dccd234f8d6562759df8d523",
+            "notes": "Test build of branch crowbar-pause (5fd5cc4): pause from Crowbar's Guide menu.\n\nSHA-256: f51d06f9ea9d668c3f0d3e16fa76f5bb3f980a73dccd234f8d6562759df8d523\n",
+            "page": "https://github.com/DiamondDogz/GBO-Code-Fairy-PS4RT-Windows/releases/tag/windows-1.0.1-pause.4"
+          },
           {
             "version": "1.0",
             "tag": "windows-1.0",
@@ -498,7 +522,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 413,
+        "stars": 418,
         "launch": "trg",
         "beta": {
           "version": "v1.1.1",
@@ -650,7 +674,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 413,
+        "stars": 418,
         "launch": "trg",
         "beta": {
           "version": "v1.1.1",
@@ -990,7 +1014,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 94,
+        "stars": 99,
         "launch": "trg",
         "beta": {
           "version": "v0.1.0",
@@ -1034,7 +1058,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 94,
+        "stars": 99,
         "launch": "trg",
         "beta": {
           "version": "v0.1.0",
