@@ -3250,7 +3250,1036 @@
       "runtimes": [
         {"platform": "windows", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true},
         {"platform": "linux", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-x86_64.AppImage", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
-      ]
+      ],
+      "options": {
+        "windows": [
+          {
+            "key": "display_mode",
+            "label": {
+              "en": "Display",
+              "fr": "Affichage"
+            },
+            "hint": {
+              "en": "Window or borderless",
+              "fr": "Fenêtre ou plein écran fenêtré"
+            },
+            "values": [
+              [
+                "windowed",
+                {
+                  "en": "Windowed",
+                  "fr": "Fenêtré"
+                }
+              ],
+              [
+                "borderless",
+                {
+                  "en": "Borderless",
+                  "fr": "Plein écran fenêtré"
+                }
+              ]
+            ],
+            "default": "windowed"
+          },
+          {
+            "key": "renderer",
+            "label": {
+              "en": "Renderer",
+              "fr": "Moteur d'affichage"
+            },
+            "values": [
+              ["vulkan", "Vulkan"],
+              ["auto", "Auto"],
+              [
+                "opengl",
+                {
+                  "en": "OpenGL (experimental)",
+                  "fr": "OpenGL (expérimental)"
+                }
+              ],
+              [
+                "d3d11",
+                {
+                  "en": "Direct3D 11 (experimental)",
+                  "fr": "Direct3D 11 (expérimental)"
+                }
+              ]
+            ],
+            "default": "vulkan"
+          },
+          {
+            "key": "presentation",
+            "label": {
+              "en": "Fit",
+              "fr": "Ajustement"
+            },
+            "values": [
+              [
+                "letterbox",
+                {
+                  "en": "Letterbox",
+                  "fr": "Bandes noires"
+                }
+              ],
+              [
+                "stretch",
+                {
+                  "en": "Stretch",
+                  "fr": "Étiré"
+                }
+              ]
+            ],
+            "default": "letterbox"
+          },
+          {
+            "key": "render_resolution",
+            "label": {
+              "en": "Render resolution",
+              "fr": "Résolution de rendu"
+            },
+            "hint": {
+              "en": "Internal size, before upscaling",
+              "fr": "Taille interne, avant mise à l'échelle"
+            },
+            "values": [
+              [
+                "native",
+                {
+                  "en": "Native (1080p)",
+                  "fr": "Native (1080p)"
+                }
+              ],
+              ["480p", "480p"],
+              ["720p", "720p"],
+              ["1440p", "1440p"],
+              ["1800p", "1800p"],
+              ["4K", "4K"]
+            ],
+            "default": "native"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": {
+              "en": "Aspect ratio",
+              "fr": "Format d'image"
+            },
+            "values": [
+              [
+                "16:9",
+                {
+                  "en": "16:9 Original",
+                  "fr": "16:9 d'origine"
+                }
+              ],
+              ["16:10", "16:10"],
+              ["21:9", "21:9"],
+              ["32:9", "32:9"],
+              ["4:3", "4:3"],
+              ["5:4", "5:4"]
+            ],
+            "default": "16:9"
+          },
+          {
+            "key": "true_ultrawide",
+            "label": {
+              "en": "True ultrawide",
+              "fr": "Vrai ultra-large"
+            },
+            "hint": {
+              "en": "Widens the view on 21:9 and 32:9",
+              "fr": "Élargit la vue en 21:9 et 32:9"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "frame_rate",
+            "label": {
+              "en": "Frame rate",
+              "fr": "Images par seconde"
+            },
+            "hint": {
+              "en": "How often a frame reaches the screen. The game stays at 60",
+              "fr": "Fréquence envoyée à l'écran. Le jeu reste à 60"
+            },
+            "values": [
+              ["60", "60"],
+              ["30", "30"],
+              ["90", "90"],
+              ["120", "120"],
+              ["144", "144"],
+              ["165", "165"],
+              ["240", "240"],
+              [
+                "0",
+                {
+                  "en": "Unlimited",
+                  "fr": "Illimité"
+                }
+              ]
+            ],
+            "default": "60"
+          },
+          {
+            "key": "vsync",
+            "label": "VSync",
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "fsr1",
+            "label": "FSR 1",
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "rcas",
+            "label": {
+              "en": "Sharpening",
+              "fr": "Netteté"
+            },
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "smaa",
+            "label": {
+              "en": "Anti-aliasing",
+              "fr": "Anticrénelage"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              ["1", "SMAA"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "anisotropy",
+            "label": {
+              "en": "Anisotropic filtering",
+              "fr": "Filtrage anisotrope"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Game default",
+                  "fr": "Celui du jeu"
+                }
+              ],
+              ["2", "2×"],
+              ["4", "4×"],
+              ["8", "8×"],
+              ["16", "16×"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "text_language",
+            "label": {
+              "en": "Menu and subtitles",
+              "fr": "Menus et sous-titres"
+            },
+            "hint": {
+              "en": "Only the languages of your game's region are used",
+              "fr": "Seules les langues de la région de votre jeu sont utilisées"
+            },
+            "values": [
+              [
+                "english",
+                {
+                  "en": "English",
+                  "fr": "Anglais"
+                }
+              ],
+              [
+                "french",
+                {
+                  "en": "French",
+                  "fr": "Français"
+                }
+              ],
+              [
+                "german",
+                {
+                  "en": "German",
+                  "fr": "Allemand"
+                }
+              ],
+              [
+                "italian",
+                {
+                  "en": "Italian",
+                  "fr": "Italien"
+                }
+              ],
+              [
+                "spanish",
+                {
+                  "en": "Spanish",
+                  "fr": "Espagnol"
+                }
+              ],
+              [
+                "brazilian_portuguese",
+                {
+                  "en": "Portuguese (Brazil)",
+                  "fr": "Portugais (Brésil)"
+                }
+              ],
+              [
+                "russian",
+                {
+                  "en": "Russian",
+                  "fr": "Russe"
+                }
+              ],
+              [
+                "japanese",
+                {
+                  "en": "Japanese",
+                  "fr": "Japonais"
+                }
+              ],
+              [
+                "traditional_chinese",
+                {
+                  "en": "Traditional Chinese",
+                  "fr": "Chinois traditionnel"
+                }
+              ],
+              [
+                "korean",
+                {
+                  "en": "Korean",
+                  "fr": "Coréen"
+                }
+              ]
+            ],
+            "default": "english"
+          },
+          {
+            "key": "controller_prompts",
+            "label": {
+              "en": "Button prompts",
+              "fr": "Boutons affichés"
+            },
+            "values": [
+              ["playstation", "PlayStation"],
+              ["xbox", "Xbox"]
+            ],
+            "default": "playstation"
+          },
+          {
+            "key": "skip_intro",
+            "label": {
+              "en": "Skip intro",
+              "fr": "Passer l'introduction"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "japanese_menu_buttons",
+            "label": {
+              "en": "Japanese menu buttons",
+              "fr": "Boutons japonais"
+            },
+            "hint": {
+              "en": "Circle confirms, Cross cancels",
+              "fr": "Rond valide, Croix annule"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "dcp_japanese_npc_voices",
+            "label": {
+              "en": "Japanese NPC voices",
+              "fr": "Voix japonaises des PNJ"
+            },
+            "hint": {
+              "en": "USA version",
+              "fr": "Version américaine"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "unlock_gallery",
+            "label": {
+              "en": "Unlock gallery",
+              "fr": "Débloquer la galerie"
+            },
+            "hint": {
+              "en": "Your save is not changed",
+              "fr": "Votre sauvegarde n'est pas modifiée"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "show_fps",
+            "label": {
+              "en": "FPS counter",
+              "fr": "Compteur d'images"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          }
+        ],
+        "linux": [
+          {
+            "key": "display_mode",
+            "label": {
+              "en": "Display",
+              "fr": "Affichage"
+            },
+            "hint": {
+              "en": "Window or borderless",
+              "fr": "Fenêtre ou plein écran fenêtré"
+            },
+            "values": [
+              [
+                "windowed",
+                {
+                  "en": "Windowed",
+                  "fr": "Fenêtré"
+                }
+              ],
+              [
+                "borderless",
+                {
+                  "en": "Borderless",
+                  "fr": "Plein écran fenêtré"
+                }
+              ]
+            ],
+            "default": "windowed"
+          },
+          {
+            "key": "renderer",
+            "label": {
+              "en": "Renderer",
+              "fr": "Moteur d'affichage"
+            },
+            "values": [
+              ["vulkan", "Vulkan"],
+              ["auto", "Auto"],
+              [
+                "opengl",
+                {
+                  "en": "OpenGL (experimental)",
+                  "fr": "OpenGL (expérimental)"
+                }
+              ]
+            ],
+            "default": "vulkan"
+          },
+          {
+            "key": "presentation",
+            "label": {
+              "en": "Fit",
+              "fr": "Ajustement"
+            },
+            "values": [
+              [
+                "letterbox",
+                {
+                  "en": "Letterbox",
+                  "fr": "Bandes noires"
+                }
+              ],
+              [
+                "stretch",
+                {
+                  "en": "Stretch",
+                  "fr": "Étiré"
+                }
+              ]
+            ],
+            "default": "letterbox"
+          },
+          {
+            "key": "render_resolution",
+            "label": {
+              "en": "Render resolution",
+              "fr": "Résolution de rendu"
+            },
+            "hint": {
+              "en": "Internal size, before upscaling",
+              "fr": "Taille interne, avant mise à l'échelle"
+            },
+            "values": [
+              [
+                "native",
+                {
+                  "en": "Native (1080p)",
+                  "fr": "Native (1080p)"
+                }
+              ],
+              ["480p", "480p"],
+              ["720p", "720p"],
+              ["1440p", "1440p"],
+              ["1800p", "1800p"],
+              ["4K", "4K"]
+            ],
+            "default": "native"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": {
+              "en": "Aspect ratio",
+              "fr": "Format d'image"
+            },
+            "values": [
+              [
+                "16:9",
+                {
+                  "en": "16:9 Original",
+                  "fr": "16:9 d'origine"
+                }
+              ],
+              ["16:10", "16:10"],
+              ["21:9", "21:9"],
+              ["32:9", "32:9"],
+              ["4:3", "4:3"],
+              ["5:4", "5:4"]
+            ],
+            "default": "16:9"
+          },
+          {
+            "key": "true_ultrawide",
+            "label": {
+              "en": "True ultrawide",
+              "fr": "Vrai ultra-large"
+            },
+            "hint": {
+              "en": "Widens the view on 21:9 and 32:9",
+              "fr": "Élargit la vue en 21:9 et 32:9"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "frame_rate",
+            "label": {
+              "en": "Frame rate",
+              "fr": "Images par seconde"
+            },
+            "hint": {
+              "en": "How often a frame reaches the screen. The game stays at 60",
+              "fr": "Fréquence envoyée à l'écran. Le jeu reste à 60"
+            },
+            "values": [
+              ["60", "60"],
+              ["30", "30"],
+              ["90", "90"],
+              ["120", "120"],
+              ["144", "144"],
+              ["165", "165"],
+              ["240", "240"],
+              [
+                "0",
+                {
+                  "en": "Unlimited",
+                  "fr": "Illimité"
+                }
+              ]
+            ],
+            "default": "60"
+          },
+          {
+            "key": "vsync",
+            "label": "VSync",
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "fsr1",
+            "label": "FSR 1",
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "rcas",
+            "label": {
+              "en": "Sharpening",
+              "fr": "Netteté"
+            },
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "smaa",
+            "label": {
+              "en": "Anti-aliasing",
+              "fr": "Anticrénelage"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              ["1", "SMAA"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "anisotropy",
+            "label": {
+              "en": "Anisotropic filtering",
+              "fr": "Filtrage anisotrope"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Game default",
+                  "fr": "Celui du jeu"
+                }
+              ],
+              ["2", "2×"],
+              ["4", "4×"],
+              ["8", "8×"],
+              ["16", "16×"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "text_language",
+            "label": {
+              "en": "Menu and subtitles",
+              "fr": "Menus et sous-titres"
+            },
+            "hint": {
+              "en": "Only the languages of your game's region are used",
+              "fr": "Seules les langues de la région de votre jeu sont utilisées"
+            },
+            "values": [
+              [
+                "english",
+                {
+                  "en": "English",
+                  "fr": "Anglais"
+                }
+              ],
+              [
+                "french",
+                {
+                  "en": "French",
+                  "fr": "Français"
+                }
+              ],
+              [
+                "german",
+                {
+                  "en": "German",
+                  "fr": "Allemand"
+                }
+              ],
+              [
+                "italian",
+                {
+                  "en": "Italian",
+                  "fr": "Italien"
+                }
+              ],
+              [
+                "spanish",
+                {
+                  "en": "Spanish",
+                  "fr": "Espagnol"
+                }
+              ],
+              [
+                "brazilian_portuguese",
+                {
+                  "en": "Portuguese (Brazil)",
+                  "fr": "Portugais (Brésil)"
+                }
+              ],
+              [
+                "russian",
+                {
+                  "en": "Russian",
+                  "fr": "Russe"
+                }
+              ],
+              [
+                "japanese",
+                {
+                  "en": "Japanese",
+                  "fr": "Japonais"
+                }
+              ],
+              [
+                "traditional_chinese",
+                {
+                  "en": "Traditional Chinese",
+                  "fr": "Chinois traditionnel"
+                }
+              ],
+              [
+                "korean",
+                {
+                  "en": "Korean",
+                  "fr": "Coréen"
+                }
+              ]
+            ],
+            "default": "english"
+          },
+          {
+            "key": "controller_prompts",
+            "label": {
+              "en": "Button prompts",
+              "fr": "Boutons affichés"
+            },
+            "values": [
+              ["playstation", "PlayStation"],
+              ["xbox", "Xbox"]
+            ],
+            "default": "playstation"
+          },
+          {
+            "key": "skip_intro",
+            "label": {
+              "en": "Skip intro",
+              "fr": "Passer l'introduction"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "japanese_menu_buttons",
+            "label": {
+              "en": "Japanese menu buttons",
+              "fr": "Boutons japonais"
+            },
+            "hint": {
+              "en": "Circle confirms, Cross cancels",
+              "fr": "Rond valide, Croix annule"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "dcp_japanese_npc_voices",
+            "label": {
+              "en": "Japanese NPC voices",
+              "fr": "Voix japonaises des PNJ"
+            },
+            "hint": {
+              "en": "USA version",
+              "fr": "Version américaine"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "unlock_gallery",
+            "label": {
+              "en": "Unlock gallery",
+              "fr": "Débloquer la galerie"
+            },
+            "hint": {
+              "en": "Your save is not changed",
+              "fr": "Votre sauvegarde n'est pas modifiée"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "show_fps",
+            "label": {
+              "en": "FPS counter",
+              "fr": "Compteur d'images"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          }
+        ]
+      }
     },
     {
       "id": "odin-sphere-leifthrasir",
@@ -3270,7 +4299,717 @@
       "runtimes": [
         {"platform": "windows", "repo": "saulob/odin-sphere-leifthrasir-pc", "asset": "OdinSphereLeifthrasirPC-*-windows-x64.zip", "maintainer": "saulob", "launch": "trg", "trophies": true},
         {"platform": "linux", "repo": "saulob/odin-sphere-leifthrasir-pc", "asset": "OdinSphereLeifthrasirPC-*-x86_64.AppImage", "maintainer": "saulob", "launch": "trg", "trophies": true}
-      ]
+      ],
+      "options": {
+        "windows": [
+          {
+            "key": "display_mode",
+            "label": {
+              "en": "Display",
+              "fr": "Affichage"
+            },
+            "hint": {
+              "en": "Window or borderless",
+              "fr": "Fenêtre ou plein écran fenêtré"
+            },
+            "values": [
+              [
+                "windowed",
+                {
+                  "en": "Windowed",
+                  "fr": "Fenêtré"
+                }
+              ],
+              [
+                "borderless",
+                {
+                  "en": "Borderless",
+                  "fr": "Plein écran fenêtré"
+                }
+              ]
+            ],
+            "default": "windowed"
+          },
+          {
+            "key": "presentation",
+            "label": {
+              "en": "Fit",
+              "fr": "Ajustement"
+            },
+            "values": [
+              [
+                "letterbox",
+                {
+                  "en": "Letterbox",
+                  "fr": "Bandes noires"
+                }
+              ],
+              [
+                "stretch",
+                {
+                  "en": "Stretch",
+                  "fr": "Étiré"
+                }
+              ]
+            ],
+            "default": "letterbox"
+          },
+          {
+            "key": "render_resolution",
+            "label": {
+              "en": "Render resolution",
+              "fr": "Résolution de rendu"
+            },
+            "hint": {
+              "en": "Internal size, before upscaling",
+              "fr": "Taille interne, avant mise à l'échelle"
+            },
+            "values": [
+              [
+                "native",
+                {
+                  "en": "Native (1080p)",
+                  "fr": "Native (1080p)"
+                }
+              ],
+              ["480p", "480p"],
+              ["720p", "720p"],
+              ["1440p", "1440p"],
+              ["1800p", "1800p"],
+              ["4K", "4K"]
+            ],
+            "default": "native"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": {
+              "en": "Aspect ratio",
+              "fr": "Format d'image"
+            },
+            "values": [
+              [
+                "16:9",
+                {
+                  "en": "16:9 Original",
+                  "fr": "16:9 d'origine"
+                }
+              ],
+              ["16:10", "16:10"],
+              ["21:9", "21:9"],
+              ["32:9", "32:9"],
+              ["4:3", "4:3"],
+              ["5:4", "5:4"]
+            ],
+            "default": "16:9"
+          },
+          {
+            "key": "vsync",
+            "label": "VSync",
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "fsr1",
+            "label": "FSR 1",
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "rcas",
+            "label": {
+              "en": "Sharpening",
+              "fr": "Netteté"
+            },
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "smaa",
+            "label": {
+              "en": "Anti-aliasing",
+              "fr": "Anticrénelage"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              ["1", "SMAA"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "anisotropy",
+            "label": {
+              "en": "Anisotropic filtering",
+              "fr": "Filtrage anisotrope"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Game default",
+                  "fr": "Celui du jeu"
+                }
+              ],
+              ["2", "2×"],
+              ["4", "4×"],
+              ["8", "8×"],
+              ["16", "16×"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "text_language",
+            "label": {
+              "en": "Menu and subtitles",
+              "fr": "Menus et sous-titres"
+            },
+            "hint": {
+              "en": "Only the languages of your game's region are used",
+              "fr": "Seules les langues de la région de votre jeu sont utilisées"
+            },
+            "values": [
+              [
+                "english",
+                {
+                  "en": "English",
+                  "fr": "Anglais"
+                }
+              ],
+              [
+                "french",
+                {
+                  "en": "French",
+                  "fr": "Français"
+                }
+              ],
+              [
+                "german",
+                {
+                  "en": "German",
+                  "fr": "Allemand"
+                }
+              ],
+              [
+                "italian",
+                {
+                  "en": "Italian",
+                  "fr": "Italien"
+                }
+              ],
+              [
+                "spanish",
+                {
+                  "en": "Spanish",
+                  "fr": "Espagnol"
+                }
+              ],
+              [
+                "traditional_chinese",
+                {
+                  "en": "Traditional Chinese",
+                  "fr": "Chinois traditionnel"
+                }
+              ],
+              [
+                "korean",
+                {
+                  "en": "Korean",
+                  "fr": "Coréen"
+                }
+              ]
+            ],
+            "default": "english"
+          },
+          {
+            "key": "controller_prompts",
+            "label": {
+              "en": "Button prompts",
+              "fr": "Boutons affichés"
+            },
+            "values": [
+              ["playstation", "PlayStation"],
+              ["xbox", "Xbox"]
+            ],
+            "default": "playstation"
+          },
+          {
+            "key": "skip_intro",
+            "label": {
+              "en": "Skip intro",
+              "fr": "Passer l'introduction"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "unlock_bookshelf",
+            "label": {
+              "en": "Unlock bookshelf",
+              "fr": "Débloquer la bibliothèque"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "show_fps",
+            "label": {
+              "en": "FPS counter",
+              "fr": "Compteur d'images"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          }
+        ],
+        "linux": [
+          {
+            "key": "display_mode",
+            "label": {
+              "en": "Display",
+              "fr": "Affichage"
+            },
+            "hint": {
+              "en": "Window or borderless",
+              "fr": "Fenêtre ou plein écran fenêtré"
+            },
+            "values": [
+              [
+                "windowed",
+                {
+                  "en": "Windowed",
+                  "fr": "Fenêtré"
+                }
+              ],
+              [
+                "borderless",
+                {
+                  "en": "Borderless",
+                  "fr": "Plein écran fenêtré"
+                }
+              ]
+            ],
+            "default": "windowed"
+          },
+          {
+            "key": "presentation",
+            "label": {
+              "en": "Fit",
+              "fr": "Ajustement"
+            },
+            "values": [
+              [
+                "letterbox",
+                {
+                  "en": "Letterbox",
+                  "fr": "Bandes noires"
+                }
+              ],
+              [
+                "stretch",
+                {
+                  "en": "Stretch",
+                  "fr": "Étiré"
+                }
+              ]
+            ],
+            "default": "letterbox"
+          },
+          {
+            "key": "render_resolution",
+            "label": {
+              "en": "Render resolution",
+              "fr": "Résolution de rendu"
+            },
+            "hint": {
+              "en": "Internal size, before upscaling",
+              "fr": "Taille interne, avant mise à l'échelle"
+            },
+            "values": [
+              [
+                "native",
+                {
+                  "en": "Native (1080p)",
+                  "fr": "Native (1080p)"
+                }
+              ],
+              ["480p", "480p"],
+              ["720p", "720p"],
+              ["1440p", "1440p"],
+              ["1800p", "1800p"],
+              ["4K", "4K"]
+            ],
+            "default": "native"
+          },
+          {
+            "key": "aspect_ratio",
+            "label": {
+              "en": "Aspect ratio",
+              "fr": "Format d'image"
+            },
+            "values": [
+              [
+                "16:9",
+                {
+                  "en": "16:9 Original",
+                  "fr": "16:9 d'origine"
+                }
+              ],
+              ["16:10", "16:10"],
+              ["21:9", "21:9"],
+              ["32:9", "32:9"],
+              ["4:3", "4:3"],
+              ["5:4", "5:4"]
+            ],
+            "default": "16:9"
+          },
+          {
+            "key": "vsync",
+            "label": "VSync",
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "fsr1",
+            "label": "FSR 1",
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "rcas",
+            "label": {
+              "en": "Sharpening",
+              "fr": "Netteté"
+            },
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "smaa",
+            "label": {
+              "en": "Anti-aliasing",
+              "fr": "Anticrénelage"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              ["1", "SMAA"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "anisotropy",
+            "label": {
+              "en": "Anisotropic filtering",
+              "fr": "Filtrage anisotrope"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Game default",
+                  "fr": "Celui du jeu"
+                }
+              ],
+              ["2", "2×"],
+              ["4", "4×"],
+              ["8", "8×"],
+              ["16", "16×"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "text_language",
+            "label": {
+              "en": "Menu and subtitles",
+              "fr": "Menus et sous-titres"
+            },
+            "hint": {
+              "en": "Only the languages of your game's region are used",
+              "fr": "Seules les langues de la région de votre jeu sont utilisées"
+            },
+            "values": [
+              [
+                "english",
+                {
+                  "en": "English",
+                  "fr": "Anglais"
+                }
+              ],
+              [
+                "french",
+                {
+                  "en": "French",
+                  "fr": "Français"
+                }
+              ],
+              [
+                "german",
+                {
+                  "en": "German",
+                  "fr": "Allemand"
+                }
+              ],
+              [
+                "italian",
+                {
+                  "en": "Italian",
+                  "fr": "Italien"
+                }
+              ],
+              [
+                "spanish",
+                {
+                  "en": "Spanish",
+                  "fr": "Espagnol"
+                }
+              ],
+              [
+                "traditional_chinese",
+                {
+                  "en": "Traditional Chinese",
+                  "fr": "Chinois traditionnel"
+                }
+              ],
+              [
+                "korean",
+                {
+                  "en": "Korean",
+                  "fr": "Coréen"
+                }
+              ]
+            ],
+            "default": "english"
+          },
+          {
+            "key": "controller_prompts",
+            "label": {
+              "en": "Button prompts",
+              "fr": "Boutons affichés"
+            },
+            "values": [
+              ["playstation", "PlayStation"],
+              ["xbox", "Xbox"]
+            ],
+            "default": "playstation"
+          },
+          {
+            "key": "skip_intro",
+            "label": {
+              "en": "Skip intro",
+              "fr": "Passer l'introduction"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "unlock_bookshelf",
+            "label": {
+              "en": "Unlock bookshelf",
+              "fr": "Débloquer la bibliothèque"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "show_fps",
+            "label": {
+              "en": "FPS counter",
+              "fr": "Compteur d'images"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          }
+        ]
+      }
     },
     {
       "id": "13-sentinels-aegis-rim",
@@ -3290,7 +5029,684 @@
       "runtimes": [
         {"platform": "windows", "repo": "saulob/13-sentinels-aegis-rim-pc", "asset": "13SentinelsAegisRimPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true},
         {"platform": "linux", "repo": "saulob/13-sentinels-aegis-rim-pc", "asset": "13SentinelsAegisRimPC-*-x86_64.AppImage", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
-      ]
+      ],
+      "options": {
+        "windows": [
+          {
+            "key": "display_mode",
+            "label": {
+              "en": "Display",
+              "fr": "Affichage"
+            },
+            "hint": {
+              "en": "Window or borderless",
+              "fr": "Fenêtre ou plein écran fenêtré"
+            },
+            "values": [
+              [
+                "windowed",
+                {
+                  "en": "Windowed",
+                  "fr": "Fenêtré"
+                }
+              ],
+              [
+                "borderless",
+                {
+                  "en": "Borderless",
+                  "fr": "Plein écran fenêtré"
+                }
+              ]
+            ],
+            "default": "windowed"
+          },
+          {
+            "key": "renderer",
+            "label": {
+              "en": "Renderer",
+              "fr": "Moteur d'affichage"
+            },
+            "values": [
+              ["vulkan", "Vulkan"],
+              ["auto", "Auto"],
+              [
+                "opengl",
+                {
+                  "en": "OpenGL (experimental)",
+                  "fr": "OpenGL (expérimental)"
+                }
+              ],
+              [
+                "d3d11",
+                {
+                  "en": "Direct3D 11 (experimental)",
+                  "fr": "Direct3D 11 (expérimental)"
+                }
+              ]
+            ],
+            "default": "vulkan"
+          },
+          {
+            "key": "presentation",
+            "label": {
+              "en": "Fit",
+              "fr": "Ajustement"
+            },
+            "values": [
+              [
+                "letterbox",
+                {
+                  "en": "Letterbox",
+                  "fr": "Bandes noires"
+                }
+              ],
+              [
+                "stretch",
+                {
+                  "en": "Stretch",
+                  "fr": "Étiré"
+                }
+              ]
+            ],
+            "default": "letterbox"
+          },
+          {
+            "key": "render_resolution",
+            "label": {
+              "en": "Render resolution",
+              "fr": "Résolution de rendu"
+            },
+            "hint": {
+              "en": "Internal size, before upscaling",
+              "fr": "Taille interne, avant mise à l'échelle"
+            },
+            "values": [
+              [
+                "native",
+                {
+                  "en": "Native (1080p)",
+                  "fr": "Native (1080p)"
+                }
+              ],
+              ["480p", "480p"],
+              ["720p", "720p"],
+              ["1440p", "1440p"],
+              ["1800p", "1800p"],
+              ["4K", "4K"]
+            ],
+            "default": "native"
+          },
+          {
+            "key": "vsync",
+            "label": "VSync",
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "fsr1",
+            "label": "FSR 1",
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "rcas",
+            "label": {
+              "en": "Sharpening",
+              "fr": "Netteté"
+            },
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "smaa",
+            "label": {
+              "en": "Anti-aliasing",
+              "fr": "Anticrénelage"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              ["1", "SMAA"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "anisotropy",
+            "label": {
+              "en": "Anisotropic filtering",
+              "fr": "Filtrage anisotrope"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Game default",
+                  "fr": "Celui du jeu"
+                }
+              ],
+              ["2", "2×"],
+              ["4", "4×"],
+              ["8", "8×"],
+              ["16", "16×"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "text_language",
+            "label": {
+              "en": "Menu and subtitles",
+              "fr": "Menus et sous-titres"
+            },
+            "hint": {
+              "en": "Only the languages of your game's region are used",
+              "fr": "Seules les langues de la région de votre jeu sont utilisées"
+            },
+            "values": [
+              [
+                "english",
+                {
+                  "en": "English",
+                  "fr": "Anglais"
+                }
+              ],
+              [
+                "french",
+                {
+                  "en": "French",
+                  "fr": "Français"
+                }
+              ],
+              [
+                "german",
+                {
+                  "en": "German",
+                  "fr": "Allemand"
+                }
+              ],
+              [
+                "italian",
+                {
+                  "en": "Italian",
+                  "fr": "Italien"
+                }
+              ],
+              [
+                "spanish",
+                {
+                  "en": "Spanish",
+                  "fr": "Espagnol"
+                }
+              ],
+              [
+                "japanese",
+                {
+                  "en": "Japanese",
+                  "fr": "Japonais"
+                }
+              ],
+              [
+                "tchinese",
+                {
+                  "en": "Traditional Chinese",
+                  "fr": "Chinois traditionnel"
+                }
+              ],
+              [
+                "schinese",
+                {
+                  "en": "Simplified Chinese",
+                  "fr": "Chinois simplifié"
+                }
+              ]
+            ],
+            "default": "english"
+          },
+          {
+            "key": "controller_icons",
+            "label": {
+              "en": "Button prompts",
+              "fr": "Boutons affichés"
+            },
+            "values": [
+              ["playstation", "PlayStation"],
+              ["xbox", "Xbox"]
+            ],
+            "default": "playstation"
+          },
+          {
+            "key": "skip_intro",
+            "label": {
+              "en": "Skip intro",
+              "fr": "Passer l'introduction"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "show_fps",
+            "label": {
+              "en": "FPS counter",
+              "fr": "Compteur d'images"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          }
+        ],
+        "linux": [
+          {
+            "key": "display_mode",
+            "label": {
+              "en": "Display",
+              "fr": "Affichage"
+            },
+            "hint": {
+              "en": "Window or borderless",
+              "fr": "Fenêtre ou plein écran fenêtré"
+            },
+            "values": [
+              [
+                "windowed",
+                {
+                  "en": "Windowed",
+                  "fr": "Fenêtré"
+                }
+              ],
+              [
+                "borderless",
+                {
+                  "en": "Borderless",
+                  "fr": "Plein écran fenêtré"
+                }
+              ]
+            ],
+            "default": "windowed"
+          },
+          {
+            "key": "renderer",
+            "label": {
+              "en": "Renderer",
+              "fr": "Moteur d'affichage"
+            },
+            "values": [
+              ["vulkan", "Vulkan"],
+              ["auto", "Auto"],
+              [
+                "opengl",
+                {
+                  "en": "OpenGL (experimental)",
+                  "fr": "OpenGL (expérimental)"
+                }
+              ]
+            ],
+            "default": "vulkan"
+          },
+          {
+            "key": "presentation",
+            "label": {
+              "en": "Fit",
+              "fr": "Ajustement"
+            },
+            "values": [
+              [
+                "letterbox",
+                {
+                  "en": "Letterbox",
+                  "fr": "Bandes noires"
+                }
+              ],
+              [
+                "stretch",
+                {
+                  "en": "Stretch",
+                  "fr": "Étiré"
+                }
+              ]
+            ],
+            "default": "letterbox"
+          },
+          {
+            "key": "render_resolution",
+            "label": {
+              "en": "Render resolution",
+              "fr": "Résolution de rendu"
+            },
+            "hint": {
+              "en": "Internal size, before upscaling",
+              "fr": "Taille interne, avant mise à l'échelle"
+            },
+            "values": [
+              [
+                "native",
+                {
+                  "en": "Native (1080p)",
+                  "fr": "Native (1080p)"
+                }
+              ],
+              ["480p", "480p"],
+              ["720p", "720p"],
+              ["1440p", "1440p"],
+              ["1800p", "1800p"],
+              ["4K", "4K"]
+            ],
+            "default": "native"
+          },
+          {
+            "key": "vsync",
+            "label": "VSync",
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "fsr1",
+            "label": "FSR 1",
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "rcas",
+            "label": {
+              "en": "Sharpening",
+              "fr": "Netteté"
+            },
+            "values": [
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ],
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ]
+            ],
+            "default": "1"
+          },
+          {
+            "key": "smaa",
+            "label": {
+              "en": "Anti-aliasing",
+              "fr": "Anticrénelage"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              ["1", "SMAA"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "anisotropy",
+            "label": {
+              "en": "Anisotropic filtering",
+              "fr": "Filtrage anisotrope"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Game default",
+                  "fr": "Celui du jeu"
+                }
+              ],
+              ["2", "2×"],
+              ["4", "4×"],
+              ["8", "8×"],
+              ["16", "16×"]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "text_language",
+            "label": {
+              "en": "Menu and subtitles",
+              "fr": "Menus et sous-titres"
+            },
+            "hint": {
+              "en": "Only the languages of your game's region are used",
+              "fr": "Seules les langues de la région de votre jeu sont utilisées"
+            },
+            "values": [
+              [
+                "english",
+                {
+                  "en": "English",
+                  "fr": "Anglais"
+                }
+              ],
+              [
+                "french",
+                {
+                  "en": "French",
+                  "fr": "Français"
+                }
+              ],
+              [
+                "german",
+                {
+                  "en": "German",
+                  "fr": "Allemand"
+                }
+              ],
+              [
+                "italian",
+                {
+                  "en": "Italian",
+                  "fr": "Italien"
+                }
+              ],
+              [
+                "spanish",
+                {
+                  "en": "Spanish",
+                  "fr": "Espagnol"
+                }
+              ],
+              [
+                "japanese",
+                {
+                  "en": "Japanese",
+                  "fr": "Japonais"
+                }
+              ],
+              [
+                "tchinese",
+                {
+                  "en": "Traditional Chinese",
+                  "fr": "Chinois traditionnel"
+                }
+              ],
+              [
+                "schinese",
+                {
+                  "en": "Simplified Chinese",
+                  "fr": "Chinois simplifié"
+                }
+              ]
+            ],
+            "default": "english"
+          },
+          {
+            "key": "controller_icons",
+            "label": {
+              "en": "Button prompts",
+              "fr": "Boutons affichés"
+            },
+            "values": [
+              ["playstation", "PlayStation"],
+              ["xbox", "Xbox"]
+            ],
+            "default": "playstation"
+          },
+          {
+            "key": "skip_intro",
+            "label": {
+              "en": "Skip intro",
+              "fr": "Passer l'introduction"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Non"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Oui"
+                }
+              ]
+            ],
+            "default": "0"
+          },
+          {
+            "key": "show_fps",
+            "label": {
+              "en": "FPS counter",
+              "fr": "Compteur d'images"
+            },
+            "values": [
+              [
+                "0",
+                {
+                  "en": "Off",
+                  "fr": "Désactivé"
+                }
+              ],
+              [
+                "1",
+                {
+                  "en": "On",
+                  "fr": "Activé"
+                }
+              ]
+            ],
+            "default": "0"
+          }
+        ]
+      }
     }
   ]
 }
