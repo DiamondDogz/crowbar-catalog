@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T19:51:32+00:00",
+  "generatedAt": "2026-11-13T20:33:32+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -9,16 +9,16 @@
         "stars": 45,
         "launch": "ps4rt-launch",
         "beta": {
-          "version": "1.2-rc.3",
-          "tag": "windows-1.2-rc.3",
+          "version": "1.2-rc.5",
+          "tag": "windows-1.2-rc.5",
           "prerelease": true,
-          "published": "2026-11-13T19:33:12Z",
-          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.2-rc.3/Kagekidan-windows-1.2-rc.3.zip",
-          "file": "Kagekidan-windows-1.2-rc.3.zip",
-          "size": 83056084,
-          "sha256": "4b796146795964ee4cc7310882f951c3f70a2da111e5049dee8db2555a67553c",
-          "notes": "windows-1.1.5 with a runtime built from branch sakura-1.2 (610923b): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: 4b796146795964ee4cc7310882f951c3f70a2da111e5049dee8db2555a67553c\n",
-          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.2-rc.3"
+          "published": "2026-11-13T20:32:29Z",
+          "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.2-rc.5/Kagekidan-windows-1.2-rc.5.zip",
+          "file": "Kagekidan-windows-1.2-rc.5.zip",
+          "size": 83056551,
+          "sha256": "cc5765423c8180cb8726c791454e891d9e3f4087f00b6f60603cb279d73edd09",
+          "notes": "windows-1.1.5 with a runtime built from branch sakura-1.2 (cd9344a): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: cc5765423c8180cb8726c791454e891d9e3f4087f00b6f60603cb279d73edd09\n",
+          "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.2-rc.5"
         },
         "stable": {
           "version": "1.1.5",
@@ -33,6 +33,18 @@
           "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1.5"
         },
         "versions": [
+          {
+            "version": "1.2-rc.5",
+            "tag": "windows-1.2-rc.5",
+            "prerelease": true,
+            "published": "2026-11-13T20:32:29Z",
+            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.2-rc.5/Kagekidan-windows-1.2-rc.5.zip",
+            "file": "Kagekidan-windows-1.2-rc.5.zip",
+            "size": 83056551,
+            "sha256": "cc5765423c8180cb8726c791454e891d9e3f4087f00b6f60603cb279d73edd09",
+            "notes": "windows-1.1.5 with a runtime built from branch sakura-1.2 (cd9344a): pause from Crowbar's Guide menu (crowbar-sdk 1.2). The launcher is unchanged.\n\nSHA-256: cc5765423c8180cb8726c791454e891d9e3f4087f00b6f60603cb279d73edd09\n",
+            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.2-rc.5"
+          },
           {
             "version": "1.2-rc.3",
             "tag": "windows-1.2-rc.3",
@@ -140,18 +152,6 @@
             "sha256": "634948ba8b2d376812f9dabb7a7dc16e7aeeba431cfd82955c2cef0ef7d775d5",
             "notes": "## windows-1.1-test\n\nSuperseded by [windows-1.1](https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1). Do not send this archive.\n\nSame `ps4rt.exe` as windows-1.1 (14,510,592 bytes), built from commit `f6e5f4c`, before the release notes and the README were updated. The publisher tested this file on 31 October 2026. The game started.\n\n`634948ba8b2d376812f9dabb7a7dc16e7aeeba431cfd82955c2cef0ef7d775d5  Kagekidan-windows-1.1-test.zip`\n\n### Test machine\n\nNot a minimum. windows-1.0 and windows-1.1 were started on:\n\n- Windows 11 Pro for Workstations, version 26H2\n- Intel ",
             "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.1-test"
-          },
-          {
-            "version": "1.0",
-            "tag": "windows-1.0",
-            "prerelease": false,
-            "published": "2026-10-30T11:23:34Z",
-            "url": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/download/windows-1.0/Kagekidan-windows-1.0.zip",
-            "file": "Kagekidan-windows-1.0.zip",
-            "size": 85315757,
-            "sha256": "95108a97225d66044b7be8797c06b5b2cb9521c61436275c8e1b4f0d334e0159",
-            "notes": "## windows-1.0\n\nFirst Windows release. Upstream [Sakura-Wars-PS4RT v1.0](https://github.com/HekamiAeon/Sakura-Wars-PS4RT/releases/tag/v1.0), commit `85ac44fdc1fe7e13fac325e6ecea3b523be27d1f`. This archive is commit `34ecef7`.\n\nPublished by DiamondDogz. The runtime is HekamiAeon's. The launcher was written with Grok, by xAI. Not affiliated with SEGA. The game is not included.\n\n`95108a97225d66044b7be8797c06b5b2cb9521c61436275c8e1b4f0d334e0159  Kagekidan-windows-1.0.zip`\n\n### Added\n\n- `Kagekidan.exe`, a Windows launcher. It does not open a browser. English by default, French from the EN button.\n-",
-            "page": "https://github.com/DiamondDogz/Sakura-Wars-PS4RT-Windows/releases/tag/windows-1.0"
           }
         ]
       },
