@@ -3625,18 +3625,6 @@
             "default": "english"
           },
           {
-            "key": "controller_prompts",
-            "label": {
-              "en": "Button prompts",
-              "fr": "Boutons affichés"
-            },
-            "values": [
-              ["playstation", "PlayStation"],
-              ["xbox", "Xbox"]
-            ],
-            "default": "playstation"
-          },
-          {
             "key": "skip_intro",
             "label": {
               "en": "Skip intro",
@@ -4135,18 +4123,6 @@
             "default": "english"
           },
           {
-            "key": "controller_prompts",
-            "label": {
-              "en": "Button prompts",
-              "fr": "Boutons affichés"
-            },
-            "values": [
-              ["playstation", "PlayStation"],
-              ["xbox", "Xbox"]
-            ],
-            "default": "playstation"
-          },
-          {
             "key": "skip_intro",
             "label": {
               "en": "Skip intro",
@@ -4571,18 +4547,6 @@
             "default": "english"
           },
           {
-            "key": "controller_prompts",
-            "label": {
-              "en": "Button prompts",
-              "fr": "Boutons affichés"
-            },
-            "values": [
-              ["playstation", "PlayStation"],
-              ["xbox", "Xbox"]
-            ],
-            "default": "playstation"
-          },
-          {
             "key": "skip_intro",
             "label": {
               "en": "Skip intro",
@@ -4923,18 +4887,6 @@
               ]
             ],
             "default": "english"
-          },
-          {
-            "key": "controller_prompts",
-            "label": {
-              "en": "Button prompts",
-              "fr": "Boutons affichés"
-            },
-            "values": [
-              ["playstation", "PlayStation"],
-              ["xbox", "Xbox"]
-            ],
-            "default": "playstation"
           },
           {
             "key": "skip_intro",
@@ -5312,18 +5264,6 @@
             "default": "english"
           },
           {
-            "key": "controller_icons",
-            "label": {
-              "en": "Button prompts",
-              "fr": "Boutons affichés"
-            },
-            "values": [
-              ["playstation", "PlayStation"],
-              ["xbox", "Xbox"]
-            ],
-            "default": "playstation"
-          },
-          {
             "key": "skip_intro",
             "label": {
               "en": "Skip intro",
@@ -5644,18 +5584,6 @@
               ]
             ],
             "default": "english"
-          },
-          {
-            "key": "controller_icons",
-            "label": {
-              "en": "Button prompts",
-              "fr": "Boutons affichés"
-            },
-            "values": [
-              ["playstation", "PlayStation"],
-              ["xbox", "Xbox"]
-            ],
-            "default": "playstation"
           },
           {
             "key": "skip_intro",
