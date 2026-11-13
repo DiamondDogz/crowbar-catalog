@@ -3248,7 +3248,8 @@
         "en-US": "Four adventurers explore the kingdom's labyrinths in search of a cursed treasure."
       },
       "runtimes": [
-        {"platform": "windows", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
+        {"platform": "windows", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-windows-x64.zip", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true},
+        {"platform": "linux", "repo": "saulob/dragons-crown-pro-pc", "asset": "DragonsCrownProPC-*-x86_64.AppImage", "checksum": "{asset}.sha256", "maintainer": "saulob", "launch": "trg", "trophies": true}
       ]
     }
   ]
