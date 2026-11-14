@@ -11,6 +11,12 @@ def rel(tag, date, pre=False, draft=False, assets=("Sakura.zip",)):
             "assets": [{"name": n, "browser_download_url": "https://dl/" + n, "size": 10, "digest": "sha256:" + "a" * 64} for n in assets]}
 
 
+class Badges(unittest.TestCase):
+    def test_ordre_filtre_et_trophees(self):
+        self.assertEqual(b.badges({"badges": ["captures", "inconnu", "pause"], "trophies": True}), ["pause", "trophies", "captures"])
+        self.assertEqual(b.badges({}), [])
+
+
 class Resolve(unittest.TestCase):
     def test_stable_et_beta(self):
         releases = [rel("windows-1.2-test", "2026-11-04T00:00:00Z", pre=True),

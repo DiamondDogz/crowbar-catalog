@@ -134,7 +134,8 @@ def dumps(v, indent=0, inline=False) -> str:
             return "[]"
         if all(not isinstance(x, (dict, list)) for x in v):
             return "[" + ", ".join(json.dumps(x, ensure_ascii=False) for x in v) + "]"
-        flat = lambda x: isinstance(x, dict) and all(not isinstance(y, (dict, list)) for y in x.values())
+        plain = lambda y: not isinstance(y, (dict, list)) or (isinstance(y, list) and all(not isinstance(z, (dict, list)) for z in y))
+        flat = lambda x: isinstance(x, dict) and all(plain(y) for y in x.values())
         return "[\n" + ",\n".join(f"{inner}{dumps(x, indent + 1, inline and flat(x))}" for x in v) + f"\n{pad}]"
     return json.dumps(v, ensure_ascii=False)
 
@@ -150,6 +151,8 @@ def apply(catalog: dict, f: dict, sha_note: str) -> tuple[dict, str]:
     entry["maintainer"] = f.get("maintainer") or f["repo"].split("/")[0]
     entry["launch"] = "crowbar-json"
     entry["trophies"] = bool(f.get("_trophies"))
+    if f.get("_badges"):
+        entry["badges"] = f["_badges"]
     games = catalog.setdefault("games", [])
     game = next((g for g in games if g.get("id") == f["game"]), None)
     if game is None:
@@ -219,7 +222,9 @@ def main(argv=None) -> int:
         if r["errors"]:
             raise ValueError("crowbar-check signale des erreurs dans la release (ci-dessus)")
         lines.append("- ✓ `crowbar.json` présent et valide, aucun fichier de jeu ni clé détecté")
-        form["_trophies"] = bool(((r.get("manifestData") or {}).get("features") or {}).get("trophies"))
+        md = r.get("manifestData") or {}
+        form["_trophies"] = bool((md.get("features") or {}).get("trophies"))
+        form["_badges"] = [b for b, on in (("pause", (md.get("features") or {}).get("pause")), ("mods", md.get("mods"))) if on]
         catalog_path = ROOT / "catalog.json"
         catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
         entry, what = apply(catalog, form, sha)

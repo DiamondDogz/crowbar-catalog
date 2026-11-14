@@ -44,6 +44,7 @@ Les nouvelles versions de votre runtime sont ensuite prises en compte **toutes s
 | `asset` | Motif du fichier à télécharger dans la release (`*.zip`, `*-linux-x86_64.tar.gz`) |
 | `checksum` | Facultatif : fichier d'empreinte publié à côté (`{asset}.sha256`). Sinon, Crowbar utilise l'empreinte fournie par GitHub |
 | `maintainer` | Affiché aux joueurs avant l'installation |
+| `badges` | Facultatif. Ce que le runtime sait faire d'autre, en badges sur sa fiche dans Crowbar avant le téléchargement : `pause` (pause du Guide), `quit` (Quitter propre), `captures` (captures vers Crowbar), `presence`, `mods`. Crowbar ajoute un ✓ à ceux qu'il a vus marcher sur le PC du joueur |
 | `trophies` | `true` quand le runtime note les trophées obtenus ([format](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md#2-trophies)). Crowbar les montre alors en direct, dans le profil et aux amis du joueur |
 | `launch` | Façon de lancer le jeu, reconnue aussi d'après les fichiers du runtime. `crowbar-json` = le runtime livre un `crowbar.json` ([format](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md)) qui dit tout ; `ps4rt-launch` = `scripts/ps4rt_launch.py --game <dossier>` ; `ps4rt-run` = `run.py` avec `PS4RT_GAME_DIR` (runtimes livrés avec le launcher Ravn) ; `native-play` = launcher natif sans Python, `bin/… Launcher.exe --play`, qui lance le jeu indiqué dans `out/launcher.ini` ; `trg` = port TRG (`dragons_crown_pro.exe` à la racine), Crowbar écrit l'ini et saute le launcher. Sous Windows, avec le Python de `python/` |
 

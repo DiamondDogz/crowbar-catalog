@@ -48,6 +48,7 @@ After that, new versions of your runtime are picked up **on their own**: just pu
 | `checksum` | Optional: a checksum file published next to it (`{asset}.sha256`). Otherwise, Crowbar uses the checksum GitHub provides |
 | `maintainer` | Shown to players before installation |
 | `launch` | How to launch the game; Crowbar also recognises it from the runtime's files. See below |
+| `badges` | Optional. What else the runtime does, shown as badges on its page in Crowbar before download: `pause` (Guide pause), `quit` (clean quit), `captures` (screenshots to Crowbar), `presence`, `mods`. Crowbar adds a ✓ to those it has seen working on the player's PC |
 | `trophies` | `true` when the runtime records trophy unlocks ([format](https://github.com/DiamondDogz/crowbar-sdk/blob/main/SPEC.md#2-trophies)). Crowbar then shows them live, in the profile and to the player's friends |
 
 The `launch` values:

@@ -26,6 +26,13 @@ API = "https://api.github.com"
 NOTES_MAX = 4000  # notes de version tronquées, pour garder releases.json léger
 VERSIONS_MAX = 10  # versions proposées dans Crowbar pour revenir en arrière ou en choisir une
 VERSION_NOTES_MAX = 600
+BADGES = ("pause", "trophies", "quit", "captures", "presence", "mods")  # badges montrés par Crowbar
+
+
+def badges(spec: dict) -> list[str]:
+    """Ce que le runtime sait faire, dans l'ordre de Crowbar : `badges` du catalogue, et `trophies`."""
+    have = {b for b in spec.get("badges", []) if b in BADGES} | ({"trophies"} if spec.get("trophies") else set())
+    return [b for b in BADGES if b in have]
 
 
 def http_get(url: str, accept: str = "application/vnd.github+json") -> bytes:
@@ -149,7 +156,7 @@ def build(catalog: dict, fetch=fetch_releases, read=http_get, info=fetch_repo) -
             except (urllib.error.URLError, OSError, ValueError):
                 stars = None
             entry[key] = {"repo": spec["repo"], "maintainer": spec.get("maintainer", ""), "stars": stars,
-                          "launch": spec.get("launch", "ps4rt-launch"), **channels}
+                          "launch": spec.get("launch", "ps4rt-launch"), "badges": badges(spec), **channels}
         result["games"][game["id"]] = entry
     return result, problems
 
