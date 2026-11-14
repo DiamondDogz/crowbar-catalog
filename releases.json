@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T13:12:21+00:00",
+  "generatedAt": "2026-11-14T13:40:21+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -8,6 +8,12 @@
         "maintainer": "DiamondDogz",
         "stars": 47,
         "launch": "ps4rt-launch",
+        "badges": [
+          "pause",
+          "trophies",
+          "quit",
+          "captures"
+        ],
         "beta": {
           "version": "1.2.1",
           "tag": "windows-1.2.1",
@@ -160,6 +166,9 @@
         "maintainer": "HekamiAeon",
         "stars": 43,
         "launch": "ps4rt-launch",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v1.2",
           "tag": "v1.2",
@@ -230,6 +239,9 @@
         "maintainer": "Hoverbike51",
         "stars": 45,
         "launch": "native-play",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v1.1.1",
           "tag": "v1.1.1",
@@ -310,6 +322,7 @@
         "maintainer": "HekamiAeon",
         "stars": 29,
         "launch": "ps4rt-launch",
+        "badges": [],
         "beta": {
           "version": "v1.2",
           "tag": "v1.2",
@@ -368,6 +381,9 @@
         "maintainer": "DiamondDogz",
         "stars": 27,
         "launch": "ps4rt-run",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "1.2.2",
           "tag": "windows-1.2.2",
@@ -460,6 +476,7 @@
         "maintainer": "HekamiAeon",
         "stars": 13,
         "launch": "ps4rt-launch",
+        "badges": [],
         "beta": {
           "version": "v1.2",
           "tag": "v1.2",
@@ -530,6 +547,9 @@
         "maintainer": "HekamiAeon",
         "stars": 4,
         "launch": "ps4rt-launch",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v1.0",
           "tag": "v1.0",
@@ -574,6 +594,9 @@
         "maintainer": "DiamondDogz",
         "stars": 12,
         "launch": "crowbar-json",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "1.0.2",
           "tag": "windows-1.0.2",
@@ -680,6 +703,9 @@
         "maintainer": "saulob",
         "stars": 429,
         "launch": "trg",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v1.2.0",
           "tag": "v1.2.0",
@@ -832,6 +858,9 @@
         "maintainer": "saulob",
         "stars": 429,
         "launch": "trg",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v1.2.0",
           "tag": "v1.2.0",
@@ -986,6 +1015,9 @@
         "maintainer": "saulob",
         "stars": 193,
         "launch": "trg",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v0.2.3",
           "tag": "v0.2.3",
@@ -1078,6 +1110,9 @@
         "maintainer": "saulob",
         "stars": 193,
         "launch": "trg",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v0.2.3",
           "tag": "v0.2.3",
@@ -1172,6 +1207,9 @@
         "maintainer": "saulob",
         "stars": 103,
         "launch": "trg",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v0.1.0",
           "tag": "v0.1.0",
@@ -1216,6 +1254,9 @@
         "maintainer": "saulob",
         "stars": 103,
         "launch": "trg",
+        "badges": [
+          "trophies"
+        ],
         "beta": {
           "version": "v0.1.0",
           "tag": "v0.1.0",
