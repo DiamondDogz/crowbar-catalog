@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T23:00:07+00:00",
+  "generatedAt": "2026-11-14T02:24:19+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -666,33 +666,45 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 419,
+        "stars": 426,
         "launch": "trg",
         "beta": {
-          "version": "v1.1.1",
-          "tag": "v1.1.1",
+          "version": "v1.2.0",
+          "tag": "v1.2.0",
           "prerelease": false,
-          "published": "2026-11-08T10:50:49Z",
-          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.1.1/DragonsCrownProPC-v1.1.1-windows-x64.zip",
-          "file": "DragonsCrownProPC-v1.1.1-windows-x64.zip",
-          "size": 33429709,
-          "sha256": "d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c",
-          "notes": "# Dragon's Crown Pro PC v1.1.1\n\nHotfix release for the automatic updater introduced after v1.1.0\n\n## Updater fixes\n\n- Fixed an update download that could remain stuck indefinitely after a temporary network or HTTP failure\n- Added robust timeout and cancellation handling for GitHub release downloads\n- Added secure validation for GitHub release redirects and download hosts\n- Failed downloads now terminate cleanly and offer RETRY instead of remaining on Downloading update\n- RETRY starts a fresh download and does not reuse partial files\n- Partial downloads are written to temporary files and removed after failures\n- Preserved SHA-256 verification, staging validation and rollback behavior\n- Added focused coverage for HTTP 504, stalled transfers, interrupted downloads, invalid redirects and successful retry after failure\n\nNo game files are included\n\n## Downloads\n\n- Windows: DragonsCrownProPC-v1.1.1-windows-x64.zip\n- Linux / Steam Deck experimental: DragonsCrownProPC-v1.1.1-x86_64.AppImage\n\n## Security\n\n| File | SHA-256 | VirusTotal |\n| --- | --- | --- |\n| DragonsCrownProPC-v1.1.1-windows-x64.zip | d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c | https://www.virustotal.com/gui/file/d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c?nocache=1 |\n| DragonsCrownProPC-v1.1.1-x86_64.AppImage | 61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff | https://www.virustotal.com/gui/file/61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff?nocache=1 |\n| dragons_crown_pro.exe | 340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d | https://www.virustotal.com/gui/file/340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d?nocache=1 |\n| trg-updater.exe | 92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f | https://www.virustotal.com/gui/file/92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f?nocache=1 |\n\n## Checksums\n\nd7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c  DragonsCrownProPC-v1.1.1-windows-x64.zip\n61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff  DragonsCrownProPC-v1.1.1-x86_64.AppImage\r\n",
-          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.1.1"
+          "published": "2026-11-13T23:59:21Z",
+          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.2.0/DragonsCrownProPC-v1.2.0-windows-x64.zip",
+          "file": "DragonsCrownProPC-v1.2.0-windows-x64.zip",
+          "size": 33464945,
+          "sha256": "08402a1d16880ed259b58b3d4d75fc80dfcc8f53b1c23e578cac8d79df7d62be",
+          "notes": "# Dragon's Crown Pro PC v1.2.0\r\n\r\nDragon's Crown Pro for PlayStation 4 as a native PC port for Windows and, experimentally, Linux and Steam Deck\r\n\r\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package from one of the supported builds\r\n\r\nIf you use v1.1.1 or v1.1.0, the launcher offers this release with **UPDATE NOW**. Your installed game files, saves, settings and logs are kept\r\n\r\n## Early Story Online\r\n\r\nDragon's Crown makes you play a good part of the story before its online multiplayer becomes available. v1.2.0 adds **Early Story Online**, which lets friends start playing together shortly after the opening tutorial, once the host reaches Hydeland\r\n\r\n- **Online much earlier.** After the tutorial and the first arrival in Hydeland, the host gets the game's own \"Go online?\" prompt and Network Menu. In Hydeland, **Y / Triangle** opens the Network Menu, because the character menu is not available yet. The tutorial itself stays single-player\r\n- **The host leads the story.** The host controls the story progression of the session. A guest whose own character is at a different story point temporarily follows the host's story for the shared stages and cutscenes\r\n- **The guest's own progress is protected.** The guest's saved story progress is not advanced by the host's session, and it is restored when the guest leaves, disconnects or the room closes\r\n- **Rewards stay with the guest.** XP, gold, loot and items earned in the session are the guest's own, as in any online game\r\n- **Built on the game's own multiplayer.** It uses the game's multiplayer menus and rooms and the port's lobby and peer-to-peer transport. Changes to the host's story step are passed to the room through the game's Matching2-compatible room path\r\n- **For friends, not strangers.** Early Story rooms are hidden from random matchmaking. Friends join them with Join a Friend's room or the join code\r\n- **How to use it.** Turn on **Early Story Online** on the launcher's **Online** page (Online Play must be on). It is Off by default and applies at the next game start. Only the host needs the option. A guest needs v1.2.0 but not the option, and older versions cannot join an Early Story room\r\n\r\n**Tested with two players.** Two-player Early Story sessions, including a change of host, were tested successfully. Sessions with three or four players have not been validated. With the option Off, online play and its unlock work exactly as before\r\n\r\n## Online improvements\r\n\r\n- The online service now supports Early Story rooms: they are kept private, only clients that support them can join, and the host's live story step is shared with the room's members. The service must be updated for early rooms to be hosted\r\n- Hardened the online service against abusive or malformed WebSocket connections, while keeping normal play and the relay unaffected\r\n- New aggregate Early Story Online statistics on the maintainer's private dashboard. For this one feature, the service also keeps, per account that hosted or joined an Early Story room, the online name, the account ID, how many such rooms it took part in and when. It keeps no address, room or join code, and turning the option on records nothing by itself. See the privacy section of [docs/ONLINE.md](https://github.com/saulob/dragons-crown-pro-pc/blob/main/docs/ONLINE.md)\r\n\r\n## Controller and gameplay improvements\r\n\r\n- **Controller Rumble** toggle (On by default) on the launcher's **Controls** page and in the F1 Options menu, where it applies at once ([#70](https://github.com/saulob/dragons-crown-pro-pc/issues/70))\r\n- **Your own gamepad mappings**: a device SDL does not recognize as a gamepad, such as a remote-play virtual pad, can be added with a line in `user/gamecontrollerdb.txt`, in the format of [SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB). `SDL_GAMECONTROLLERCONFIG` still takes priority ([#27](https://github.com/saulob/dragons-crown-pro-pc/issues/27))\r\n- **Better diagnostics",
+          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.2.0"
         },
         "stable": {
-          "version": "v1.1.1",
-          "tag": "v1.1.1",
+          "version": "v1.2.0",
+          "tag": "v1.2.0",
           "prerelease": false,
-          "published": "2026-11-08T10:50:49Z",
-          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.1.1/DragonsCrownProPC-v1.1.1-windows-x64.zip",
-          "file": "DragonsCrownProPC-v1.1.1-windows-x64.zip",
-          "size": 33429709,
-          "sha256": "d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c",
-          "notes": "# Dragon's Crown Pro PC v1.1.1\n\nHotfix release for the automatic updater introduced after v1.1.0\n\n## Updater fixes\n\n- Fixed an update download that could remain stuck indefinitely after a temporary network or HTTP failure\n- Added robust timeout and cancellation handling for GitHub release downloads\n- Added secure validation for GitHub release redirects and download hosts\n- Failed downloads now terminate cleanly and offer RETRY instead of remaining on Downloading update\n- RETRY starts a fresh download and does not reuse partial files\n- Partial downloads are written to temporary files and removed after failures\n- Preserved SHA-256 verification, staging validation and rollback behavior\n- Added focused coverage for HTTP 504, stalled transfers, interrupted downloads, invalid redirects and successful retry after failure\n\nNo game files are included\n\n## Downloads\n\n- Windows: DragonsCrownProPC-v1.1.1-windows-x64.zip\n- Linux / Steam Deck experimental: DragonsCrownProPC-v1.1.1-x86_64.AppImage\n\n## Security\n\n| File | SHA-256 | VirusTotal |\n| --- | --- | --- |\n| DragonsCrownProPC-v1.1.1-windows-x64.zip | d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c | https://www.virustotal.com/gui/file/d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c?nocache=1 |\n| DragonsCrownProPC-v1.1.1-x86_64.AppImage | 61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff | https://www.virustotal.com/gui/file/61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff?nocache=1 |\n| dragons_crown_pro.exe | 340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d | https://www.virustotal.com/gui/file/340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d?nocache=1 |\n| trg-updater.exe | 92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f | https://www.virustotal.com/gui/file/92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f?nocache=1 |\n\n## Checksums\n\nd7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c  DragonsCrownProPC-v1.1.1-windows-x64.zip\n61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff  DragonsCrownProPC-v1.1.1-x86_64.AppImage\r\n",
-          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.1.1"
+          "published": "2026-11-13T23:59:21Z",
+          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.2.0/DragonsCrownProPC-v1.2.0-windows-x64.zip",
+          "file": "DragonsCrownProPC-v1.2.0-windows-x64.zip",
+          "size": 33464945,
+          "sha256": "08402a1d16880ed259b58b3d4d75fc80dfcc8f53b1c23e578cac8d79df7d62be",
+          "notes": "# Dragon's Crown Pro PC v1.2.0\r\n\r\nDragon's Crown Pro for PlayStation 4 as a native PC port for Windows and, experimentally, Linux and Steam Deck\r\n\r\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package from one of the supported builds\r\n\r\nIf you use v1.1.1 or v1.1.0, the launcher offers this release with **UPDATE NOW**. Your installed game files, saves, settings and logs are kept\r\n\r\n## Early Story Online\r\n\r\nDragon's Crown makes you play a good part of the story before its online multiplayer becomes available. v1.2.0 adds **Early Story Online**, which lets friends start playing together shortly after the opening tutorial, once the host reaches Hydeland\r\n\r\n- **Online much earlier.** After the tutorial and the first arrival in Hydeland, the host gets the game's own \"Go online?\" prompt and Network Menu. In Hydeland, **Y / Triangle** opens the Network Menu, because the character menu is not available yet. The tutorial itself stays single-player\r\n- **The host leads the story.** The host controls the story progression of the session. A guest whose own character is at a different story point temporarily follows the host's story for the shared stages and cutscenes\r\n- **The guest's own progress is protected.** The guest's saved story progress is not advanced by the host's session, and it is restored when the guest leaves, disconnects or the room closes\r\n- **Rewards stay with the guest.** XP, gold, loot and items earned in the session are the guest's own, as in any online game\r\n- **Built on the game's own multiplayer.** It uses the game's multiplayer menus and rooms and the port's lobby and peer-to-peer transport. Changes to the host's story step are passed to the room through the game's Matching2-compatible room path\r\n- **For friends, not strangers.** Early Story rooms are hidden from random matchmaking. Friends join them with Join a Friend's room or the join code\r\n- **How to use it.** Turn on **Early Story Online** on the launcher's **Online** page (Online Play must be on). It is Off by default and applies at the next game start. Only the host needs the option. A guest needs v1.2.0 but not the option, and older versions cannot join an Early Story room\r\n\r\n**Tested with two players.** Two-player Early Story sessions, including a change of host, were tested successfully. Sessions with three or four players have not been validated. With the option Off, online play and its unlock work exactly as before\r\n\r\n## Online improvements\r\n\r\n- The online service now supports Early Story rooms: they are kept private, only clients that support them can join, and the host's live story step is shared with the room's members. The service must be updated for early rooms to be hosted\r\n- Hardened the online service against abusive or malformed WebSocket connections, while keeping normal play and the relay unaffected\r\n- New aggregate Early Story Online statistics on the maintainer's private dashboard. For this one feature, the service also keeps, per account that hosted or joined an Early Story room, the online name, the account ID, how many such rooms it took part in and when. It keeps no address, room or join code, and turning the option on records nothing by itself. See the privacy section of [docs/ONLINE.md](https://github.com/saulob/dragons-crown-pro-pc/blob/main/docs/ONLINE.md)\r\n\r\n## Controller and gameplay improvements\r\n\r\n- **Controller Rumble** toggle (On by default) on the launcher's **Controls** page and in the F1 Options menu, where it applies at once ([#70](https://github.com/saulob/dragons-crown-pro-pc/issues/70))\r\n- **Your own gamepad mappings**: a device SDL does not recognize as a gamepad, such as a remote-play virtual pad, can be added with a line in `user/gamecontrollerdb.txt`, in the format of [SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB). `SDL_GAMECONTROLLERCONFIG` still takes priority ([#27](https://github.com/saulob/dragons-crown-pro-pc/issues/27))\r\n- **Better diagnostics",
+          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.2.0"
         },
         "versions": [
+          {
+            "version": "v1.2.0",
+            "tag": "v1.2.0",
+            "prerelease": false,
+            "published": "2026-11-13T23:59:21Z",
+            "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.2.0/DragonsCrownProPC-v1.2.0-windows-x64.zip",
+            "file": "DragonsCrownProPC-v1.2.0-windows-x64.zip",
+            "size": 33464945,
+            "sha256": "08402a1d16880ed259b58b3d4d75fc80dfcc8f53b1c23e578cac8d79df7d62be",
+            "notes": "# Dragon's Crown Pro PC v1.2.0\r\n\r\nDragon's Crown Pro for PlayStation 4 as a native PC port for Windows and, experimentally, Linux and Steam Deck\r\n\r\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package from one of the supported builds\r\n\r\nIf you use v1.1.1 or v1.1.0, the launcher offers this release with **UPDATE NOW**. Your installed game files, saves, settings and logs are kept\r\n\r\n## Early Story Online\r\n\r\nDragon's Crown makes you play a good part of the story before its online multiplayer becomes available. v1.2.0 adds **Early Story Online**, which ",
+            "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.2.0"
+          },
           {
             "version": "v1.1.1",
             "tag": "v1.1.1",
@@ -800,51 +812,51 @@
             "sha256": "d7eedcb701421fa0bc25153784737d770be8eb83572063e0b3979f368b881180",
             "notes": "## Dragon's Crown Pro PC Port v0.7.0\n\nAdds an Arachnophobia Safe Mode, keyboard rebinding, Japanese NPC voices for the US build, support for the US 1.01 update and a corrected Asia / Hong Kong 1.02 install, more cheats, and a launcher that can update itself. This is an unofficial fan-made port, not affiliated with or endorsed by Vanillaware, Atlus, SEGA, Sony Interactive Entertainment or any other rights holder.\n\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package.\n\n### Highlights\n\n- **Arachnophobia Safe Mode**: the Giant Spiders can be shown as a ",
             "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.7.0"
-          },
-          {
-            "version": "v0.6.0",
-            "tag": "v0.6.0",
-            "prerelease": false,
-            "published": "2026-10-17T21:34:40Z",
-            "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v0.6.0/DragonsCrownProPC-v0.6.0-windows-x64.zip",
-            "file": "DragonsCrownProPC-v0.6.0-windows-x64.zip",
-            "size": 14258013,
-            "sha256": "effeb4bda65e5a4f6df9e780fe67ac1b65b2d5e5ba9cc2317012269db5d54391",
-            "notes": "## Dragon's Crown Pro PC Port v0.6.0\n\nAdds support for the Japanese and Asia / Hong Kong PS4 releases, Aspect Ratio options, local offline PS4 Trophies and Traditional Chinese text for the Asia / Hong Kong build. This is an unofficial fan-made port, not affiliated with or endorsed by Vanillaware, Atlus, SEGA, Sony Interactive Entertainment or any other rights holder.\n\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package.\n\n### Highlights\n\n- **More regions**: the US build plus the Japanese (`CUSA07001` 1.00, 1.02, 1.03) and Asia / Hong Kong (`CUSA1020",
-            "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.6.0"
           }
         ]
       },
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 419,
+        "stars": 426,
         "launch": "trg",
         "beta": {
-          "version": "v1.1.1",
-          "tag": "v1.1.1",
+          "version": "v1.2.0",
+          "tag": "v1.2.0",
           "prerelease": false,
-          "published": "2026-11-08T10:50:49Z",
-          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.1.1/DragonsCrownProPC-v1.1.1-x86_64.AppImage",
-          "file": "DragonsCrownProPC-v1.1.1-x86_64.AppImage",
-          "size": 28629312,
-          "sha256": "61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff",
-          "notes": "# Dragon's Crown Pro PC v1.1.1\n\nHotfix release for the automatic updater introduced after v1.1.0\n\n## Updater fixes\n\n- Fixed an update download that could remain stuck indefinitely after a temporary network or HTTP failure\n- Added robust timeout and cancellation handling for GitHub release downloads\n- Added secure validation for GitHub release redirects and download hosts\n- Failed downloads now terminate cleanly and offer RETRY instead of remaining on Downloading update\n- RETRY starts a fresh download and does not reuse partial files\n- Partial downloads are written to temporary files and removed after failures\n- Preserved SHA-256 verification, staging validation and rollback behavior\n- Added focused coverage for HTTP 504, stalled transfers, interrupted downloads, invalid redirects and successful retry after failure\n\nNo game files are included\n\n## Downloads\n\n- Windows: DragonsCrownProPC-v1.1.1-windows-x64.zip\n- Linux / Steam Deck experimental: DragonsCrownProPC-v1.1.1-x86_64.AppImage\n\n## Security\n\n| File | SHA-256 | VirusTotal |\n| --- | --- | --- |\n| DragonsCrownProPC-v1.1.1-windows-x64.zip | d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c | https://www.virustotal.com/gui/file/d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c?nocache=1 |\n| DragonsCrownProPC-v1.1.1-x86_64.AppImage | 61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff | https://www.virustotal.com/gui/file/61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff?nocache=1 |\n| dragons_crown_pro.exe | 340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d | https://www.virustotal.com/gui/file/340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d?nocache=1 |\n| trg-updater.exe | 92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f | https://www.virustotal.com/gui/file/92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f?nocache=1 |\n\n## Checksums\n\nd7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c  DragonsCrownProPC-v1.1.1-windows-x64.zip\n61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff  DragonsCrownProPC-v1.1.1-x86_64.AppImage\r\n",
-          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.1.1"
+          "published": "2026-11-13T23:59:21Z",
+          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.2.0/DragonsCrownProPC-v1.2.0-x86_64.AppImage",
+          "file": "DragonsCrownProPC-v1.2.0-x86_64.AppImage",
+          "size": 28682560,
+          "sha256": "d020405b192afe580af13c68a8fd8e0b09c2f2516b8a81661caf21fa8f8cbd55",
+          "notes": "# Dragon's Crown Pro PC v1.2.0\r\n\r\nDragon's Crown Pro for PlayStation 4 as a native PC port for Windows and, experimentally, Linux and Steam Deck\r\n\r\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package from one of the supported builds\r\n\r\nIf you use v1.1.1 or v1.1.0, the launcher offers this release with **UPDATE NOW**. Your installed game files, saves, settings and logs are kept\r\n\r\n## Early Story Online\r\n\r\nDragon's Crown makes you play a good part of the story before its online multiplayer becomes available. v1.2.0 adds **Early Story Online**, which lets friends start playing together shortly after the opening tutorial, once the host reaches Hydeland\r\n\r\n- **Online much earlier.** After the tutorial and the first arrival in Hydeland, the host gets the game's own \"Go online?\" prompt and Network Menu. In Hydeland, **Y / Triangle** opens the Network Menu, because the character menu is not available yet. The tutorial itself stays single-player\r\n- **The host leads the story.** The host controls the story progression of the session. A guest whose own character is at a different story point temporarily follows the host's story for the shared stages and cutscenes\r\n- **The guest's own progress is protected.** The guest's saved story progress is not advanced by the host's session, and it is restored when the guest leaves, disconnects or the room closes\r\n- **Rewards stay with the guest.** XP, gold, loot and items earned in the session are the guest's own, as in any online game\r\n- **Built on the game's own multiplayer.** It uses the game's multiplayer menus and rooms and the port's lobby and peer-to-peer transport. Changes to the host's story step are passed to the room through the game's Matching2-compatible room path\r\n- **For friends, not strangers.** Early Story rooms are hidden from random matchmaking. Friends join them with Join a Friend's room or the join code\r\n- **How to use it.** Turn on **Early Story Online** on the launcher's **Online** page (Online Play must be on). It is Off by default and applies at the next game start. Only the host needs the option. A guest needs v1.2.0 but not the option, and older versions cannot join an Early Story room\r\n\r\n**Tested with two players.** Two-player Early Story sessions, including a change of host, were tested successfully. Sessions with three or four players have not been validated. With the option Off, online play and its unlock work exactly as before\r\n\r\n## Online improvements\r\n\r\n- The online service now supports Early Story rooms: they are kept private, only clients that support them can join, and the host's live story step is shared with the room's members. The service must be updated for early rooms to be hosted\r\n- Hardened the online service against abusive or malformed WebSocket connections, while keeping normal play and the relay unaffected\r\n- New aggregate Early Story Online statistics on the maintainer's private dashboard. For this one feature, the service also keeps, per account that hosted or joined an Early Story room, the online name, the account ID, how many such rooms it took part in and when. It keeps no address, room or join code, and turning the option on records nothing by itself. See the privacy section of [docs/ONLINE.md](https://github.com/saulob/dragons-crown-pro-pc/blob/main/docs/ONLINE.md)\r\n\r\n## Controller and gameplay improvements\r\n\r\n- **Controller Rumble** toggle (On by default) on the launcher's **Controls** page and in the F1 Options menu, where it applies at once ([#70](https://github.com/saulob/dragons-crown-pro-pc/issues/70))\r\n- **Your own gamepad mappings**: a device SDL does not recognize as a gamepad, such as a remote-play virtual pad, can be added with a line in `user/gamecontrollerdb.txt`, in the format of [SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB). `SDL_GAMECONTROLLERCONFIG` still takes priority ([#27](https://github.com/saulob/dragons-crown-pro-pc/issues/27))\r\n- **Better diagnostics",
+          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.2.0"
         },
         "stable": {
-          "version": "v1.1.1",
-          "tag": "v1.1.1",
+          "version": "v1.2.0",
+          "tag": "v1.2.0",
           "prerelease": false,
-          "published": "2026-11-08T10:50:49Z",
-          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.1.1/DragonsCrownProPC-v1.1.1-x86_64.AppImage",
-          "file": "DragonsCrownProPC-v1.1.1-x86_64.AppImage",
-          "size": 28629312,
-          "sha256": "61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff",
-          "notes": "# Dragon's Crown Pro PC v1.1.1\n\nHotfix release for the automatic updater introduced after v1.1.0\n\n## Updater fixes\n\n- Fixed an update download that could remain stuck indefinitely after a temporary network or HTTP failure\n- Added robust timeout and cancellation handling for GitHub release downloads\n- Added secure validation for GitHub release redirects and download hosts\n- Failed downloads now terminate cleanly and offer RETRY instead of remaining on Downloading update\n- RETRY starts a fresh download and does not reuse partial files\n- Partial downloads are written to temporary files and removed after failures\n- Preserved SHA-256 verification, staging validation and rollback behavior\n- Added focused coverage for HTTP 504, stalled transfers, interrupted downloads, invalid redirects and successful retry after failure\n\nNo game files are included\n\n## Downloads\n\n- Windows: DragonsCrownProPC-v1.1.1-windows-x64.zip\n- Linux / Steam Deck experimental: DragonsCrownProPC-v1.1.1-x86_64.AppImage\n\n## Security\n\n| File | SHA-256 | VirusTotal |\n| --- | --- | --- |\n| DragonsCrownProPC-v1.1.1-windows-x64.zip | d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c | https://www.virustotal.com/gui/file/d7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c?nocache=1 |\n| DragonsCrownProPC-v1.1.1-x86_64.AppImage | 61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff | https://www.virustotal.com/gui/file/61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff?nocache=1 |\n| dragons_crown_pro.exe | 340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d | https://www.virustotal.com/gui/file/340f75e14ff36596a0fa5db4b3bb0bd7d137a80871030adef3c1f269bfd50a1d?nocache=1 |\n| trg-updater.exe | 92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f | https://www.virustotal.com/gui/file/92be2c48780aa1fb1a0f136f122bccefe0f95836afc314b31f96ca997b90620f?nocache=1 |\n\n## Checksums\n\nd7fe5b680fc61e6df25c4241b85589f56d29cb909ac9f1d5efc3f64c2611428c  DragonsCrownProPC-v1.1.1-windows-x64.zip\n61fddb2abf30bb0f1749855382a2b23c6ccfea3605d5e8cb9ee66e29be8b8bff  DragonsCrownProPC-v1.1.1-x86_64.AppImage\r\n",
-          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.1.1"
+          "published": "2026-11-13T23:59:21Z",
+          "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.2.0/DragonsCrownProPC-v1.2.0-x86_64.AppImage",
+          "file": "DragonsCrownProPC-v1.2.0-x86_64.AppImage",
+          "size": 28682560,
+          "sha256": "d020405b192afe580af13c68a8fd8e0b09c2f2516b8a81661caf21fa8f8cbd55",
+          "notes": "# Dragon's Crown Pro PC v1.2.0\r\n\r\nDragon's Crown Pro for PlayStation 4 as a native PC port for Windows and, experimentally, Linux and Steam Deck\r\n\r\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package from one of the supported builds\r\n\r\nIf you use v1.1.1 or v1.1.0, the launcher offers this release with **UPDATE NOW**. Your installed game files, saves, settings and logs are kept\r\n\r\n## Early Story Online\r\n\r\nDragon's Crown makes you play a good part of the story before its online multiplayer becomes available. v1.2.0 adds **Early Story Online**, which lets friends start playing together shortly after the opening tutorial, once the host reaches Hydeland\r\n\r\n- **Online much earlier.** After the tutorial and the first arrival in Hydeland, the host gets the game's own \"Go online?\" prompt and Network Menu. In Hydeland, **Y / Triangle** opens the Network Menu, because the character menu is not available yet. The tutorial itself stays single-player\r\n- **The host leads the story.** The host controls the story progression of the session. A guest whose own character is at a different story point temporarily follows the host's story for the shared stages and cutscenes\r\n- **The guest's own progress is protected.** The guest's saved story progress is not advanced by the host's session, and it is restored when the guest leaves, disconnects or the room closes\r\n- **Rewards stay with the guest.** XP, gold, loot and items earned in the session are the guest's own, as in any online game\r\n- **Built on the game's own multiplayer.** It uses the game's multiplayer menus and rooms and the port's lobby and peer-to-peer transport. Changes to the host's story step are passed to the room through the game's Matching2-compatible room path\r\n- **For friends, not strangers.** Early Story rooms are hidden from random matchmaking. Friends join them with Join a Friend's room or the join code\r\n- **How to use it.** Turn on **Early Story Online** on the launcher's **Online** page (Online Play must be on). It is Off by default and applies at the next game start. Only the host needs the option. A guest needs v1.2.0 but not the option, and older versions cannot join an Early Story room\r\n\r\n**Tested with two players.** Two-player Early Story sessions, including a change of host, were tested successfully. Sessions with three or four players have not been validated. With the option Off, online play and its unlock work exactly as before\r\n\r\n## Online improvements\r\n\r\n- The online service now supports Early Story rooms: they are kept private, only clients that support them can join, and the host's live story step is shared with the room's members. The service must be updated for early rooms to be hosted\r\n- Hardened the online service against abusive or malformed WebSocket connections, while keeping normal play and the relay unaffected\r\n- New aggregate Early Story Online statistics on the maintainer's private dashboard. For this one feature, the service also keeps, per account that hosted or joined an Early Story room, the online name, the account ID, how many such rooms it took part in and when. It keeps no address, room or join code, and turning the option on records nothing by itself. See the privacy section of [docs/ONLINE.md](https://github.com/saulob/dragons-crown-pro-pc/blob/main/docs/ONLINE.md)\r\n\r\n## Controller and gameplay improvements\r\n\r\n- **Controller Rumble** toggle (On by default) on the launcher's **Controls** page and in the F1 Options menu, where it applies at once ([#70](https://github.com/saulob/dragons-crown-pro-pc/issues/70))\r\n- **Your own gamepad mappings**: a device SDL does not recognize as a gamepad, such as a remote-play virtual pad, can be added with a line in `user/gamecontrollerdb.txt`, in the format of [SDL_GameControllerDB](https://github.com/mdqinc/SDL_GameControllerDB). `SDL_GAMECONTROLLERCONFIG` still takes priority ([#27](https://github.com/saulob/dragons-crown-pro-pc/issues/27))\r\n- **Better diagnostics",
+          "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.2.0"
         },
         "versions": [
+          {
+            "version": "v1.2.0",
+            "tag": "v1.2.0",
+            "prerelease": false,
+            "published": "2026-11-13T23:59:21Z",
+            "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v1.2.0/DragonsCrownProPC-v1.2.0-x86_64.AppImage",
+            "file": "DragonsCrownProPC-v1.2.0-x86_64.AppImage",
+            "size": 28682560,
+            "sha256": "d020405b192afe580af13c68a8fd8e0b09c2f2516b8a81661caf21fa8f8cbd55",
+            "notes": "# Dragon's Crown Pro PC v1.2.0\r\n\r\nDragon's Crown Pro for PlayStation 4 as a native PC port for Windows and, experimentally, Linux and Steam Deck\r\n\r\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package from one of the supported builds\r\n\r\nIf you use v1.1.1 or v1.1.0, the launcher offers this release with **UPDATE NOW**. Your installed game files, saves, settings and logs are kept\r\n\r\n## Early Story Online\r\n\r\nDragon's Crown makes you play a good part of the story before its online multiplayer becomes available. v1.2.0 adds **Early Story Online**, which ",
+            "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v1.2.0"
+          },
           {
             "version": "v1.1.1",
             "tag": "v1.1.1",
@@ -952,18 +964,6 @@
             "sha256": "7acb7ac7f6106ab343a812bda6122e04ede9239c53de3ab796e5a88730dfe301",
             "notes": "## Dragon's Crown Pro PC Port v0.7.0\n\nAdds an Arachnophobia Safe Mode, keyboard rebinding, Japanese NPC voices for the US build, support for the US 1.01 update and a corrected Asia / Hong Kong 1.02 install, more cheats, and a launcher that can update itself. This is an unofficial fan-made port, not affiliated with or endorsed by Vanillaware, Atlus, SEGA, Sony Interactive Entertainment or any other rights holder.\n\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package.\n\n### Highlights\n\n- **Arachnophobia Safe Mode**: the Giant Spiders can be shown as a ",
             "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.7.0"
-          },
-          {
-            "version": "v0.6.0",
-            "tag": "v0.6.0",
-            "prerelease": false,
-            "published": "2026-10-17T21:34:40Z",
-            "url": "https://github.com/saulob/dragons-crown-pro-pc/releases/download/v0.6.0/DragonsCrownProPC-v0.6.0-x86_64.AppImage",
-            "file": "DragonsCrownProPC-v0.6.0-x86_64.AppImage",
-            "size": 14064120,
-            "sha256": "93bb10e912634bd550539504bce79a20763cb4a3ee2285d3a5a010e281669c4c",
-            "notes": "## Dragon's Crown Pro PC Port v0.6.0\n\nAdds support for the Japanese and Asia / Hong Kong PS4 releases, Aspect Ratio options, local offline PS4 Trophies and Traditional Chinese text for the Asia / Hong Kong build. This is an unofficial fan-made port, not affiliated with or endorsed by Vanillaware, Atlus, SEGA, Sony Interactive Entertainment or any other rights holder.\n\n**No game files are included.** You need your own legally obtained Dragon's Crown Pro PS4 package.\n\n### Highlights\n\n- **More regions**: the US build plus the Japanese (`CUSA07001` 1.00, 1.02, 1.03) and Asia / Hong Kong (`CUSA1020",
-            "page": "https://github.com/saulob/dragons-crown-pro-pc/releases/tag/v0.6.0"
           }
         ]
       }
@@ -972,7 +972,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 189,
+        "stars": 190,
         "launch": "trg",
         "beta": {
           "version": "v0.2.3",
@@ -1064,7 +1064,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 189,
+        "stars": 190,
         "launch": "trg",
         "beta": {
           "version": "v0.2.3",
@@ -1158,7 +1158,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 100,
+        "stars": 101,
         "launch": "trg",
         "beta": {
           "version": "v0.1.0",
@@ -1202,7 +1202,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 100,
+        "stars": 101,
         "launch": "trg",
         "beta": {
           "version": "v0.1.0",
