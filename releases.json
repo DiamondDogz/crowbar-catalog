@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T19:54:53+00:00",
+  "generatedAt": "2026-11-15T23:51:58+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -391,7 +391,7 @@
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 27,
+        "stars": 28,
         "launch": "ps4rt-run",
         "badges": [
           "trophies"
@@ -713,7 +713,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 434,
+        "stars": 435,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -868,7 +868,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 434,
+        "stars": 435,
         "launch": "trg",
         "badges": [
           "trophies"
