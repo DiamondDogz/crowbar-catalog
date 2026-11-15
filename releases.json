@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T14:23:39+00:00",
+  "generatedAt": "2026-11-15T19:54:53+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 48,
+        "stars": 49,
         "launch": "ps4rt-launch",
         "badges": [
           "pause",
@@ -604,7 +604,7 @@
       "windows": {
         "repo": "DiamondDogz/GBO-Code-Fairy-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 14,
+        "stars": 15,
         "launch": "crowbar-json",
         "badges": [
           "trophies"
@@ -1025,7 +1025,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 198,
+        "stars": 199,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1120,7 +1120,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 198,
+        "stars": 199,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1217,7 +1217,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 109,
+        "stars": 110,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1264,7 +1264,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 109,
+        "stars": 110,
         "launch": "trg",
         "badges": [
           "trophies"
