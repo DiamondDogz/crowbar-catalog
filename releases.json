@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T13:59:29+00:00",
+  "generatedAt": "2026-11-16T23:20:20+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -237,7 +237,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 46,
+        "stars": 47,
         "launch": "native-play",
         "badges": [
           "trophies"
@@ -713,7 +713,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 442,
+        "stars": 456,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -868,7 +868,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 442,
+        "stars": 456,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1217,7 +1217,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 112,
+        "stars": 113,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1264,7 +1264,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 112,
+        "stars": 113,
         "launch": "trg",
         "badges": [
           "trophies"
