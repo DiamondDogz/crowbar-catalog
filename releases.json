@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T23:51:58+00:00",
+  "generatedAt": "2026-11-16T05:35:32+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 49,
+        "stars": 50,
         "launch": "ps4rt-launch",
         "badges": [
           "pause",
@@ -391,7 +391,7 @@
       "windows": {
         "repo": "DiamondDogz/Valkyria-Revolution-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 28,
+        "stars": 29,
         "launch": "ps4rt-run",
         "badges": [
           "trophies"
@@ -713,7 +713,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 435,
+        "stars": 437,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -868,7 +868,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 435,
+        "stars": 437,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1025,7 +1025,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 199,
+        "stars": 200,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1120,7 +1120,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 199,
+        "stars": 200,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1217,7 +1217,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 110,
+        "stars": 111,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1264,7 +1264,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 110,
+        "stars": 111,
         "launch": "trg",
         "badges": [
           "trophies"
