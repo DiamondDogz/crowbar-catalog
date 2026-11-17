@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T14:39:25+00:00",
+  "generatedAt": "2026-11-17T22:40:06+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -713,7 +713,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 471,
+        "stars": 485,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -868,7 +868,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 471,
+        "stars": 485,
         "launch": "trg",
         "badges": [
           "trophies"
