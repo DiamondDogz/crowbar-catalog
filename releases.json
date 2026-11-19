@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T02:27:44+00:00",
+  "generatedAt": "2026-11-19T10:42:10+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -486,7 +486,7 @@
       "linux": {
         "repo": "HekamiAeon/valkyria-revolution-ps4rt",
         "maintainer": "HekamiAeon",
-        "stars": 14,
+        "stars": 15,
         "launch": "ps4rt-launch",
         "badges": [],
         "beta": {
@@ -713,7 +713,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 503,
+        "stars": 506,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -868,7 +868,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 503,
+        "stars": 506,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1025,7 +1025,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 208,
+        "stars": 209,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1120,7 +1120,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 208,
+        "stars": 209,
         "launch": "trg",
         "badges": [
           "trophies"
