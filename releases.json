@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-19T19:12:21+00:00",
+  "generatedAt": "2026-11-20T01:20:46+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -237,7 +237,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 49,
+        "stars": 50,
         "launch": "native-play",
         "badges": [
           "trophies"
@@ -486,34 +486,46 @@
       "linux": {
         "repo": "HekamiAeon/valkyria-revolution-ps4rt",
         "maintainer": "HekamiAeon",
-        "stars": 15,
+        "stars": 16,
         "launch": "ps4rt-launch",
         "badges": [],
         "beta": {
-          "version": "v1.2",
-          "tag": "v1.2",
+          "version": "v1.3",
+          "tag": "v1.3",
           "prerelease": false,
-          "published": "2026-10-29T17:24:44Z",
-          "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.2/valkyria-revolution-linux-x86_64-d29d542.tar.gz",
-          "file": "valkyria-revolution-linux-x86_64-d29d542.tar.gz",
-          "size": 89519042,
-          "sha256": "53358f6dcb29445b195e6eb2d7bb23aebb8652ef00ac32bda546a15584248b2a",
-          "notes": "# Valkyria Revolution PS4RT v1.2\n\nLinux x86-64 release.\n\n## What's New in v1.2\n- **Improved player launcher:** Standardized the launcher as `Play-Game.sh` to match other PS4RT ports. Supply `--game` on the first launch; later launches reuse the remembered, validated game directory. The previous `Play-Valkyria.sh` remains available for compatibility with existing shortcuts.\n- **Cleaner source and distribution:** Removed obsolete Windows packaging infrastructure and unused launcher logic, including the Tkinter folder picker. Tightened the public source export and excluded unnecessary documentation from the player archive.\n- **Restart Game:** Added a Restart Game option to the PS4RT graphics overlay, with a confirmation prompt to avoid accidental restarts.\n- **Restored overlay assets:** Added the overlay background artwork and recorded navigation, confirm and cancel sounds to the repository so clean portable builds include them.\n- **Clearer setup guidance:** Improved the included `PLAYER_README.txt` and first-launch error message for players who have not yet configured their game directory.\n\n## Features\n- Original PS4 x86-64 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p and 4K output (the game renders internally at 1080p)\n- FSR 3.1 and bundled FSR 4 v07 support where hardware features permit\n- Anisotropic filtering up to 16x and adjustable sharpening\n- Custom illustrated graphics overlay with menu sounds, display-mode selection, and confirmation dialogs for Restart Game and Exit Game\n- DualSense, XInput and keyboard support, with configurable launch-time mappings\n- Save/load support with existing player saves and settings preserved\n\n## Compatibility\nTested on Fedora Linux through the opening three chapters, including cinematics, exploration, combat and initial saving/loading. The glibc 2.35 portable build and graphics overlay have also been gameplay smoke-tested on Fedora.\n\nA complete playthrough has not been verified.\n\nThis release targets **native x86-64 (AMD64) Linux CPUs**. ARM64 devices, including systems running x86-64 binaries through FEX or Box64, are not officially supported. Other Linux distributions, including SteamOS, remain unverified.\n\n## Installation\nDownload and extract the **Linux x86-64 runtime** archive, open a terminal inside its extracted directory, and run this once with your own game path:\n\n```bash\nbash Play-Game.sh --game \"/path/to/your/CUSA06810\"\n```\n\nOn later launches, the launcher remembers the validated game directory:\n\n```bash\nbash Play-Game.sh\n```\n\nYou can supply `--game` again at any time to choose and remember a different valid game location. See `PLAYER_README.txt` inside the player archive for details. The `--data-dir` option remains available for custom save/settings locations; supply the same custom location on subsequent launches.\n\n**Requirements:**\n- Linux x86-64 with glibc 2.35 or newer\n- Compatible Vulkan graphics driver and loader\n- Python 3\n- Your own extracted, plaintext Valkyria Revolution PS4 game files (CUSA06810)\n\nPlayers do not need Podman, a compiler, or separate installations of the twelve bundled application libraries, including FFmpeg 8 and SDL3. No `LD_LIBRARY_PATH` setup is required for normal play.\n\nThe original game files and PS4 firmware are **not** included. See the [repository README](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) for source instructions, known limitations, credits and licensing notices.\n",
-          "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.2"
+          "published": "2026-11-19T22:58:37Z",
+          "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.3/valkyria-revolution-linux-x86_64-a901bd2.tar.gz",
+          "file": "valkyria-revolution-linux-x86_64-a901bd2.tar.gz",
+          "size": 95197876,
+          "sha256": "e3b2159ec52a37360a704ea47299d9afa28f348a376b9caaa8ac280ab48027a2",
+          "notes": "# Valkyria Revolution PS4RT v1.3\n\nA Linux x86-64 update adding achievements, an experimental 60 FPS mode, new internal resolutions and experimental ultrawide for **Valkyria Revolution (CUSA06810)**.\n\n## What's new\n\n- **Achievements:** Game-triggered trophies are now tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- **60 FPS (experimental):** An **Engine frame rate** option runs the game at 30 (original) or 60 and switches live. Game speed stays normal. Some animations or timings may still differ from the original; switch back to 30 if something misbehaves.\n- **Internal resolutions:** Choose the resolution the game renders at: 1024×576, 720p, 1080p, 1440p or native 4K. Changing it requires a restart.\n- **Ultrawide (experimental):** 21:9 (2560×1080, 3440×1440), 24:9 (3840×1440) and 32:9 (3840×1080, 5120×1440) internal resolutions show more of the game world instead of stretching the image. The HUD stays in a centred 16:9 area. Pre-rendered videos stay 16:9.\n- **FSR 1:** A new lightweight spatial upscaler option alongside FSR 3.1 and FSR 4.\n- **FSR fixes:** The FSR output resolution is now chosen separately from the internal resolution, and only matching outputs are offered. Talk portraits are now upscaled with the scene instead of stretched, and they and the narration panel no longer shake. FSR 4 no longer leaves trails of outlines in the pencil-sketch smokescreen effect.\n- **Graphics quality:** A **Graphics quality** option (Max, High, Low) for slower GPUs: High draws lower-resolution shadows and Low turns them off. Changing it requires a restart.\n- **NVIDIA startup fix:** Avoids a startup crash reported on NVIDIA GPUs.\n- **Cutscene fixes:** Fixed some existing game bugs in cutscenes.\n\n## Install and launch\n\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA06810** game folder:\n\n```bash\nbash Play-Game.sh --game \"/absolute/path/to/CUSA06810\"\n```\n\nAfter successful setup:\n\n```bash\nbash Play-Game.sh\n```\n\n**Keep your save data when upgrading:** saves, achievements and settings are stored outside the player folder, in `~/.local/share/valkyria-revolution/`, so a new PS4RT version finds them automatically. Extract v1.3 into its own folder and launch it as before: your saves, settings and remembered game folder carry over, with nothing to copy. If you used `--data-dir`, pass the same folder to v1.3.\n\n## Platform and notes\n\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\n\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\n",
+          "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.3"
         },
         "stable": {
-          "version": "v1.2",
-          "tag": "v1.2",
+          "version": "v1.3",
+          "tag": "v1.3",
           "prerelease": false,
-          "published": "2026-10-29T17:24:44Z",
-          "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.2/valkyria-revolution-linux-x86_64-d29d542.tar.gz",
-          "file": "valkyria-revolution-linux-x86_64-d29d542.tar.gz",
-          "size": 89519042,
-          "sha256": "53358f6dcb29445b195e6eb2d7bb23aebb8652ef00ac32bda546a15584248b2a",
-          "notes": "# Valkyria Revolution PS4RT v1.2\n\nLinux x86-64 release.\n\n## What's New in v1.2\n- **Improved player launcher:** Standardized the launcher as `Play-Game.sh` to match other PS4RT ports. Supply `--game` on the first launch; later launches reuse the remembered, validated game directory. The previous `Play-Valkyria.sh` remains available for compatibility with existing shortcuts.\n- **Cleaner source and distribution:** Removed obsolete Windows packaging infrastructure and unused launcher logic, including the Tkinter folder picker. Tightened the public source export and excluded unnecessary documentation from the player archive.\n- **Restart Game:** Added a Restart Game option to the PS4RT graphics overlay, with a confirmation prompt to avoid accidental restarts.\n- **Restored overlay assets:** Added the overlay background artwork and recorded navigation, confirm and cancel sounds to the repository so clean portable builds include them.\n- **Clearer setup guidance:** Improved the included `PLAYER_README.txt` and first-launch error message for players who have not yet configured their game directory.\n\n## Features\n- Original PS4 x86-64 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p and 4K output (the game renders internally at 1080p)\n- FSR 3.1 and bundled FSR 4 v07 support where hardware features permit\n- Anisotropic filtering up to 16x and adjustable sharpening\n- Custom illustrated graphics overlay with menu sounds, display-mode selection, and confirmation dialogs for Restart Game and Exit Game\n- DualSense, XInput and keyboard support, with configurable launch-time mappings\n- Save/load support with existing player saves and settings preserved\n\n## Compatibility\nTested on Fedora Linux through the opening three chapters, including cinematics, exploration, combat and initial saving/loading. The glibc 2.35 portable build and graphics overlay have also been gameplay smoke-tested on Fedora.\n\nA complete playthrough has not been verified.\n\nThis release targets **native x86-64 (AMD64) Linux CPUs**. ARM64 devices, including systems running x86-64 binaries through FEX or Box64, are not officially supported. Other Linux distributions, including SteamOS, remain unverified.\n\n## Installation\nDownload and extract the **Linux x86-64 runtime** archive, open a terminal inside its extracted directory, and run this once with your own game path:\n\n```bash\nbash Play-Game.sh --game \"/path/to/your/CUSA06810\"\n```\n\nOn later launches, the launcher remembers the validated game directory:\n\n```bash\nbash Play-Game.sh\n```\n\nYou can supply `--game` again at any time to choose and remember a different valid game location. See `PLAYER_README.txt` inside the player archive for details. The `--data-dir` option remains available for custom save/settings locations; supply the same custom location on subsequent launches.\n\n**Requirements:**\n- Linux x86-64 with glibc 2.35 or newer\n- Compatible Vulkan graphics driver and loader\n- Python 3\n- Your own extracted, plaintext Valkyria Revolution PS4 game files (CUSA06810)\n\nPlayers do not need Podman, a compiler, or separate installations of the twelve bundled application libraries, including FFmpeg 8 and SDL3. No `LD_LIBRARY_PATH` setup is required for normal play.\n\nThe original game files and PS4 firmware are **not** included. See the [repository README](https://github.com/HekamiAeon/valkyria-revolution-ps4rt) for source instructions, known limitations, credits and licensing notices.\n",
-          "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.2"
+          "published": "2026-11-19T22:58:37Z",
+          "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.3/valkyria-revolution-linux-x86_64-a901bd2.tar.gz",
+          "file": "valkyria-revolution-linux-x86_64-a901bd2.tar.gz",
+          "size": 95197876,
+          "sha256": "e3b2159ec52a37360a704ea47299d9afa28f348a376b9caaa8ac280ab48027a2",
+          "notes": "# Valkyria Revolution PS4RT v1.3\n\nA Linux x86-64 update adding achievements, an experimental 60 FPS mode, new internal resolutions and experimental ultrawide for **Valkyria Revolution (CUSA06810)**.\n\n## What's new\n\n- **Achievements:** Game-triggered trophies are now tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- **60 FPS (experimental):** An **Engine frame rate** option runs the game at 30 (original) or 60 and switches live. Game speed stays normal. Some animations or timings may still differ from the original; switch back to 30 if something misbehaves.\n- **Internal resolutions:** Choose the resolution the game renders at: 1024×576, 720p, 1080p, 1440p or native 4K. Changing it requires a restart.\n- **Ultrawide (experimental):** 21:9 (2560×1080, 3440×1440), 24:9 (3840×1440) and 32:9 (3840×1080, 5120×1440) internal resolutions show more of the game world instead of stretching the image. The HUD stays in a centred 16:9 area. Pre-rendered videos stay 16:9.\n- **FSR 1:** A new lightweight spatial upscaler option alongside FSR 3.1 and FSR 4.\n- **FSR fixes:** The FSR output resolution is now chosen separately from the internal resolution, and only matching outputs are offered. Talk portraits are now upscaled with the scene instead of stretched, and they and the narration panel no longer shake. FSR 4 no longer leaves trails of outlines in the pencil-sketch smokescreen effect.\n- **Graphics quality:** A **Graphics quality** option (Max, High, Low) for slower GPUs: High draws lower-resolution shadows and Low turns them off. Changing it requires a restart.\n- **NVIDIA startup fix:** Avoids a startup crash reported on NVIDIA GPUs.\n- **Cutscene fixes:** Fixed some existing game bugs in cutscenes.\n\n## Install and launch\n\nDownload the **linux-x86_64** player archive and extract it into a writable directory. Supply your own extracted, plaintext **CUSA06810** game folder:\n\n```bash\nbash Play-Game.sh --game \"/absolute/path/to/CUSA06810\"\n```\n\nAfter successful setup:\n\n```bash\nbash Play-Game.sh\n```\n\n**Keep your save data when upgrading:** saves, achievements and settings are stored outside the player folder, in `~/.local/share/valkyria-revolution/`, so a new PS4RT version finds them automatically. Extract v1.3 into its own folder and launch it as before: your saves, settings and remembered game folder carry over, with nothing to copy. If you used `--data-dir`, pass the same folder to v1.3.\n\n## Platform and notes\n\n- Linux x86-64, glibc 2.35+, Python 3, compatible Vulkan 1.3 GPU drivers.\n- The portable player archive includes the required application libraries and PS4RT tools. No development toolchain is needed to play.\n- This is experimental compatibility software, not a general-purpose PS4 emulator. No game files, firmware, keys, PKGs, saves, or DLC are distributed.\n\nFor troubleshooting, see `PLAYER_README.txt` in the extracted player directory and the repository README.\n",
+          "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.3"
         },
         "versions": [
+          {
+            "version": "v1.3",
+            "tag": "v1.3",
+            "prerelease": false,
+            "published": "2026-11-19T22:58:37Z",
+            "url": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/download/v1.3/valkyria-revolution-linux-x86_64-a901bd2.tar.gz",
+            "file": "valkyria-revolution-linux-x86_64-a901bd2.tar.gz",
+            "size": 95197876,
+            "sha256": "e3b2159ec52a37360a704ea47299d9afa28f348a376b9caaa8ac280ab48027a2",
+            "notes": "# Valkyria Revolution PS4RT v1.3\n\nA Linux x86-64 update adding achievements, an experimental 60 FPS mode, new internal resolutions and experimental ultrawide for **Valkyria Revolution (CUSA06810)**.\n\n## What's new\n\n- **Achievements:** Game-triggered trophies are now tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- **60 FPS (experimental):** An **Engine frame rate** option runs the game at 30 (original) or 60 and swit",
+            "page": "https://github.com/HekamiAeon/valkyria-revolution-ps4rt/releases/tag/v1.3"
+          },
           {
             "version": "v1.2",
             "tag": "v1.2",
@@ -713,7 +725,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 512,
+        "stars": 513,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -868,7 +880,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 512,
+        "stars": 513,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1025,7 +1037,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 211,
+        "stars": 212,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1132,7 +1144,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 211,
+        "stars": 212,
         "launch": "trg",
         "badges": [
           "trophies"
