@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T08:58:06+00:00",
+  "generatedAt": "2026-11-20T17:42:38+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -486,7 +486,7 @@
       "linux": {
         "repo": "HekamiAeon/valkyria-revolution-ps4rt",
         "maintainer": "HekamiAeon",
-        "stars": 16,
+        "stars": 17,
         "launch": "ps4rt-launch",
         "badges": [],
         "beta": {
@@ -725,7 +725,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 519,
+        "stars": 528,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -880,7 +880,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 519,
+        "stars": 528,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1253,7 +1253,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 118,
+        "stars": 119,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1300,7 +1300,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 118,
+        "stars": 119,
         "launch": "trg",
         "badges": [
           "trophies"
