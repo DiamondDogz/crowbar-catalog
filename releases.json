@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T15:14:50+00:00",
+  "generatedAt": "2026-11-22T21:06:43+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 50,
+        "stars": 51,
         "launch": "ps4rt-launch",
         "badges": [
           "pause",
@@ -725,7 +725,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 549,
+        "stars": 552,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -880,7 +880,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 549,
+        "stars": 552,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1037,7 +1037,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 219,
+        "stars": 221,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1144,7 +1144,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 219,
+        "stars": 221,
         "launch": "trg",
         "badges": [
           "trophies"
