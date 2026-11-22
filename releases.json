@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T07:05:39+00:00",
+  "generatedAt": "2026-11-22T15:14:50+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -237,7 +237,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 50,
+        "stars": 51,
         "launch": "native-play",
         "badges": [
           "trophies"
@@ -332,7 +332,7 @@
       "linux": {
         "repo": "HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "HekamiAeon",
-        "stars": 31,
+        "stars": 32,
         "launch": "ps4rt-launch",
         "badges": [],
         "beta": {
@@ -725,7 +725,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 548,
+        "stars": 549,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -880,7 +880,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 548,
+        "stars": 549,
         "launch": "trg",
         "badges": [
           "trophies"
