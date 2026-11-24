@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T05:51:38+00:00",
+  "generatedAt": "2026-11-24T17:14:19+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
         "repo": "DiamondDogz/Sakura-Wars-PS4RT-Windows",
         "maintainer": "DiamondDogz",
-        "stars": 51,
+        "stars": 52,
         "launch": "ps4rt-launch",
         "badges": [
           "pause",
@@ -725,7 +725,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 560,
+        "stars": 567,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -880,7 +880,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 560,
+        "stars": 567,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1037,7 +1037,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 226,
+        "stars": 227,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1144,7 +1144,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 226,
+        "stars": 227,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1253,7 +1253,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 134,
+        "stars": 139,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1300,7 +1300,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 134,
+        "stars": 139,
         "launch": "trg",
         "badges": [
           "trophies"
