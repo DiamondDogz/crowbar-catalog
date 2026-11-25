@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T17:14:19+00:00",
+  "generatedAt": "2026-11-25T01:28:15+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -164,7 +164,7 @@
       "linux": {
         "repo": "HekamiAeon/Sakura-Wars-PS4RT",
         "maintainer": "HekamiAeon",
-        "stars": 44,
+        "stars": 45,
         "launch": "ps4rt-launch",
         "badges": [
           "trophies"
@@ -237,7 +237,7 @@
       "windows": {
         "repo": "Hoverbike51/Star-Ocean-Integrity-and-Faithlessness-PS4RT",
         "maintainer": "Hoverbike51",
-        "stars": 52,
+        "stars": 53,
         "launch": "native-play",
         "badges": [
           "trophies"
@@ -725,7 +725,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 567,
+        "stars": 571,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -880,7 +880,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 567,
+        "stars": 571,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1037,7 +1037,7 @@
       "windows": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 227,
+        "stars": 228,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1144,7 +1144,7 @@
       "linux": {
         "repo": "saulob/odin-sphere-leifthrasir-pc",
         "maintainer": "saulob",
-        "stars": 227,
+        "stars": 228,
         "launch": "trg",
         "badges": [
           "trophies"
