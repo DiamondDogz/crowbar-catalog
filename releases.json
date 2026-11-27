@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T20:31:26+00:00",
+  "generatedAt": "2026-11-27T03:16:07+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -336,30 +336,42 @@
         "launch": "ps4rt-launch",
         "badges": [],
         "beta": {
-          "version": "v1.2",
-          "tag": "v1.2",
+          "version": "v1.3",
+          "tag": "v1.3",
           "prerelease": false,
-          "published": "2026-10-29T20:13:30Z",
-          "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.2/star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
-          "file": "star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
-          "size": 37209463,
-          "sha256": "ae8a65f95a29ea95a87930b0f178d8fc72e1c8a02ce081fff793fd257b3d5cb3",
-          "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added optional `--data-dir` support while preserving the existing default save and settings location.\r\n- Preserved Restart Game behavior and graphics overrides.\r\n- Improved player instructions, archive layout tests, and build integrity checks.\r\n\r\n## Features\r\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\r\n- 1080p, 1440p, and 4K output\r\n- FSR 3.1 and bundled FSR 4 v07 support\r\n- Custom graphics overlay with menu sounds and Restart Game\r\n- Live Sync/Async shader compilation toggle\r\n- DualSense, XInput, and keyboard support\r\n- Configurable controller and keyboard mappings\r\n\r\n## Compatibility\r\nTested on Fedora Linux through Chapter 4, including battles, cinematics, exploration, and saving/loading. The v1.2 launcher, Restart Game, and gameplay smoke tests passed.\r\n\r\nA complete playthrough and broad Linux compatibility have not been verified. Sync mode favors visual consistency; Async may reduce shader compilation stutter but exhibit brief visual flickers.\r\n\r\n## Installation\r\nExtract the Linux x86-64 runtime archive.\r\n\r\nFirst launch:\r\n\r\n    bash Play-Game.sh --game \"/path/to/CUSA03219\"\r\n\r\nSubsequent launches:\r\n\r\n    bash Play-Game.sh\r\n\r\nRequirements: native x86-64 Linux, glibc 2.35+, Python 3, a compatible Vulkan driver, and your own extracted plaintext CUSA03219 game files.\r\n\r\nNo PS4 game files or firmware are included. See the repository README for details, limitations, and credits.\r\n",
-          "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2"
+          "published": "2026-11-27T03:11:41Z",
+          "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.3/star-ocean-5-ps4rt-linux-x86_64-e66d654.tar.gz",
+          "file": "star-ocean-5-ps4rt-linux-x86_64-e66d654.tar.gz",
+          "size": 41541011,
+          "sha256": "b97afca050f3dea069f44c7200e4b0ae3c630523c6b4954f4899c92f86593cec",
+          "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.3\n\nLinux x86-64 release.\n\n## What's New in v1.3\n- Added achievements. Game-triggered trophies are tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- Added a **Game language** option to the overlay. It switches the game between **English and French** after **Apply and restart**. Trophy text follows the selected language. Saves are not changed.\n- Added internal resolutions: choose the resolution the game renders at, 1024×576, 720p, 1080p, 1440p or native 4K. Changing it requires a restart.\n- Added ultrawide support (experimental): 21:9 (2560×1080, 3440×1440), 24:9 (3840×1440) and 32:9 (3840×1080, 5120×1440) internal resolutions show more of the game world instead of stretching the image. Pre-rendered videos stay 16:9.\n- Added FSR 1, a lightweight spatial upscaler option alongside FSR 3.1 and FSR 4.\n- Added a **Framerate** option: 60 (original) or a 30 FPS lock for slower GPUs that cannot hold 60. Game speed stays the same, and the choice applies live.\n- Added a **Graphics quality** option (Max, High, Low) for slower GPUs: High draws lower-resolution shadows, and Low draws them lower still and turns off ambient occlusion. Changing it requires a restart.\n- Fixed FSR jitter: the title screen and some cutscenes no longer shake with FSR on, and lamp-lit surfaces no longer flicker. FSR 3.1 no longer leaves trails behind moving characters. The FSR output resolution is now chosen separately from the internal resolution, and only matching outputs are offered.\n- Improved asynchronous shader compilation: new shaders no longer hold up the frame while they compile, and shaders saved by earlier sessions are reused instead of being built again. The **Asynchronous compilation** option is now on by default and applies live. A `ps4rt.ini` copied from v1.2 keeps its saved choice, so tick the option in the overlay after upgrading.\n- Fixed a startup crash reported on NVIDIA GPUs.\n- Fixed a crash after the last boss that stopped the game before the ending credits.\n- Fixed the camera drifting on its own when the right stick rests slightly off centre.\n- Fixed character shadows that flickered or went missing, and black squares that could appear on characters.\n- Added the FPS counter toggle to the Graphics menu.\n\n## Features\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p, and 4K output\n- FSR 3.1 and bundled FSR 4 v07 support\n- Custom graphics overlay with menu sounds and Restart Game\n- Live Sync/Async shader compilation toggle\n- DualSense, XInput, and keyboard support\n- Configurable controller and keyboard mappings\n\n## Compatibility\nTested on Fedora Linux through a complete playthrough, including battles, cinematics, exploration, and saving/loading, and confirmed working on Steam Deck. The v1.3 launcher, Restart Game, and gameplay smoke tests passed.\n\nBroad Linux compatibility has not been verified. Asynchronous compilation reduces shader compilation stutter but may exhibit brief visual flickers; turning it off favors visual consistency.\n\n## Installation\nExtract the Linux x86-64 runtime archive.\n\nFirst launch:\n\n    bash Play-Game.sh --game \"/path/to/CUSA03219\"\n\nSubsequent launches:\n\n    bash Play-Game.sh\n\n**Keep your save data when upgrading:** saves, achievements and settings are stored inside the player folder, so a new PS4RT version starts without them. To keep your progress, copy `out/CUSA03219/user/` (save data and achievements) and `out/CUSA03219/ps4rt.ini` (settings) from your previous version's folder into the new one **before its first launch**. Copying later replaces any saves made in the new version. If you used `--data-dir`, pass the same folder to v1.3.\n\nRequirements: native x86-64 Linux, glibc 2.35+, Python 3, a compatible Vulkan driver, and your own extracted plaintext",
+          "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.3"
         },
         "stable": {
-          "version": "v1.2",
-          "tag": "v1.2",
+          "version": "v1.3",
+          "tag": "v1.3",
           "prerelease": false,
-          "published": "2026-10-29T20:13:30Z",
-          "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.2/star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
-          "file": "star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
-          "size": 37209463,
-          "sha256": "ae8a65f95a29ea95a87930b0f178d8fc72e1c8a02ce081fff793fd257b3d5cb3",
-          "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added optional `--data-dir` support while preserving the existing default save and settings location.\r\n- Preserved Restart Game behavior and graphics overrides.\r\n- Improved player instructions, archive layout tests, and build integrity checks.\r\n\r\n## Features\r\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\r\n- 1080p, 1440p, and 4K output\r\n- FSR 3.1 and bundled FSR 4 v07 support\r\n- Custom graphics overlay with menu sounds and Restart Game\r\n- Live Sync/Async shader compilation toggle\r\n- DualSense, XInput, and keyboard support\r\n- Configurable controller and keyboard mappings\r\n\r\n## Compatibility\r\nTested on Fedora Linux through Chapter 4, including battles, cinematics, exploration, and saving/loading. The v1.2 launcher, Restart Game, and gameplay smoke tests passed.\r\n\r\nA complete playthrough and broad Linux compatibility have not been verified. Sync mode favors visual consistency; Async may reduce shader compilation stutter but exhibit brief visual flickers.\r\n\r\n## Installation\r\nExtract the Linux x86-64 runtime archive.\r\n\r\nFirst launch:\r\n\r\n    bash Play-Game.sh --game \"/path/to/CUSA03219\"\r\n\r\nSubsequent launches:\r\n\r\n    bash Play-Game.sh\r\n\r\nRequirements: native x86-64 Linux, glibc 2.35+, Python 3, a compatible Vulkan driver, and your own extracted plaintext CUSA03219 game files.\r\n\r\nNo PS4 game files or firmware are included. See the repository README for details, limitations, and credits.\r\n",
-          "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2"
+          "published": "2026-11-27T03:11:41Z",
+          "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.3/star-ocean-5-ps4rt-linux-x86_64-e66d654.tar.gz",
+          "file": "star-ocean-5-ps4rt-linux-x86_64-e66d654.tar.gz",
+          "size": 41541011,
+          "sha256": "b97afca050f3dea069f44c7200e4b0ae3c630523c6b4954f4899c92f86593cec",
+          "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.3\n\nLinux x86-64 release.\n\n## What's New in v1.3\n- Added achievements. Game-triggered trophies are tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- Added a **Game language** option to the overlay. It switches the game between **English and French** after **Apply and restart**. Trophy text follows the selected language. Saves are not changed.\n- Added internal resolutions: choose the resolution the game renders at, 1024×576, 720p, 1080p, 1440p or native 4K. Changing it requires a restart.\n- Added ultrawide support (experimental): 21:9 (2560×1080, 3440×1440), 24:9 (3840×1440) and 32:9 (3840×1080, 5120×1440) internal resolutions show more of the game world instead of stretching the image. Pre-rendered videos stay 16:9.\n- Added FSR 1, a lightweight spatial upscaler option alongside FSR 3.1 and FSR 4.\n- Added a **Framerate** option: 60 (original) or a 30 FPS lock for slower GPUs that cannot hold 60. Game speed stays the same, and the choice applies live.\n- Added a **Graphics quality** option (Max, High, Low) for slower GPUs: High draws lower-resolution shadows, and Low draws them lower still and turns off ambient occlusion. Changing it requires a restart.\n- Fixed FSR jitter: the title screen and some cutscenes no longer shake with FSR on, and lamp-lit surfaces no longer flicker. FSR 3.1 no longer leaves trails behind moving characters. The FSR output resolution is now chosen separately from the internal resolution, and only matching outputs are offered.\n- Improved asynchronous shader compilation: new shaders no longer hold up the frame while they compile, and shaders saved by earlier sessions are reused instead of being built again. The **Asynchronous compilation** option is now on by default and applies live. A `ps4rt.ini` copied from v1.2 keeps its saved choice, so tick the option in the overlay after upgrading.\n- Fixed a startup crash reported on NVIDIA GPUs.\n- Fixed a crash after the last boss that stopped the game before the ending credits.\n- Fixed the camera drifting on its own when the right stick rests slightly off centre.\n- Fixed character shadows that flickered or went missing, and black squares that could appear on characters.\n- Added the FPS counter toggle to the Graphics menu.\n\n## Features\n- Original PS4 game code running through the PS4RT Linux compatibility runtime\n- 1080p, 1440p, and 4K output\n- FSR 3.1 and bundled FSR 4 v07 support\n- Custom graphics overlay with menu sounds and Restart Game\n- Live Sync/Async shader compilation toggle\n- DualSense, XInput, and keyboard support\n- Configurable controller and keyboard mappings\n\n## Compatibility\nTested on Fedora Linux through a complete playthrough, including battles, cinematics, exploration, and saving/loading, and confirmed working on Steam Deck. The v1.3 launcher, Restart Game, and gameplay smoke tests passed.\n\nBroad Linux compatibility has not been verified. Asynchronous compilation reduces shader compilation stutter but may exhibit brief visual flickers; turning it off favors visual consistency.\n\n## Installation\nExtract the Linux x86-64 runtime archive.\n\nFirst launch:\n\n    bash Play-Game.sh --game \"/path/to/CUSA03219\"\n\nSubsequent launches:\n\n    bash Play-Game.sh\n\n**Keep your save data when upgrading:** saves, achievements and settings are stored inside the player folder, so a new PS4RT version starts without them. To keep your progress, copy `out/CUSA03219/user/` (save data and achievements) and `out/CUSA03219/ps4rt.ini` (settings) from your previous version's folder into the new one **before its first launch**. Copying later replaces any saves made in the new version. If you used `--data-dir`, pass the same folder to v1.3.\n\nRequirements: native x86-64 Linux, glibc 2.35+, Python 3, a compatible Vulkan driver, and your own extracted plaintext",
+          "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.3"
         },
         "versions": [
+          {
+            "version": "v1.3",
+            "tag": "v1.3",
+            "prerelease": false,
+            "published": "2026-11-27T03:11:41Z",
+            "url": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/download/v1.3/star-ocean-5-ps4rt-linux-x86_64-e66d654.tar.gz",
+            "file": "star-ocean-5-ps4rt-linux-x86_64-e66d654.tar.gz",
+            "size": 41541011,
+            "sha256": "b97afca050f3dea069f44c7200e4b0ae3c630523c6b4954f4899c92f86593cec",
+            "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.3\n\nLinux x86-64 release.\n\n## What's New in v1.3\n- Added achievements. Game-triggered trophies are tracked locally and shown in the overlay's **Achievements** tab, with icons, progress, hidden entries and unlock notifications. They are not synced with PSN, and trophies earned before this version do not unlock retroactively.\n- Added a **Game language** option to the overlay. It switches the game between **English and French** after **Apply and restart**. Trophy text follows the selected language. Saves are not changed.\n- Added internal resolutio",
+            "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.3"
+          },
           {
             "version": "v1.2",
             "tag": "v1.2",
@@ -369,7 +381,7 @@
             "file": "star-ocean-5-ps4rt-linux-x86_64-7010cc2.tar.gz",
             "size": 37209463,
             "sha256": "ae8a65f95a29ea95a87930b0f178d8fc72e1c8a02ce081fff793fd257b3d5cb3",
-            "notes": "# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added optional `--data-dir` support while preserving the existing default save and settings location.\r\n- Preserved Restart Game behavior and graphics overrides.\r\n- Improved player instructions, archive layout tests, and buil",
+            "notes": "**Superseded by [Star Ocean PS4RT v1.3](https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.3).**\r\n\r\nThis release is retained for historical reference and rollback.\r\n\r\n---\r\n# Star Ocean: Integrity and Faithlessness PS4RT v1.2\r\n\r\nLinux x86-64 release.\r\n\r\n## What's New in v1.2\r\n- Standardized the player launcher as `Play-Game.sh`.\r\n- Added remembered game directory support. `--game` is needed for first-time setup, but can be omitted on subsequent launches.\r\n- Retained `Play-Star-Ocean.sh` as a compatibility alias for older versions of PS4RT.\r\n- Added option",
             "page": "https://github.com/HekamiAeon/Star-Ocean-Integrity-and-Faithlessness-PS4RT/releases/tag/v1.2"
           },
           {
@@ -725,7 +737,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 587,
+        "stars": 588,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -880,7 +892,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 587,
+        "stars": 588,
         "launch": "trg",
         "badges": [
           "trophies"
