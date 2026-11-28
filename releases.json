@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T03:35:18+00:00",
+  "generatedAt": "2026-11-28T12:20:56+00:00",
   "games": {
     "sakura-wars": {
       "windows": {
@@ -737,7 +737,7 @@
       "windows": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 593,
+        "stars": 597,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -892,7 +892,7 @@
       "linux": {
         "repo": "saulob/dragons-crown-pro-pc",
         "maintainer": "saulob",
-        "stars": 593,
+        "stars": 597,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1265,7 +1265,7 @@
       "windows": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 145,
+        "stars": 147,
         "launch": "trg",
         "badges": [
           "trophies"
@@ -1312,7 +1312,7 @@
       "linux": {
         "repo": "saulob/13-sentinels-aegis-rim-pc",
         "maintainer": "saulob",
-        "stars": 145,
+        "stars": 147,
         "launch": "trg",
         "badges": [
           "trophies"
